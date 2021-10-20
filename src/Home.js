@@ -1,10 +1,9 @@
-import React,{useState} from 'react';
+import React,{useState,useEffect} from 'react';
 import Island from "./Island";
 import Moon from "./vectors/moon.svg"
 import { motion} from "framer-motion";
 import {useSelector} from "react-redux"
 import { selectslideTitle } from './features/appSlice';
-import {useEffect} from "react"
 import { useSpring, animated } from 'react-spring'
 import Bottom3 from "./vectors/bottom-3.svg"
 import Bottom2 from "./vectors/bottom-2.svg"
@@ -23,8 +22,8 @@ const trans7 = (x, y) => `translate3d(${x / 12}px,${y / 12}px,0) scaleX(1.1)`
 
 
 function Home() {
-
-    const [props, set] = useSpring(() => ({ xy: [0, 0], config: { mass: 10, tension: 550, friction: 140 } }))
+    
+  const [props, set] = useSpring(() => ({ xy: [0, 0], config: { mass: 10, tension: 550, friction: 140 } }))
   const [moonPos,setPos]=useState('true');
   const Title = useSelector(selectslideTitle);
   var maxw = window.matchMedia("(max-width: 640px)")
@@ -40,6 +39,7 @@ function Home() {
         <motion.div initial={{opacity:1}}
          animate={{opacity:1,transition: { duration: 0.5 , delay: 0.5, when: "beforeChildren"}}}
         exit={{opacity:1,transition: { duration: 0.5 , delay: 0.5, when: "afterChildren"}}}>
+            
              <div className="relative h-screen w-screen z-0"></div><div className="relative h-screen w-screen z-0"></div>
              <SlideBar/>
              

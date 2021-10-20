@@ -57,7 +57,7 @@ function NavBar() {
                 
                 {itemIds.map((i) => ( 
             <Link to="/"> <button autoFocus className="nav-btn" 
-            style={{ color: `${colors[i]}`,margin: "0px 0px 0px 0px"}}
+            style={{ margin: "0px 0px 0px 0px"}}
             ><div className="flex flex-row"><div className="w-6 mx-1 my-auto px-0.5 lg:block md:hidden">{Icons[i]}</div>{NavI[i]}</div></button></Link>
                 ))}
                 

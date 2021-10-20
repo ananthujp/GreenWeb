@@ -6,7 +6,7 @@ import {
 function Sample() {
     return (
 
-        <motion.div className="bg-indigo-600 absolute top-0 flex flex-col w-full h-full" initial={{ opacity: 0 }}
+        <motion.div className="bg-purple-700 absolute top-0 flex flex-col w-full h-full" initial={{ opacity: 0 }}
         animate={{  opacity: 1 ,staggerChildren: 0.5, transition: { duration: 0.5 , delay: 0.5, when: "beforeChildren"}}}
         exit={{ y: 0 ,transition: { duration: 0.5 , delay: 0.5, when: "afterChildren"}}}>
 
@@ -112,7 +112,7 @@ function Sample() {
                 id="Layer_1" className="relative ml-12 top w-6" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.47 29.47"><defs></defs><polygon fill="#ffffff" points="23.76 0 0 19.96 29.46 29.46 23.76 0"/></motion.svg>
               
               </div>
-              <nav className="mx-auto pt-10 bg-indigo-600 w-full text-center text-white flex justify-center"><Link to="/"><div ><RewindIcon/>BACK</div></Link> </nav>
+              <nav className="mx-auto pt-10 bg-purple-700 w-full text-center text-white flex justify-center"><Link to="/"><div ><RewindIcon/>BACK</div></Link> </nav>
         </motion.div>
 
     )
