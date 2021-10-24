@@ -5,8 +5,8 @@ import {
   } from "react-router-dom";
 function Sample() {
     return (
-
-        <motion.div className="bg-purple-700 absolute top-0 flex flex-col w-full h-full" initial={{ opacity: 0 }}
+      <div><div className="fixed top-0 h-12 w-full bg-purple-600 z-3"></div>
+        <motion.div className="bg-white absolute mt-12 flex flex-col w-full h-full" initial={{ opacity: 0 }}
         animate={{  opacity: 1 ,staggerChildren: 0.5, transition: { duration: 0.5 , delay: 0.5, when: "beforeChildren"}}}
         exit={{ y: 0 ,transition: { duration: 0.5 , delay: 0.5, when: "afterChildren"}}}>
 
@@ -16,12 +16,12 @@ function Sample() {
                 initial={{opacity:0,x: -200 }}
                 animate={{opacity:1,x: 0,transition:{duration:0.6}}}
                 exit={{opacity:0,x: 200,transition:{duration:0.6} }}
-                className="font-beb mt-10 text-white mx-auto lg:text-8xl md:text-6xl text-4xl">Captain</motion.h1>
+                className="font-beb mt-10 text-purple-700 mx-auto lg:text-8xl md:text-6xl text-4xl">Captain</motion.h1>
               <motion.h1
                 initial={{opacity:0,x: 200 }}
                 animate={{opacity:1,x: 0,transition:{duration:0.6}}}
                 exit={{opacity:0,x: -200,transition:{duration:0.6} }}
-                className="font-beb text-white  mx-auto lg:text-6xl md:text-4xl text-2xl">Kachra</motion.h1>
+                className="font-beb text-purple-700  mx-auto lg:text-6xl md:text-4xl text-2xl">Kachra</motion.h1>
               <div
                //animate={{ rotate: 180 }}
               //style={{ originX: 0 ,originY: -1.5,originZ:0 }}
@@ -31,7 +31,7 @@ function Sample() {
                 animate={{ rotate: [0,90,0] }}
                 style={{ originX: 0 ,originY: 0,originZ:0 }}
                 transition={{ repeat: Infinity, duration: 8 }}
-                id="Layer_1" className="relative ml-12 top w-6" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.47 29.47"><defs></defs><polygon fill="#ffffff" points="23.76 0 0 19.96 29.46 29.46 23.76 0"/></motion.svg>
+                id="Layer_1" className="relative ml-12 top w-6" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.47 29.47"><defs></defs><polygon fill="#554696" points="23.76 0 0 19.96 29.46 29.46 23.76 0"/></motion.svg>
               
               
               <motion.svg className="mx-auto w-1/2 mt-6"
@@ -48,7 +48,7 @@ function Sample() {
                     initial={{opacity:0 }}
                     animate={{opacity:1,transition:{duration:0.2,delay:0.6}}}
                     exit={{opacity:0 }}
-                    fill="#ffffff"
+                    fill="#554696"
                     d="M124.8 32.1c.3 2 1.2 3.8 2.5 5.3 1.4 1.5 6.5 5.5 8.8 6.9 12.1 7.4 29.8 19.4 68.1 22.4 60.3 4.8 110.3-28.5 110.3-28.5s25.4-13.7 1.1-24.9-89-16.6-150.5-5.6c-42 7.6-40.3 24.4-40.3 24.4zM108.6 36.4s9.3.1 11.7-5.7c1.4-3.5-2.4-6.1-6.1-7.6-.8-.3-1.7-.6-2.3-.9-1.9-.6-4-.7-6-.3-3 .5-7.4 1.7-9.2 5.2-2.8 5.5 8.9 9.3 11.9 9.3zM332.2 195.5l48.1-31s64.1-53.3 50.6-13.2-48.7 81.5-121.8 106.7c-73.1 25.2-40.2-25.7-40.2-25.7s35.9-31.1 63.3-36.8z"
                 ></motion.path>
                 <defs>
@@ -72,14 +72,14 @@ function Sample() {
                     overflow="visible"
                     transform="translate(-75.721 -158.407) scale(.2956)"
                     xlinkHref={'https://sites.iitgn.ac.in/greenoffice/game/img/76D3240AE2A62C64.jpg'}
-                    ></image>
+                    className="filter"></image>
                 </motion.g>
                 <motion.circle
 
                   initial={{opacity:0 }}
                   animate={{opacity:0.6,transition:{duration:1.2,delay:1.0}}}
                   exit={{opacity:0 }}
-                  cx="43.2" cy="181.5" r="40.2" fill="#ffffff"></motion.circle>
+                  cx="43.2" cy="181.5" r="40.2" fill="#554696"></motion.circle>
                 </motion.svg>
 
               </div>
@@ -95,7 +95,7 @@ function Sample() {
                   cy={68.3}
                   r={54.7}
                   fill="none"
-                  stroke="#ffffff"
+                  stroke="#554696"
                   strokeWidth={10}
                   strokeMiterlimit={10}
                 />
@@ -104,16 +104,17 @@ function Sample() {
                 initial={{opacity:0 }}
                 animate={{opacity:1,transition:{duration:1.2,delay:2.2}}}
                 exit={{opacity:0 }}
-                className="w-1/2 text-center mx-auto font-treb text-sm text-gray-100">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</motion.h4>
+                className="w-1/2 text-center mx-auto font-treb text-sm text-purple-400">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</motion.h4>
               <motion.svg
                 animate={{ rotate: [0,180,0] }}
                 style={{ originX: 0 ,originY: 0,originZ:0 }}
                 transition={{ repeat: Infinity, duration: 12 }}
-                id="Layer_1" className="relative ml-12 top w-6" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.47 29.47"><defs></defs><polygon fill="#ffffff" points="23.76 0 0 19.96 29.46 29.46 23.76 0"/></motion.svg>
+                id="Layer_1" className="relative ml-12 top w-6" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.47 29.47"><defs></defs><polygon fill="#554696" points="23.76 0 0 19.96 29.46 29.46 23.76 0"/></motion.svg>
               
               </div>
-              <nav className="mx-auto pt-10 bg-purple-700 w-full text-center text-white flex justify-center"><Link to="/"><div ><RewindIcon/>BACK</div></Link> </nav>
+              <nav className="mx-auto pt-10 bg-white w-full text-center text-purple-700 flex justify-center"><Link to="/"><div ><RewindIcon/>BACK</div></Link> </nav>
         </motion.div>
+        </div>
 
     )
 }

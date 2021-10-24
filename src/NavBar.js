@@ -28,6 +28,7 @@ const variants = {
   const colors = ["#FF008C", "#D309E1", "#9C1AFF", "#7700FF", "#4400FF"];
   const Icons=[<HomeIcon/>,<AnnotationIcon/>,<NewspaperIcon/>,<OfficeBuildingIcon/>]
   const NavI=["Home","Social","Blog","About"];
+
 export  const MenuItem = ({ i }) => {
     //const FontStyle = { color: `${colors[i]}` };
     return (
@@ -42,6 +43,7 @@ export  const MenuItem = ({ i }) => {
       </motion.li>
     );
   };
+
 function NavBar() {
     return (
         <Router>
@@ -56,9 +58,9 @@ function NavBar() {
             <div className="md:flex md:flex-row hidden mx-2  rounded-full mt-1 h-8">
                 
                 {itemIds.map((i) => ( 
-            <Link to="/"> <button autoFocus className="nav-btn" 
+            <nav><Link to="/Suggestions"> <button autoFocus className="nav-btn" 
             style={{ margin: "0px 0px 0px 0px"}}
-            ><div className="flex flex-row"><div className="w-6 mx-1 my-auto px-0.5 lg:block md:hidden">{Icons[i]}</div>{NavI[i]}</div></button></Link>
+            ><div className="flex flex-row"><div className="w-6 mx-1 my-auto px-0.5 lg:block md:hidden">{Icons[i]}</div>{NavI[i]}</div></button></Link></nav>
                 ))}
                 
                 

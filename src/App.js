@@ -2,6 +2,7 @@ import './App.css';
 import {useState,useEffect} from 'react';
 import NavBar from "./NavBar";
 import Sample from "./Sample"
+import Suggestions from './Suggestions';
 import { AnimatePresence } from "framer-motion";
 import Home from "./Home"
 import {Switch, Route, useLocation} from "react-router-dom";
@@ -10,7 +11,7 @@ function App() {
   const location = useLocation();
   const [isLoaded,setLoaded]=useState(false);
     useEffect(() => {
-        setTimeout(()=>setLoaded(true),4000)
+        setTimeout(()=>setLoaded(true),5500)
     }, [])
   return (
     <div>
@@ -23,6 +24,9 @@ function App() {
         </Route>
         <Route path="/Title">
           <Sample />
+        </Route>
+        <Route path="/Suggestions">
+          <Suggestions />
         </Route>
         </Switch>
         </AnimatePresence>
