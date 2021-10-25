@@ -30,7 +30,9 @@ function FbInput({img,name,batch}) {
         (batchrole.batch)?
         signInWithPopup(auth, provider):setBatchHint("font-bold ml-1 text-red-600 animate-pulse")
     });
-    
+    const checkLogin=()=>(batchrole &&(batchrole.batch!=null)?null:dispatch(
+      logout()))
+
     useEffect(() => {
      
     auth.onAuthStateChanged((authUser)=> {
@@ -50,6 +52,7 @@ function FbInput({img,name,batch}) {
       }
     })
   }, [dispatch])// eslint-disable-line react-hooks/exhaustive-deps
+  checkLogin();
     return (
         <div className="px-3 md:px-4 flex-none my-4 w-full">
                     {(user&&user.email)?<figure className="shadow-lg rounded-xl flex-none md:w-xl">

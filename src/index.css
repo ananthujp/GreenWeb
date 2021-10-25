@@ -12,9 +12,9 @@
   }
 }
 @layer components {
-  .nav-btn {
-    @apply px-4 py-1 transition-colors cursor-pointer hover:bg-white text-gray-400 hover:text-indigo-500 rounded-2xl my-2 focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-75
-  }
+  /* .nav-btn {
+    @apply 
+  } */
 
 #stars {
   width: 1px;

@@ -1,6 +1,7 @@
 import {Link,} from "react-router-dom";
 import {motion} from "framer-motion"
-import {BrowserRouter as Router,} from "react-router-dom";
+import {BrowserRouter as Router,useLocation} from "react-router-dom";
+import colorsClass from "./Colors"
 import BurgerMenuSm from './BurgerMenuSm';
 import { HomeIcon } from '@heroicons/react/outline'
 import { AnnotationIcon } from '@heroicons/react/outline'
@@ -45,10 +46,13 @@ export  const MenuItem = ({ i }) => {
   };
 
 function NavBar() {
+  const location = useLocation();
+  const colorVar=3;
+  const bgClass="fixed z-20 top-0 w-full flex justify-between drop-shadow-md px-2 " + ((location.pathname==="/")?" " : " bg-gradient-to-br from-"+colorsClass[colorVar][1]+" to-"+colorsClass[colorVar][2]);
     return (
         <Router>
             <BurgerMenuSm className="md:hidden block"/>
-        <div className="fixed z-20 top-0 w-full flex justify-between drop-shadow-md  mx-2 px-2">
+        <div className={bgClass}>
         <div className=" md:hidden block"></div>
             <div className="flex flex-row">
                 <img className="md:w-12 w-12 p-2" alt="" src={LogoW}/>
@@ -56,11 +60,10 @@ function NavBar() {
             </div>
             
             <div className="md:flex md:flex-row hidden mx-2  rounded-full mt-1 h-8">
-                
                 {itemIds.map((i) => ( 
-            <nav><Link to="/Suggestions"> <button autoFocus className="nav-btn" 
+            <button autoFocus className="px-4 py-1 transition-colors cursor-pointer hover:bg-white text-gray-100 hover:text-indigo-500 rounded-2xl my-2 focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-75" 
             style={{ margin: "0px 0px 0px 0px"}}
-            ><div className="flex flex-row"><div className="w-6 mx-1 my-auto px-0.5 lg:block md:hidden">{Icons[i]}</div>{NavI[i]}</div></button></Link></nav>
+            ><div className="flex flex-row"><div className="w-6 mx-1 my-auto px-0.5 lg:block md:hidden"><Link to="/Suggestions"> {Icons[i]}</Link></div>{NavI[i]}</div></button>
                 ))}
                 
                 

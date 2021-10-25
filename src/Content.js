@@ -42,7 +42,7 @@ function Content() {
             {SlideContent}
             </motion.div>
             <motion.button variants={item} class="py-2 my-2 px-4 bg-white text-indigo-500 font-semibold rounded-lg shadow-md hover:bg-indigo-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-75">
-            <nav><Link to={Title.split()[0]}>Explore</Link> </nav>
+            <Link to={Title.split()[0]}>Explore</Link>
             </motion.button>
             {/* <motion.div variants={item} className="bg-white hover:animate-pulse font-treb rounded-3xl text-center text-indigo-500 py-1 px-3 w-28 mt-4">Explore</motion.div> */}
         </motion.div>

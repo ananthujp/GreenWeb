@@ -1,11 +1,13 @@
 import {motion} from "framer-motion"
 import { RewindIcon } from '@heroicons/react/outline'
+import colorsClass from "./Colors"
 import {
     Link,
   } from "react-router-dom";
 function Sample() {
+  const svgColor="#8B5Cf6"
     return (
-      <div><div className="fixed top-0 h-12 w-full bg-purple-600 z-3"></div>
+      <div>
         <motion.div className="bg-white absolute mt-12 flex flex-col w-full h-full" initial={{ opacity: 0 }}
         animate={{  opacity: 1 ,staggerChildren: 0.5, transition: { duration: 0.5 , delay: 0.5, when: "beforeChildren"}}}
         exit={{ y: 0 ,transition: { duration: 0.5 , delay: 0.5, when: "afterChildren"}}}>
@@ -16,12 +18,12 @@ function Sample() {
                 initial={{opacity:0,x: -200 }}
                 animate={{opacity:1,x: 0,transition:{duration:0.6}}}
                 exit={{opacity:0,x: 200,transition:{duration:0.6} }}
-                className="font-beb mt-10 text-purple-700 mx-auto lg:text-8xl md:text-6xl text-4xl">Captain</motion.h1>
+                className={"font-beb mt-10 text-"+colorsClass[3][1]+" mx-auto lg:text-8xl md:text-6xl text-4xl"}>Captain</motion.h1>
               <motion.h1
                 initial={{opacity:0,x: 200 }}
                 animate={{opacity:1,x: 0,transition:{duration:0.6}}}
                 exit={{opacity:0,x: -200,transition:{duration:0.6} }}
-                className="font-beb text-purple-700  mx-auto lg:text-6xl md:text-4xl text-2xl">Kachra</motion.h1>
+                className={"font-beb  text-"+colorsClass[3][1]+"  mx-auto lg:text-6xl md:text-4xl text-2xl"}>Kachra</motion.h1>
               <div
                //animate={{ rotate: 180 }}
               //style={{ originX: 0 ,originY: -1.5,originZ:0 }}
@@ -31,7 +33,7 @@ function Sample() {
                 animate={{ rotate: [0,90,0] }}
                 style={{ originX: 0 ,originY: 0,originZ:0 }}
                 transition={{ repeat: Infinity, duration: 8 }}
-                id="Layer_1" className="relative ml-12 top w-6" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.47 29.47"><defs></defs><polygon fill="#554696" points="23.76 0 0 19.96 29.46 29.46 23.76 0"/></motion.svg>
+                id="Layer_1" className="relative ml-12 top w-6" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.47 29.47"><defs></defs><polygon fill={svgColor} points="23.76 0 0 19.96 29.46 29.46 23.76 0"/></motion.svg>
               
               
               <motion.svg className="mx-auto w-1/2 mt-6"
@@ -48,7 +50,7 @@ function Sample() {
                     initial={{opacity:0 }}
                     animate={{opacity:1,transition:{duration:0.2,delay:0.6}}}
                     exit={{opacity:0 }}
-                    fill="#554696"
+                    fill={svgColor}
                     d="M124.8 32.1c.3 2 1.2 3.8 2.5 5.3 1.4 1.5 6.5 5.5 8.8 6.9 12.1 7.4 29.8 19.4 68.1 22.4 60.3 4.8 110.3-28.5 110.3-28.5s25.4-13.7 1.1-24.9-89-16.6-150.5-5.6c-42 7.6-40.3 24.4-40.3 24.4zM108.6 36.4s9.3.1 11.7-5.7c1.4-3.5-2.4-6.1-6.1-7.6-.8-.3-1.7-.6-2.3-.9-1.9-.6-4-.7-6-.3-3 .5-7.4 1.7-9.2 5.2-2.8 5.5 8.9 9.3 11.9 9.3zM332.2 195.5l48.1-31s64.1-53.3 50.6-13.2-48.7 81.5-121.8 106.7c-73.1 25.2-40.2-25.7-40.2-25.7s35.9-31.1 63.3-36.8z"
                 ></motion.path>
                 <defs>
@@ -71,15 +73,15 @@ function Sample() {
                     height="2000"
                     overflow="visible"
                     transform="translate(-75.721 -158.407) scale(.2956)"
-                    xlinkHref={'https://sites.iitgn.ac.in/greenoffice/game/img/76D3240AE2A62C64.jpg'}
+                    xlinkHref={'https://manofmany.com/wp-content/uploads/2021/07/No-Equipment-Home-Workout-2-1200x800.jpg'}
                     className="filter"></image>
                 </motion.g>
                 <motion.circle
 
                   initial={{opacity:0 }}
-                  animate={{opacity:0.6,transition:{duration:1.2,delay:1.0}}}
+                  animate={{opacity:0.2,transition:{duration:1.2,delay:1.0}}}
                   exit={{opacity:0 }}
-                  cx="43.2" cy="181.5" r="40.2" fill="#554696"></motion.circle>
+                  cx="43.2" cy="181.5" r="40.2" fill={svgColor}></motion.circle>
                 </motion.svg>
 
               </div>
@@ -95,7 +97,7 @@ function Sample() {
                   cy={68.3}
                   r={54.7}
                   fill="none"
-                  stroke="#554696"
+                  stroke={svgColor}
                   strokeWidth={10}
                   strokeMiterlimit={10}
                 />
@@ -109,7 +111,7 @@ function Sample() {
                 animate={{ rotate: [0,180,0] }}
                 style={{ originX: 0 ,originY: 0,originZ:0 }}
                 transition={{ repeat: Infinity, duration: 12 }}
-                id="Layer_1" className="relative ml-12 top w-6" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.47 29.47"><defs></defs><polygon fill="#554696" points="23.76 0 0 19.96 29.46 29.46 23.76 0"/></motion.svg>
+                id="Layer_1" className="relative ml-12 top w-6" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.47 29.47"><defs></defs><polygon fill={svgColor} points="23.76 0 0 19.96 29.46 29.46 23.76 0"/></motion.svg>
               
               </div>
               <nav className="mx-auto pt-10 bg-white w-full text-center text-purple-700 flex justify-center"><Link to="/"><div ><RewindIcon/>BACK</div></Link> </nav>

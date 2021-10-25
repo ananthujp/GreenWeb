@@ -5,7 +5,7 @@ import { updateDoc,doc,getDoc, deleteDoc } from "firebase/firestore";
 import { TrashIcon } from '@heroicons/react/outline'
 import {useSelector} from "react-redux"
 import { selectUser} from './features/userSlice';
-
+import colorsClass from "./Colors"
 function FbCard({name,batch,img,msg,i,keyID}) {
     const [like,setLike]=useState(0);
     const [liked,setLiked]=useState(false);
@@ -15,17 +15,7 @@ function FbCard({name,batch,img,msg,i,keyID}) {
         getDoc(docRef).then(doc=>{
             setLike((doc.data().like))})
     }, [like])// eslint-disable-line react-hooks/exhaustive-deps
-    const colorsClass=[ ["cyan-100","cyan-400","blue-500"],
-                        ["fuchsia-100","fuchsia-500","purple-600"],
-                        ["green-100","green-400","cyan-500"],
-                        ["purple-100","purple-500","indigo-500"],
-                        ["orange-100","yellow-400","orange-500"],
-                        ["rose-100","pink-500","rose-500"],
-                        ["blue-100","blue-400","indigo-500"],
-                        ["cyan-100","cyan-400","blue-500"],
-                        ["orange-100","orange-400","pink-600"],
-                        ["green-100","green-400","cyan-600"],
-                        ]
+    
     const svgClass1="mb-5 fill-current text-" + colorsClass[i][0]
     const imgClass="w-12 h-12 rounded-full bg-"+colorsClass[i][0]
     const spanClass="text-"+colorsClass[i][0]
@@ -58,7 +48,7 @@ function FbCard({name,batch,img,msg,i,keyID}) {
                     <figure className="shadow-lg rounded-xl flex-none md:w-xl">
                         
                         <blockquote className="rounded-t-xl bg-white px-6 py-8 md:p-10 text-lg md:text-xl leading-8 md:leading-8 font-semibold text-gray-900">
-                        {(user.email==="greenclub@iitgn.ac.in")?<TrashIcon onClick={handleDelete} className="ml-auto -mt-3 h-7 w-7 text-blue-300 hover:text-blue-600 transition-all"/>:<></>}
+                        {(user&&(user.email==="greenclub@iitgn.ac.in"))?<TrashIcon onClick={handleDelete} className="ml-auto -mt-3 h-7 w-7 text-blue-300 hover:text-blue-600 transition-all"/>:<></>}
                             <svg width="45" height="36" className={svgClass1}>
                                 <path d="M13.415.001C6.07 5.185.887 13.681.887 23.041c0 7.632 4.608 12.096 9.936 12.096 5.04 0 8.784-4.032 8.784-8.784 0-4.752-3.312-8.208-7.632-8.208-.864 0-2.016.144-2.304.288.72-4.896 5.328-10.656 9.936-13.536L13.415.001zm24.768 0c-7.2 5.184-12.384 13.68-12.384 23.04 0 7.632 4.608 12.096 9.936 12.096 4.896 0 8.784-4.032 8.784-8.784 0-4.752-3.456-8.208-7.776-8.208-.864 0-1.872.144-2.16.288.72-4.896 5.184-10.656 9.792-13.536L38.183.001z">
                                 </path>

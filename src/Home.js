@@ -22,7 +22,7 @@ const trans7 = (x, y) => `translate3d(${x / 12}px,${y / 12}px,0) scaleX(1.1)`
 
 
 function Home() {
-    
+  
   const [props, set] = useSpring(() => ({ xy: [0, 0], config: { mass: 10, tension: 550, friction: 140 } }))
   const [moonPos,setPos]=useState('true');
   const Title = useSelector(selectslideTitle);

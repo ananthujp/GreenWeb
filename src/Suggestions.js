@@ -24,7 +24,7 @@ function Suggestions() {
         <motion.div initial={{opacity:0}}
         animate={{opacity:1,transition: { duration: 0.5 , delay: 0.5, when: "beforeChildren"}}}
        exit={{opacity:1,transition: { duration: 0.5 , delay: 0.5, when: "afterChildren"}}} className="bg-blue-50"><div className="fixed top-0 w-full h-12 bg-purple-600"></div>
-        <div className="w-full mt-12 flex md:flex-col flex-col ">
+        <div className="w-full mt-12 flex flex-col ">
             <div className="flex flex-col w-3/4 md:w-1/2  mx-auto">
                 
             <div className="w-full  mx-auto">
