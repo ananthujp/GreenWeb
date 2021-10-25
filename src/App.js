@@ -3,7 +3,7 @@ import {useState,useEffect} from 'react';
 import NavBar from "./NavBar";
 import Sample from "./Sample"
 import About from "./About";
-import Suggestions from './Suggestions';
+import Feedback from './Feedback';
 import Social from './Social';
 import { AnimatePresence } from "framer-motion";
 import Home from "./Home"
@@ -18,23 +18,29 @@ function App() {
   return (
     <div>
 
-        <NavBar/>
+        
         <AnimatePresence exitBeforeEnter initial={false}>
       
         <Switch location={location} key={location.pathname}>
-        <Route exact path="/">
-        {isLoaded?<Home />:<Preloader />}
+          
+        <Route exact path={["/", "/Home"]} >
+         <NavBar keyID={location.pathname}/>
+         {isLoaded?<Home />:<Preloader />}
         </Route>
         <Route path="/Title">
+          <NavBar keyID={location.pathname}/>
           <Sample />
         </Route>
-        <Route path="/Suggestions">
-          <Suggestions />
+        <Route path="/Feedback">
+          <NavBar keyID={location.pathname}/>
+          <Feedback />
         </Route>
         <Route path="/About">
+          <NavBar keyID={location.pathname}/>
           <About />
         </Route>
         <Route path="/Social">
+          <NavBar keyID={location.pathname}/>
           <Social />
         </Route>
         </Switch>

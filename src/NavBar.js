@@ -7,6 +7,7 @@ import { HomeIcon } from '@heroicons/react/outline'
 import { AnnotationIcon } from '@heroicons/react/outline'
 import { NewspaperIcon } from '@heroicons/react/outline'
 import { OfficeBuildingIcon } from '@heroicons/react/outline'
+import { ChatAltIcon } from '@heroicons/react/outline'
 import LogoW from "./vectors/LogoW.svg"
 import LogoD from "./vectors/LogoD.svg"
 const variants = {
@@ -25,10 +26,10 @@ const variants = {
       }
     }
   };
-  export const itemIds = [0, 1, 2, 3];
+  export const itemIds = [0, 1, 2, 3,4];
   const colors = ["#FF008C", "#D309E1", "#9C1AFF", "#7700FF", "#4400FF"];
-  const Icons=[<HomeIcon/>,<AnnotationIcon/>,<NewspaperIcon/>,<OfficeBuildingIcon/>]
-  const NavI=["Home","Social","Blog","About"];
+  const Icons=[<HomeIcon/>,<AnnotationIcon/>,<NewspaperIcon/>,<OfficeBuildingIcon/>,<ChatAltIcon/>]
+  const NavI=["Home","Social","Blog","About","Feedback"];
 
 export  const MenuItem = ({ i }) => {
     //const FontStyle = { color: `${colors[i]}` };
@@ -45,12 +46,12 @@ export  const MenuItem = ({ i }) => {
     );
   };
 
-function NavBar() {
-  const location = useLocation();
+function NavBar({keyID}) {
+  // const location = useLocation();
   const colorVar=3;
-  const bgClass="fixed z-20 top-0 w-full flex justify-between drop-shadow-md px-2 " + ((location.pathname==="/")?" " : " bg-gradient-to-br from-"+colorsClass[colorVar][1]+" to-"+colorsClass[colorVar][2]);
+  const bgClass="fixed z-20 top-0 w-full flex justify-between drop-shadow-md px-2 " + (((keyID==="/Home")||(keyID==="/"))?" " : " bg-gradient-to-br from-"+colorsClass[colorVar][1]+" to-"+colorsClass[colorVar][2]);
     return (
-        <Router>
+        <div>
             <BurgerMenuSm className="md:hidden block"/>
         <div className={bgClass}>
         <div className=" md:hidden block"></div>
@@ -60,16 +61,16 @@ function NavBar() {
             </div>
             
             <div className="md:flex md:flex-row hidden mx-2  rounded-full mt-1 h-8">
-                {itemIds.map((i) => ( 
+            {itemIds.map((i) => ( 
             <button autoFocus className="px-4 py-1 transition-colors cursor-pointer hover:bg-white text-gray-100 hover:text-indigo-500 rounded-2xl my-2 focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-75" 
             style={{ margin: "0px 0px 0px 0px"}}
-            ><div className="flex flex-row"><div className="w-6 mx-1 my-auto px-0.5 lg:block md:hidden"><Link to="/Suggestions"> {Icons[i]}</Link></div>{NavI[i]}</div></button>
+            ><Link to={"/"+NavI[i]}> <div className="flex flex-row"><div className="w-6 mx-1 my-auto px-0.5 lg:block md:hidden">{Icons[i]}</div>{NavI[i]}</div></Link></button>
                 ))}
                 
                 
             </div>
         </div>
-        </Router>
+       </div>
     )
 }
 
