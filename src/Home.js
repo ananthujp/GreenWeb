@@ -10,6 +10,7 @@ import Bottom2 from "./vectors/bottom-2.svg"
 import Bottom1 from "./vectors/bottom-1.svg"
 import SlideBar from "./SlideBar"
 
+
 //Parallax portion, jQuery 
 const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 2]
 const trans1 = (x, y) => `translate3d(${x / 25}px,${y / 25}px,0)`

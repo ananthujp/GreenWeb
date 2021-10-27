@@ -1,6 +1,5 @@
 import {Link,} from "react-router-dom";
 import {motion} from "framer-motion"
-import {BrowserRouter as Router,useLocation} from "react-router-dom";
 import colorsClass from "./Colors"
 import BurgerMenuSm from './BurgerMenuSm';
 import { HomeIcon } from '@heroicons/react/outline'

@@ -1,5 +1,5 @@
 import {useState,useEffect} from "react"
-import Logo from "./vectors/feedback.svg"
+import {FeedbackSVG} from "./vectors/importSVG"
 import FbCard from "./FbCard"
 import {db} from "./firebase"
 import FbInput from "./FbInput"
@@ -39,7 +39,7 @@ function Suggestions() {
                 animate="animate"
                 exit="exit"
                 className="w-full  mx-auto">
-                <img src={Logo} alt=""/>
+                <FeedbackSVG/>
             </motion.div>
             <motion.h1
                 variants={animH1}

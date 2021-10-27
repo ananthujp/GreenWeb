@@ -1,6 +1,7 @@
 import {motion} from "framer-motion"
 import { RewindIcon } from '@heroicons/react/outline'
 import colorsClass from "./Colors"
+import {animH1,animH2,animMainDiv} from "./Animations"
 import {
     Link,
   } from "react-router-dom";
@@ -8,21 +9,26 @@ function Sample() {
   const svgColor="#8B5Cf6"
     return (
       <div>
-        <motion.div className="bg-white absolute mt-12 flex flex-col w-full h-full" initial={{ opacity: 0 }}
-        animate={{  opacity: 1 ,staggerChildren: 0.5, transition: { duration: 0.5 , delay: 0.5, when: "beforeChildren"}}}
-        exit={{ y: 0 ,transition: { duration: 0.5 , delay: 0.5, when: "afterChildren"}}}>
+        <motion.div className="bg-white absolute mt-12 flex flex-col w-full h-full"
+            variants={animMainDiv}
+            initial="initial"
+            animate="animate"
+            exit="exit"
+        >
 
               
               
               <motion.h1
-                initial={{opacity:0,x: -200 }}
-                animate={{opacity:1,x: 0,transition:{duration:0.6}}}
-                exit={{opacity:0,x: 200,transition:{duration:0.6} }}
+                variants={animH1}
+                initial="initial"
+                animate="animate"
+                exit="exit"
                 className={"font-beb mt-10 text-"+colorsClass[3][1]+" mx-auto lg:text-8xl md:text-6xl text-4xl"}>Captain</motion.h1>
               <motion.h1
-                initial={{opacity:0,x: 200 }}
-                animate={{opacity:1,x: 0,transition:{duration:0.6}}}
-                exit={{opacity:0,x: -200,transition:{duration:0.6} }}
+                variants={animH2}
+                initial="initial"
+                animate="animate"
+                exit="exit"
                 className={"font-beb  text-"+colorsClass[3][1]+"  mx-auto lg:text-6xl md:text-4xl text-2xl"}>Kachra</motion.h1>
               <div
                //animate={{ rotate: 180 }}
