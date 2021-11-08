@@ -5,7 +5,7 @@ import { selectlogo} from './features/appSlice';
 function Logo() {
     const logo = useSelector(selectlogo);
     return (
-        <div className="md:w-1/2 w-3/4 h-1/4 md:my-auto mt-auto mb-0 max-w-md md:mx-0 mx-auto">
+        <div className="md:w-full w-5/6 h-2/4   mb-0 max-w-md md:mx-0 mx-auto">
             <motion.img 
                 initial={{ x: -30,opacity:0 }}
                 animate={{ x: 10 ,opacity:1}}

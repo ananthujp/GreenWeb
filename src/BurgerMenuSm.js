@@ -28,10 +28,10 @@ const variants2 = {
   }
 };
 
-const Navigation = () => (
+const Navigation = ({ toggle}) => (
   <motion.ul variants={variants2} className="absolute p-6 top-24 w-56">
     {itemIds.map((i) => (
-      <MenuItem i={i} key={i} />
+      <MenuItem i={i} key={i} toggle={toggle}/>
     ))}
   </motion.ul>
 );
@@ -108,7 +108,7 @@ const BurgerMenuSm = () => {
       className="fixed z-30 top-0 left-0 bottom-0 w-72 md:hidden block" variants={sidebar}
     >
       <motion.div className="absolute top-0 left-0 bottom-0 w-72 bg-white" variants={sidebar} />
-      <Navigation />
+      <Navigation toggle={() => toggleOpen()}/>
       <MenuToggle toggle={() => toggleOpen()} />
     </motion.nav>
   );

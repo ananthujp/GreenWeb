@@ -51,7 +51,7 @@ function Home() {
               <div id="stars2"></div>
               <div id="stars3"></div></animated.div>
                 
-             <animated.div className={moonPos?"absolute w-1/4 top-10 left-1/4 ":"absolute w-1/4 top-10 left-2/4"}  style={{ transform: props.xy.interpolate(trans2)}} >
+             <animated.div className={"absolute md:w-1/4 w-1/2 top-10 "+ (moonPos?" left-1/4":" left-2/4")}  style={{ transform: props.xy.interpolate(trans2)}} >
             
             {/* Moon Here*/}
             
@@ -59,11 +59,12 @@ function Home() {
                 initial={{scale:(15, 15), transition:{ duration: 1.1 , delay: 0.5}}}
                 animate={{scale:(1,1)}}
                 exit={{scale:(15, 15), transition:{ type: "circIn", duration: 1.1 , delay: 0.5}}}
+                
                 layout transition={{ type: "spring", stiffness: 400,damping: 30 }} src={Moon} alt=""/>
            
             </animated.div>
     
-             <animated.div style={{ transform: props.xy.interpolate(trans4)}} className="absolute h-full top-0 w-full">
+             <animated.div style={{ transform: props.xy.interpolate(trans4)}} className="absolute h-full flex -mt-12 top-0 w-full">
             {(maxw.matches)?<>
             {moonPos?<Island pos={true}/>:<></>}
             {moonPos?<></>:<Island pos={true}/>}

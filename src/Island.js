@@ -23,7 +23,7 @@ function Island({pos}) {
             initial="hidden"
             animate="show" 
             //exit="hidden"
-            className="flex lg:flex-row md:flex-row flex-col sm:h-auto mt-12 justify-center">
+            className="flex lg:flex-row md:flex-row flex-col sm:h-auto my-auto mx-auto md:w-5/6 w-full justify-center">
             {pos?
               <><Logo/>
               <Content /></>:

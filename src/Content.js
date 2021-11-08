@@ -31,7 +31,7 @@ function Content() {
         exit: { opacity: 0 },
       }
     return (
-        <motion.div className="text-white lg:w-2/5 md:w-2/6 w-3/5 md:my-auto mb-auto mt-0 md:mx-0 mx-auto"
+        <motion.div className="text-white lg:w-2/5 md:w-2/6 w-4/5 md:my-auto mb-auto mt-0 md:mx-0 mx-auto"
          variants={container}
          initial="hidden"
          animate="show"

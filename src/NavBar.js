@@ -30,18 +30,22 @@ const variants = {
   const Icons=[<HomeIcon/>,<AnnotationIcon/>,<NewspaperIcon/>,<OfficeBuildingIcon/>,<ChatAltIcon/>]
   const NavI=["Home","Social","Blog","About","Feedback"];
 
-export  const MenuItem = ({ i }) => {
+export  const MenuItem = ({ i ,toggle}) => {
     //const FontStyle = { color: `${colors[i]}` };
     return (
+      <Link to={"/"+NavI[i]}>
       <motion.li
         variants={variants}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
-        className="list-none mb-5 flex items-center cursor-pointer"
-      >
+        onClick={toggle}
+        className="list-none mb-5 flex items-center cursor-pointer">
+        
         <div className="w-8 h-8 rounded-full flex mr-5" style={{ color: `${colors[i]}` }}>{Icons[i]}</div>
         <div className="rounded-md w-48  flex flex-1" style={{ color: `${colors[i]}` }}>{NavI[i]}</div>
+        
       </motion.li>
+      </Link>
     );
   };
 
