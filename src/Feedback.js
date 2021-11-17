@@ -1,10 +1,11 @@
 import {useState,useEffect} from "react"
 import {FeedbackSVG} from "./vectors/importSVG"
+import {animImg,animH1,animH2,animMainDiv} from "./Animations"
 import FbCard from "./FbCard"
 import {db} from "./firebase"
 import FbInput from "./FbInput"
 import {motion} from "framer-motion"
-import {animImg,animH1,animH2} from "./Animations"
+
 //import { collection, addDoc, getDocs } from "firebase/firestore"; 
 
 import {collection, onSnapshot, orderBy,query} from "firebase/firestore"
@@ -22,9 +23,12 @@ function Suggestions() {
     }, [])// eslint-disable-line react-hooks/exhaustive-deps
     
     return (
-        <motion.div initial={{opacity:0}}
-        animate={{opacity:1,transition: { duration: 0.5 , when: "beforeChildren",staggerChildren: 0.5}}}
-       exit={{opacity:1,transition: { duration: 0.5 , delay: 0.5, when: "afterChildren"}}} className="bg-blue-50"><div className="fixed top-0 w-full h-12 bg-purple-600"></div>
+        <motion.div 
+        variants={animMainDiv}
+            initial="initial"
+            animate="animate"
+            exit="exit"
+        className="bg-blue-50"><div className="fixed top-0 w-full h-12 bg-purple-600"></div>
         <div className="w-full mt-12 flex flex-col ">
             <motion.div
                 initial={{opacity:0}}

@@ -4,11 +4,12 @@ import {
   Link,
 } from "react-router-dom";
 
-import { selectslideTitle,selectSubTitle,selectslideContent } from './features/appSlice';
+import { selectslideTitle,selectSubTitle,selectslideContent,selectscroll } from './features/appSlice';
 function Content() {
     const Title = useSelector(selectslideTitle);
     const SubTitle = useSelector(selectSubTitle);
     const SlideContent = useSelector(selectslideContent);
+    const scrollx=useSelector(selectscroll) - parseInt(useSelector(selectscroll));
     const container = {
         hidden: { opacity: 0 },
         show: {
@@ -35,6 +36,7 @@ function Content() {
          variants={container}
          initial="hidden"
          animate="show"
+         style={{translateY: scrollx*10}}
          exit="exit">
             <motion.h1 className="font-beb lg:text-8xl md:text-6xl text-4xl" variants={item}>{Title}</motion.h1>
             <motion.h2 className="font-treb lg:text-2xl md:text-lg text-base" variants={item}>{SubTitle}</motion.h2>

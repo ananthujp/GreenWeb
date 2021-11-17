@@ -1,5 +1,5 @@
 import {useEffect} from "react"
-import {setSlideInfo} from "./features/appSlice";
+import {setSlideInfo,setScrolInfo} from "./features/appSlice";
 import {useDispatch} from "react-redux"
 import Captain from "./vectors/captn.svg"
 import Iit from "./vectors/iit.svg"
@@ -35,11 +35,13 @@ function SlideBar() {
     const n= parseInt(DataTable.length) ;
     const scale = useTransform(scrollYProgress, [0, 1], [-120, -25]);
     const scale2 = useTransform(scrollYProgress, [0, 1], [0, n-1]);
+    
     const dispatch = useDispatch();
     
     useEffect(() => {
         scale2.onChange(()=>{
-            fetchData(parseInt(scale2.get()))
+            fetchData(parseInt(scale2.get()));
+            dispatch(setScrolInfo({scroll:scale2.get()}));
         })
         
     }, [])// eslint-disable-line react-hooks/exhaustive-deps

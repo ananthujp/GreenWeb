@@ -9,6 +9,6 @@ const animH2={initial:{opacity:0,x: 200},
                 exit:{opacity:0,x: -200,transition:{duration:0.6 } }} 
 const animMainDiv={initial:{opacity:0},
                     animate:{opacity:1,transition: { duration: 0.5 , delay: 0.5,staggerChildren: 0.5}},
-                    exit:{opacity:1,transition: { duration: 0.5 , delay: 0.5, when: "afterChildren"}}} 
+                    exit:{opacity:1,transition: { duration: 0.5 , delay: 0.5}}} 
 
 export {animImg,animH1,animH2,animMainDiv}

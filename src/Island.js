@@ -25,10 +25,10 @@ function Island({pos}) {
             //exit="hidden"
             className="flex lg:flex-row md:flex-row flex-col sm:h-auto my-auto mx-auto md:w-5/6 w-full justify-center">
             {pos?
-              <><Logo/>
+              <><Logo pos={pos}/>
               <Content /></>:
               <><Content/>
-              <Logo/></>}
+              <Logo pos={pos}/></>}
             
         </motion.div>
     )
