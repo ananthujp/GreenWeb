@@ -52,7 +52,7 @@ export  const MenuItem = ({ i ,toggle}) => {
 function NavBar({keyID}) {
   // const location = useLocation();
   const colorVar=3;
-  const bgClass="fixed z-20 top-0 w-full flex justify-between drop-shadow-md px-2 " + (((keyID==="/Home")||(keyID==="/"))?" " : " bg-gradient-to-br from-"+colorsClass[colorVar][1]+" to-"+colorsClass[colorVar][2]);
+  const bgClass="fixed z-20 top-0 w-full flex justify-between drop-shadow-md px-2 " + (((keyID==="/Home")||(keyID==="/")||(keyID==="/Title"))?" " : " bg-gradient-to-br from-"+colorsClass[colorVar][1]+" to-"+colorsClass[colorVar][2]);
     return (
         <div>
             <BurgerMenuSm className="md:hidden block"/>

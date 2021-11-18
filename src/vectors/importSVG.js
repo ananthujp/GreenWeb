@@ -13,7 +13,7 @@ const animPath={initial:{pathLength:0},
 
 export const AboutSVG=()=> {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" >
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 350" >
       <style>
         {
           ".prefix__st1{opacity:.48}.prefix__st1,.prefix__st2{fill:#fff}.prefix__st3{fill:#a797fb}.prefix__st4{fill:#e7aa36}.prefix__st5{fill:#ecbf4c}.prefix__st6{fill:#c3b7fc}.prefix__st7{fill:#dd6e5c}.prefix__st8{fill:#363271}.prefix__st9{fill:#f0c9a1}.prefix__st10{fill:#e9b588}.prefix__st11{fill:#514e92}.prefix__st13{fill:#5f5ea5}.prefix__st14{fill:#dfdbfc}.prefix__st15{fill:#e58f31}.prefix__st19{fill:#e08675}"

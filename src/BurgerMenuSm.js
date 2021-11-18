@@ -107,7 +107,7 @@ const BurgerMenuSm = () => {
      
       className="fixed z-30 top-0 left-0 bottom-0 w-72 md:hidden block" variants={sidebar}
     >
-      <motion.div className="absolute top-0 left-0 bottom-0 w-72 bg-white" variants={sidebar} />
+      <motion.div className={"absolute top-0 left-0 bottom-0 w-72 transition-bg "+ (isOpen?"bg-white":"bg-white")} variants={sidebar} />
       <Navigation toggle={() => toggleOpen()}/>
       <MenuToggle toggle={() => toggleOpen()} />
     </motion.nav>

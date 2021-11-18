@@ -9,7 +9,7 @@ function Sample() {
   const svgColor="#8B5Cf6"
     return (
       <div>
-        <motion.div className="bg-white absolute mt-12 flex flex-col w-full h-full"
+        <motion.div className="bg-purple-900 absolute flex flex-col w-full h-full"
             variants={animMainDiv}
             initial="initial"
             animate="animate"
@@ -23,13 +23,13 @@ function Sample() {
                 initial="initial"
                 animate="animate"
                 exit="exit"
-                className={"font-beb mt-10 text-"+colorsClass[3][1]+" mx-auto lg:text-8xl md:text-6xl text-4xl"}>Captain</motion.h1>
+                className={"font-beb mt-20  text-transparent bg-clip-text bg-gradient-to-br from-purple-500 to-pink-300 mx-auto lg:text-8xl md:text-6xl text-6xl"}>Captain</motion.h1>
               <motion.h1
                 variants={animH2}
                 initial="initial"
                 animate="animate"
                 exit="exit"
-                className={"font-beb  text-"+colorsClass[3][1]+"  mx-auto lg:text-6xl md:text-4xl text-2xl"}>Kachra</motion.h1>
+                className={"font-beb   text-transparent bg-clip-text bg-gradient-to-br from-purple-500 to-pink-300  mx-auto lg:text-6xl md:text-4xl text-2xl"}>Kachra</motion.h1>
               <div
                //animate={{ rotate: 180 }}
               //style={{ originX: 0 ,originY: -1.5,originZ:0 }}
@@ -79,7 +79,7 @@ function Sample() {
                     height="2000"
                     overflow="visible"
                     transform="translate(-75.721 -158.407) scale(.2956)"
-                    xlinkHref={'https://manofmany.com/wp-content/uploads/2021/07/No-Equipment-Home-Workout-2-1200x800.jpg'}
+                    xlinkHref={'https://sites.iitgn.ac.in/greenoffice/game/img/logo_m.png'}
                     className="filter"></image>
                 </motion.g>
                 <motion.circle
@@ -120,7 +120,7 @@ function Sample() {
                 id="Layer_1" className="relative ml-12 top w-6" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.47 29.47"><defs></defs><polygon fill={svgColor} points="23.76 0 0 19.96 29.46 29.46 23.76 0"/></motion.svg>
               
               </div>
-              <nav className="mx-auto pt-10 bg-white w-full text-center text-purple-700 flex justify-center"><Link to="/"><div ><RewindIcon/>BACK</div></Link> </nav>
+              <div className="mx-auto pt-10 w-full text-center text-purple-700 flex justify-center"><Link to="/"><div ><RewindIcon/>BACK</div></Link> </div>
         </motion.div>
         </div>
 
