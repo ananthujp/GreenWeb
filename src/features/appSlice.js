@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import Iit from "../vectors/iit.svg"
+import Iit from "../vectors/ico/iit.svg"
 export const appSlice = createSlice({
   name: 'app',
   initialState: {

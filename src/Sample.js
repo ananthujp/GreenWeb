@@ -1,6 +1,6 @@
 import {motion} from "framer-motion"
 import { RewindIcon } from '@heroicons/react/outline'
-import colorsClass from "./Colors"
+//import colorsClass from "./Colors"
 import {animH1,animH2,animMainDiv} from "./Animations"
 import {
     Link,
@@ -8,8 +8,8 @@ import {
 function Sample() {
   const svgColor="#8B5Cf6"
     return (
-      <div>
-        <motion.div className="bg-purple-900 absolute flex flex-col w-full h-full"
+      <div className="bg-purple-900">
+        <motion.div className="bg-purple-900 flex flex-col w-full"
             variants={animMainDiv}
             initial="initial"
             animate="animate"
@@ -42,7 +42,7 @@ function Sample() {
                 id="Layer_1" className="relative ml-12 top w-6" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.47 29.47"><defs></defs><polygon fill={svgColor} points="23.76 0 0 19.96 29.46 29.46 23.76 0"/></motion.svg>
               
               
-              <motion.svg className="mx-auto w-1/2 mt-6"
+              <motion.svg className="mx-auto md:w-1/2 w-4/5 mt-6"
                 xmlns="http://www.w3.org/2000/svg"
                 xmlnsXlink="http://www.w3.org/1999/xlink"
                 x="0"
@@ -92,6 +92,36 @@ function Sample() {
 
               </div>
               <div className="mx-auto  mt-4 flex flex-row"> 
+              <motion.svg
+                animate={{ rotate: [0,-180,0] }}
+                style={{ originX: 0 ,originY: 0,originZ:0 }}
+                transition={{ repeat: Infinity, duration: 12 }}
+                id="Layer_1" className="relative ml-12 top w-6" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.47 29.47"><defs></defs><polygon fill={svgColor} points="23.76 0 0 19.96 29.46 29.46 23.76 0"/></motion.svg>
+              
+              <motion.h4
+                initial={{opacity:0 }}
+                animate={{opacity:1,transition:{duration:1.2,delay:0.6}}}
+                exit={{opacity:0 }}
+                className="md:w-1/2 text-justify w-5/7 mx-auto font-treb text-sm text-purple-400">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</motion.h4>
+              <motion.svg xmlns="http://www.w3.org/2000/svg"
+                 animate={{ rotate: [0,180,0] }}
+                 style={{ originX: 0 ,originY: 0,originZ:0 }}
+                 transition={{ repeat: Infinity, duration: 18 }}
+                 viewBox="0 0 136.7 136.7" className="relative ml-12 w-6"  >
+                
+                <circle
+                  cx={68.3}
+                  cy={68.3}
+                  r={54.7}
+                  fill="none"
+                  stroke={svgColor}
+                  strokeWidth={10}
+                  strokeMiterlimit={10}
+                />
+              </motion.svg>
+              
+              </div>
+              <div className="mx-auto w-full -mt-12 z-30 h-24 flex flex-row"> 
               <motion.svg xmlns="http://www.w3.org/2000/svg"
                  animate={{ rotate: [0,-180,0] }}
                  style={{ originX: 0 ,originY: 0,originZ:0 }}
@@ -108,11 +138,7 @@ function Sample() {
                   strokeMiterlimit={10}
                 />
               </motion.svg>
-              <motion.h4
-                initial={{opacity:0 }}
-                animate={{opacity:1,transition:{duration:1.2,delay:0.6}}}
-                exit={{opacity:0 }}
-                className="w-1/2 text-center mx-auto font-treb text-sm text-purple-400">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</motion.h4>
+              <div className="w-1/2"></div>
               <motion.svg
                 animate={{ rotate: [0,180,0] }}
                 style={{ originX: 0 ,originY: 0,originZ:0 }}

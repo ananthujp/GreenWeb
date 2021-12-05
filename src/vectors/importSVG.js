@@ -3350,312 +3350,32 @@ export const  SocialSVG=()=>  {
 export const  BlogSVG=()=>  {
   return (
     <svg
-    xmlns="http://www.w3.org/2000/svg"
-    xmlnsXlink="http://www.w3.org/1999/xlink"
-    viewBox="0 0 1200 800"
-    
-  >
-    <style>{".prefix__st2{fill:#fff}.prefix__st21{fill:#e992ec}"}</style>
-    <linearGradient
-      id="prefix__SVGID_1_"
-      gradientUnits="userSpaceOnUse"
-      x1={605}
-      y1={209.261}
-      x2={85.201}
-      y2={209.261}
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 616.39 400.09"
     >
-      <stop offset={0} stopColor="#b37cff" />
-      <stop offset={1} stopColor="#f895e7" />
-    </linearGradient>
-    <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-      d="M203.9 360.1s-91.7 0-107-59.3c-7.8-30.5 21.5-42.8 21.5-42.8S74 221.6 87.9 165.4C101.8 109.2 182 130 182 130s7.3-87.7 110.8-69C352.4 71.8 415 116 415 116s7.8-41.5 82-6c54.3 26 108 84 108 84l-347.4 70.9-53.7 95.2z"
-      opacity={0.5}
-      fill="url(#prefix__SVGID_1_)"
-    />
-    <linearGradient
-      id="prefix__SVGID_2_"
-      gradientUnits="userSpaceOnUse"
-      x1={-7782.698}
-      y1={-106.89}
-      x2={-8025.1}
-      y2={612.18}
-      gradientTransform="scale(-1 1) rotate(-2.447 6581.955 -180529.251)"
-    >
-      <stop offset={0} stopColor="#fdf53f" />
-      <stop offset={1} stopColor="#d93c65" />
-    </linearGradient>
-    <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-      d="M46.7 449.7c1.1-26 23.1-46.2 49.1-45.1 26 1.1 46.2 23.1 45.1 49.2-.6 14.5 5 28.5 15.4 38.6 12 11.5 19.2 28 18.4 45.9-.7 17.5 6.7 34.4 20.1 45.6 15.7 13.2 25.3 33.2 24.4 55.3-1.6 37.7-33.5 67-71.2 65.3-37.7-1.6-67-33.5-65.3-71.2.1-2 .3-4 .5-6 2.5-19.2-3-38.7-15.3-53.7-9-11-14.1-25.3-13.5-40.6.3-6.7 1.7-13.2 4-19.1 4.6-12 3.1-25.4-4-36.1-5.2-8-8.2-17.7-7.7-28.1z"
-      fill="url(#prefix__SVGID_2_)"
-    />
-    <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-      className="prefix__st2"
-      d="M171.3 680.6c-.4 0-.7-.2-.9-.5-62.8-120-79.9-226.1-80.1-227.2-.1-.5.3-1.1.8-1.1.5-.1 1.1.3 1.1.8.2 1.1 17.2 106.9 79.9 226.5.3.5.1 1.1-.4 1.3-.1.2-.2.2-.4.2z"
-    />
-    <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-      className="prefix__st2"
-      d="M101.2 496.3c-.3 0-.6-.2-.8-.4-.3-.5-.2-1.1.3-1.4 11.3-7.6 20.7-36.5 20.7-36.8.2-.5.7-.8 1.3-.6.5.2.8.7.6 1.3-.4 1.2-9.6 29.9-21.5 37.9h-.6z"
-    />
-    <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-      className="prefix__st2"
-      d="M100.3 496.3c-.1 0-.3 0-.4-.1-.8-.3-19.4-8.1-30.5-20.7-.4-.4-.3-1 .1-1.4.4-.4 1-.3 1.4.1 10.8 12.2 29.6 20.1 29.8 20.2.5.2.8.8.5 1.3-.2.4-.5.6-.9.6zM121.8 564.5c-.3 0-.5-.1-.7-.3-.4-.4-.4-1 0-1.4 16.3-15.4 21.9-43.8 22-44.1.1-.5.6-.9 1.2-.8.5.1.9.6.8 1.2-.2 1.2-5.8 29.3-22.6 45.2-.2.1-.5.2-.7.2z"
-    />
-    <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-      className="prefix__st2"
-      d="M121.3 564.9c-1-.1-22.1-1.7-42.6-23.2-.4-.4-.4-1 0-1.4.4-.4 1-.4 1.4 0 20 20.9 41 22.5 41.2 22.6.6 0 1 .5.9 1.1.1.5-.4.9-.9.9zM153.2 646.2c-.1 0-.1 0 0 0-.3 0-25.8-1.3-45.5-19-.4-.4-.4-1-.1-1.4.4-.4 1-.4 1.4-.1 19.2 17.2 43.9 18.5 44.2 18.5.6 0 1 .5 1 1-.1.6-.5 1-1 1z"
-    />
-    <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-      className="prefix__st2"
-      d="M154 646c-.3 0-.6-.1-.8-.4-.3-.4-.3-1.1.2-1.4.2-.1 16.5-13.6 20.9-42.2.1-.5.6-.9 1.1-.8.5.1.9.6.8 1.1-4.5 29.3-20.9 42.9-21.6 43.4-.2.2-.4.3-.6.3z"
-    />
-    <linearGradient
-      id="prefix__SVGID_3_"
-      gradientUnits="userSpaceOnUse"
-      x1={264.639}
-      y1={403.767}
-      x2={160.638}
-      y2={676.767}
-    >
-      <stop offset={0} stopColor="#2b3582" />
-      <stop offset={1} stopColor="#150e42" />
-    </linearGradient>
-    <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-      d="M216.9 470.6c-9.5-18-31.8-24.8-49.8-15.2-18 9.5-24.8 31.8-15.2 49.8 5.3 10 6.1 21.8 2.1 32.3-4.6 12.2-4.1 26.2 2.5 38.5 6.4 12.1 6.9 26.5 1.2 38.9-6.6 14.6-6.7 31.9 1.4 47.2 13.8 26 46.1 35.9 72.1 22.1 26-13.8 35.9-46.1 22.1-72.1-.7-1.4-1.5-2.7-2.4-4-8.2-12.7-10.9-28.2-7.3-42.9 2.6-10.8 1.5-22.6-4.2-33.1-2.5-4.6-5.6-8.7-9.2-12.1-7.3-6.9-10.8-16.9-9.4-26.8 1.2-7.6-.1-15.4-3.9-22.6z"
-      fill="url(#prefix__SVGID_3_)"
-    />
-    <linearGradient
-      id="prefix__SVGID_4_"
-      gradientUnits="userSpaceOnUse"
-      x1={523.353}
-      y1={644.778}
-      x2={714.276}
-      y2={72.008}
-    >
-      <stop offset={0} stopColor="#2b3582" />
-      <stop offset={1} stopColor="#150e42" />
-    </linearGradient>
-    <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-      d="M1016.3 665.6c0 8.2-6.7 14.9-14.9 14.9H193c-8.2 0-14.9-6.7-14.9-14.9L171.3 201c0-8.2 9.7-24.2 27.4-23l790-20.4c10.3-.3 20.3 3.7 27.6 11 7.3 7.3 11.3 17.2 11.1 27.5l-11.1 469.5z"
-      fill="url(#prefix__SVGID_4_)"
-    />
-    <linearGradient
-      id="prefix__SVGID_5_"
-      gradientUnits="userSpaceOnUse"
-      x1={568.614}
-      y1={674.068}
-      x2={654.932}
-      y2={-42.86}
-    >
-      <stop offset={0} stopColor="#a737d5" />
-      <stop offset={1} stopColor="#ef497a" />
-    </linearGradient>
-    <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-      d="M1001.6 651.2c0 7.8-6.4 14.1-14.1 14.1h-775c-7.8 0-14.1-6.4-14.1-14.1L192 229.5c.7-25.4 23-34.5 36.5-34 0 0 617.5-16.6 757.2-20.3 7.2-.2 14.3 2.6 19.4 7.7 5.1 5.1 8 12.1 7.8 19.4l-11.3 448.9z"
-      fill="url(#prefix__SVGID_5_)"
-    />
-    <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-      className="prefix__st2"
-      d="M206.7 449.8c-.5 0-1-.4-1-1l-.5-34.2c0-.6.4-1 1-1 .5 0 1 .4 1 1l.5 34.2c0 .5-.4 1-1 1zM205.5 366c-.5 0-1-.4-1-1l-1.9-131c0-8.7 2.7-15.7 8-20.7 9.6-9.2 24.5-8.7 25.1-8.7l241.8-6.5c.6 0 1 .4 1 1s-.4 1-1 1l-241.9 6.5c-.7 0-14.8-.5-23.8 8.1-4.8 4.6-7.3 11.1-7.4 19.2l1.9 131c.2.6-.2 1.1-.8 1.1z"
-    />
-    <linearGradient
-      id="prefix__SVGID_6_"
-      gradientUnits="userSpaceOnUse"
-      x1={230.931}
-      y1={425.487}
-      x2={984.82}
-      y2={425.487}
-    >
-      <stop offset={0} stopColor="#b37cff" />
-      <stop offset={1} stopColor="#f895e7" />
-    </linearGradient>
-    <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-      d="M232.5 627.8c.8-34.9.5-343.5-1.5-370.2-2-26.6 39.5-31.6 103.3-34.6s601.6-14.9 615.4-16c31.1-2.5 37.6 44 34.5 145-2.3 75.9-6.2 200.9-8 258.4-.5 17.1-14.5 30.7-31.6 30.7-129.6.4-625.6 1.8-658.6 2.8-38 1.1-53.8-2.2-53.5-16.1z"
-      opacity={0.5}
-      fill="url(#prefix__SVGID_6_)"
-    />
-    <linearGradient
-      id="prefix__SVGID_7_"
-      gradientUnits="userSpaceOnUse"
-      x1={813.076}
-      y1={313.152}
-      x2={669.399}
-      y2={-226.247}
-    >
-      <stop offset={0} stopColor="#fdf53f" />
-      <stop offset={1} stopColor="#d93c65" />
-    </linearGradient>
-    <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-      d="M689.1 134.7c0 23.3 7.3 115 13.3 136.9 6 21.9 32.5 19.9 53.1 17.9s84.9-4 108.1-7.3c23.2-3.3 17.9-35.2 11.3-79.6-6.6-44.5-10.4-62.7-15.7-90.5-5.3-27.9-59-23.4-78.3-21.4-19.3 1.9-91.8 4.1-91.8 44z"
-      fill="url(#prefix__SVGID_7_)"
-    />
-    <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-      className="prefix__st2"
-      d="M736 250.2c-2.3 0-4.4-1.1-5.8-2.9-1.5-2.1-1.8-4.8-.7-7.1l19.6-42.6c.9-2 2.8-3.5 5-3.8 2.2-.4 4.4.3 6 1.9l19.4 19.6c.7.7 1.6 1 2.6.8.9-.2 1.7-.9 2-1.8l17-48.3c.9-2.5 3.2-4.3 5.8-4.5 2.7-.2 5.2 1.2 6.5 3.5l38.1 69.8c.5 1 .2 2.2-.8 2.7s-2.2.2-2.7-.8l-38.1-69.8c-.5-1-1.6-1.5-2.7-1.4-1.1.1-2 .8-2.4 1.8l-17 48.3c-.8 2.2-2.6 3.8-4.9 4.4-2.3.5-4.7-.2-6.3-1.9l-19.4-19.6c-.6-.6-1.6-.9-2.5-.8-.9.2-1.7.7-2 1.6l-19.6 42.6c-.5 1-.4 2.2.3 3.1.7.9 1.7 1.4 2.9 1.3l95.5-10.7c1.1-.1 2.1.7 2.2 1.8.1 1.1-.7 2.1-1.8 2.2l-95.5 10.7c-.2-.2-.5-.1-.7-.1zM741.6 167.7h-1.3c-4.7-.3-9.1-2.5-12.2-6.1-3.1-3.6-4.6-8.2-4.3-12.9.3-4.7 2.5-9.1 6.1-12.2 3.6-3.1 8.2-4.6 12.9-4.3 4.7.3 9.1 2.5 12.2 6.1 3.1 3.6 4.6 8.2 4.3 12.9-.3 4.7-2.5 9.1-6.1 12.2-3.2 2.8-7.3 4.3-11.6 4.3zm0-31.6c-3.3 0-6.5 1.2-9 3.4-2.8 2.4-4.5 5.8-4.7 9.5-.3 3.7.9 7.2 3.3 10s5.8 4.5 9.5 4.7c3.7.3 7.2-.9 10-3.3s4.5-5.8 4.7-9.5c.3-3.7-.9-7.2-3.3-10s-5.8-4.5-9.5-4.7c-.3-.1-.7-.1-1-.1zM871.1 232.2c-.5 0-.9-.4-1-.9-.9-8.1-2.3-17.3-3.7-27l-.4-2.7c-.5-3.7-1.1-7.2-1.6-10.5-.1-.5.3-1.1.8-1.1.5-.1 1.1.3 1.1.8.5 3.3 1 6.8 1.6 10.5l.4 2.7c1.5 9.7 2.8 18.9 3.7 27.1.1.5-.3 1-.9 1.1.1 0 0 0 0 0z"
-    />
-    <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-      className="prefix__st2"
-      d="M824.8 277.9c-.5 0-1-.4-1-.9 0-.6.4-1 .9-1.1 15.3-.9 25.4-1.8 31.8-2.7 14.8-2.1 16.1-18.2 13.6-41.8-.1-.5.3-1 .9-1.1.5-.1 1 .3 1.1.9 2.7 24.7 1.1 41.7-15.3 44-6.4.9-16.6 1.7-32 2.7.1 0 0 0 0 0zM740.9 282.9c-14.1 0-28.3-3.2-32.4-18.2-1.2-4.4-2.5-12.1-3.9-22.8-.1-.5.3-1 .9-1.1.6-.1 1 .3 1.1.9 1.4 10.6 2.7 18.2 3.9 22.5 5.4 19.7 30.7 17.2 47.4 15.6 1.6-.2 3.4-.3 5.7-.5.5 0 1 .4 1.1.9 0 .6-.4 1-.9 1.1-2.3.2-4.1.3-5.7.5-5.2.5-11.2 1.1-17.2 1.1zM701.9 209.1c-.5 0-.9-.4-1-.9-2.6-27.5-4.5-57.1-4.5-68.7 0-19.3 18.1-32.1 53.7-37.8.5-.1 1.1.3 1.1.8.1.5-.3 1.1-.8 1.1-34.5 5.6-52 17.6-52 35.8 0 11.6 1.9 41 4.5 68.5.1.6-.3 1.1-1 1.2.1 0 0 0 0 0z"
-    />
-    <linearGradient
-      id="prefix__SVGID_8_"
-      gradientUnits="userSpaceOnUse"
-      x1={569.517}
-      y1={894.761}
-      x2={641.93}
-      y2={498.825}
-    >
-      <stop offset={0} stopColor="#2b3582" />
-      <stop offset={1} stopColor="#150e42" />
-    </linearGradient>
-    <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-      d="M1065.6 719.1H145.2c-9 0-16.4-7.4-16.4-16.4v-8.1c0-9 7.4-16.4 16.4-16.4h920.4c9 0 16.4 7.4 16.4 16.4v8.1c-.1 9-7.4 16.4-16.4 16.4z"
-      fill="url(#prefix__SVGID_8_)"
-    />
-    <g>
-      <linearGradient
-        id="prefix__SVGID_9_"
-        gradientUnits="userSpaceOnUse"
-        x1={-7235.119}
-        y1={-677.213}
-        x2={-7480.884}
-        y2={51.833}
-        gradientTransform="scale(-1 1) rotate(-13.426 229.123 -26815.2)"
-      >
-        <stop offset={0} stopColor="#2b3582" />
-        <stop offset={1} stopColor="#150e42" />
-      </linearGradient>
+      <style>
+        {
+          ".prefix__st1{fill:#fff}.prefix__st2{fill:#ffc500}.prefix__st3{fill:#f47e14}.prefix__st4{fill:#464689}.prefix__st5{fill:#ffb4a6}.prefix__st6{fill:#122030}.prefix__st8{fill:#f76687}.prefix__st9{fill:none;stroke:#fff;stroke-miterlimit:10}.prefix__st10{fill:#ecbf4c}.prefix__st13{fill:#a797fb}.prefix__st14{opacity:.2;fill:#9ed3ff}.prefix__st17{fill:#fffdff}.prefix__st18{fill:#e08675}.prefix__st19{fill:#dd6e5c}.prefix__st20{fill:#e0eefb}.prefix__st21{fill:#5f5ea5}"
+        }
+      </style>
       <motion.path
           variants={animPath}
           initial="initial"
           animate="animate"
           exit="exit"
-        d="M922.4 445.2c6.1-25.7 31.9-41.6 57.6-35.4 25.7 6.1 41.6 31.9 35.4 57.6-3.4 14.3-.5 29.3 7.9 41.4 9.7 13.8 13.7 31.6 9.4 49.3-4.1 17.3 0 35.5 11.2 49.3 13.1 16.1 18.8 38 13.6 59.8-8.9 37.2-46.3 60.2-83.5 51.3-37.2-8.9-60.2-46.3-51.3-83.5.5-2 1-3.9 1.7-5.8 6.2-18.7 4.4-39.1-4.9-56.4-6.8-12.7-9.2-27.9-5.6-43 1.6-6.7 4.2-12.8 7.7-18.3 6.9-11 8-24.7 3-36.7-3.6-9.1-4.6-19.3-2.2-29.6z"
-        fill="url(#prefix__SVGID_9_)"
+        d="M504.57 231.71c-8 19.6 2.7 38.7 8.8 57.4 8.3 25.6 11.51 94.34-5.09 117.54-.8 1.1-1.6 2.2-2.5 3.3-17.6 20.9-45.7 23-70.9 24.7-12.8.8-25.6 1.5-38.4 2.1-20.9 1-41.8 1.6-62.6 1.9-2.3 0-4.6.1-6.9.1-17 .2-34 .1-50.9-.2-22.9-.3-45.7-.9-68.6-1.4-6.6-.1-13.1-.3-19.7-.4-15.6-.3-31.3-1.7-46.3-5.4-17-4.2-32.8-11.3-46.1-23.1-1.4-1.2-2.8-2.5-4.1-3.8-26.1-26-58.24-83.56-43.64-117.86 6.5-15.4 12.89-36.94 11.29-53.54-.9-9-7.83-45.47-11.23-53.87-13.2-32.3 17.48-63.67 49.78-85.17 14.4-9.6 32.65-40.07 46.79-41.88 35.07-24.98 81.11-18.22 124.31-34.72 26.1-10 56.2-12.6 81.7-1 23.3 10.6 46.59 16.42 70.29 25.62 21.1 8.2 36.91 21.78 58.11 30.28 20.6 8.3 38.4 24 48.4 43.9 11 22 12.3 48.5 4.3 71.7-5.81 16.4-20.31 27.8-26.81 43.8z"
+        opacity={0.29}
+        fill="#c3b7fc"
+        id="prefix__BACKGROUND"
       />
-      <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-        className="prefix__st2"
-        d="M1002.1 699.1c-.4 0-.8-.3-1-.7-39.4-131.5-35.9-240.5-35.8-241.6 0-.6.5-1 1-1 .6 0 1 .5 1 1 0 1.1-3.5 109.7 35.8 240.9.2.5-.1 1.1-.7 1.2-.1.2-.2.2-.3.2z"
-      />
-      <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-        className="prefix__st2"
-        d="M967.9 502.1c-.4 0-.8-.2-.9-.6-.2-.5 0-1.1.5-1.3 12.7-5.4 27.6-32.4 27.8-32.7.3-.5.9-.7 1.4-.4.5.3.7.9.4 1.4-.6 1.1-15.4 27.9-28.7 33.6h-.5z"
-      />
-      <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-        className="prefix__st2"
-        d="M966.9 501.9c-.2 0-.4-.1-.5-.2-.7-.5-17.8-11.8-26.4-26.5-.3-.5-.1-1.1.4-1.4.5-.3 1.1-.1 1.4.4 8.4 14.3 25.6 25.7 25.7 25.8.5.3.6.9.3 1.4-.2.4-.5.5-.9.5zM975.2 573.9c-.3 0-.7-.2-.8-.5-.3-.5-.2-1.1.3-1.4 19.2-12.2 30.3-39.4 30.4-39.7.2-.5.8-.8 1.3-.6.5.2.8.8.6 1.3-.5 1.1-11.5 28-31.2 40.6-.3.3-.5.3-.6.3z"
-      />
-      <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-        className="prefix__st2"
-        d="M974.6 574.3h-.3c-.9-.2-21.6-5.9-37.9-31.3-.3-.5-.2-1.1.3-1.4.5-.3 1.1-.2 1.4.3 15.9 24.7 36.5 30.4 36.7 30.4.5.1.9.7.7 1.2 0 .5-.4.8-.9.8zM990.6 661.3h-.2c-.3-.1-25.4-6.3-41.5-27.7-.3-.4-.2-1.1.2-1.4.4-.3 1.1-.2 1.4.2 15.7 20.8 40.2 26.9 40.4 26.9.5.1.9.7.7 1.2-.1.5-.5.8-1 .8z"
-      />
-      <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-        className="prefix__st2"
-        d="M991.5 661.3c-.4 0-.7-.2-.9-.5-.3-.5-.1-1.1.4-1.4.2-.1 19.1-10.4 29-37.9.2-.5.8-.8 1.3-.6.5.2.8.8.6 1.3-10.2 28.3-29.1 38.6-29.9 39-.2 0-.3.1-.5.1z"
-      />
-      <g>
-        <linearGradient
-          id="prefix__SVGID_10_"
-          gradientUnits="userSpaceOnUse"
-          x1={683.001}
-          y1={1373.605}
-          x2={368.098}
-          y2={2307.744}
-          gradientTransform="rotate(-17.007 -2934.413 -492.328)"
-        >
-          <stop offset={0} stopColor="#fdf53f" />
-          <stop offset={1} stopColor="#d93c65" />
-        </linearGradient>
+      <g id="prefix__OBJECTS">
         <motion.path
           variants={animPath}
           initial="initial"
           animate="animate"
           exit="exit"
-          d="M1129.6 363.3c-9.9-32.4-44.2-50.6-76.5-40.7-32.4 9.9-50.6 44.2-40.7 76.5 5.5 18 3 37.5-6.8 53.5-11.3 18.4-15 41.5-8.1 63.8 6.7 21.8 2.8 45.4-10.4 64-15.5 21.7-21 50.1-12.6 77.5 14.3 46.9 64 73.3 110.9 58.9 46.9-14.3 73.3-64 58.9-110.9-.8-2.5-1.6-5-2.6-7.3-9.4-23.4-8.8-49.6 1.7-72.5 7.7-16.8 9.5-36.4 3.7-55.5-2.6-8.4-6.4-16-11.3-22.8-9.7-13.5-12.3-31-6.8-46.7 4.1-11.7 4.6-24.9.6-37.8z"
-          fill="url(#prefix__SVGID_10_)"
+          className="prefix__st1"
+          d="M537 406.37l-.74-1.94-23.7.02-.23 1.92z"
         />
         <motion.path
           variants={animPath}
@@ -3663,7 +3383,23 @@ export const  BlogSVG=()=>  {
           animate="animate"
           exit="exit"
           className="prefix__st2"
-          d="M1048 694.1h-.2c-.5-.1-.9-.7-.7-1.2 39.7-171 26.6-309.7 26.4-311-.1-.5.3-1 .9-1.1.6-.1 1 .3 1.1.9.1 1.4 13.4 140.4-26.5 311.7-.1.4-.5.7-1 .7z"
+          d="M536.26 404.43l-3.53-12.61-9.19-.14.24 6.63s-11.37 2.7-11.22 6.15l23.7-.03z"
+        />
+        <motion.path
+          variants={animPath}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+          className="prefix__st3"
+          d="M533.35 394.05l-7.71-2.34-2.1-.03.15 4.32 10.56 1.28z"
+        />
+        <motion.path
+          variants={animPath}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+          className="prefix__st1"
+          d="M465.27 406.37l.24-1.94-23.71.02-.99 1.92z"
         />
         <motion.path
           variants={animPath}
@@ -3671,887 +3407,455 @@ export const  BlogSVG=()=>  {
           animate="animate"
           exit="exit"
           className="prefix__st2"
-          d="M1076 439.5c-.1 0-.2 0-.3-.1-17.5-6.2-38.4-39.1-39.3-40.5-.3-.5-.2-1.1.3-1.4.5-.3 1.1-.2 1.4.3.2.3 21.5 33.7 38.3 39.7.5.2.8.8.6 1.3-.2.4-.6.7-1 .7z"
+          d="M465.51 404.43l1.48-12.61-9.13-.14-2.4 6.63s-12.44 2.7-13.66 6.15l23.71-.03z"
         />
         <motion.path
           variants={animPath}
           initial="initial"
           animate="animate"
           exit="exit"
-          className="prefix__st2"
-          d="M1077.2 439.1c-.3 0-.6-.1-.8-.4-.3-.4-.2-1.1.2-1.4.2-.2 21.4-16.2 30.9-35.2.2-.5.9-.7 1.3-.4.5.2.7.9.4 1.3-9.8 19.4-31.3 35.7-31.5 35.9-.1.1-.3.2-.5.2zM1072.4 531.9c-.2 0-.3 0-.5-.1-26.1-14.5-42.8-49-43-49.3-.2-.5 0-1.1.5-1.3.5-.2 1.1 0 1.3.5.2.3 16.6 34.3 42.2 48.4.5.3.7.9.4 1.4-.2.2-.5.4-.9.4z"
+          className="prefix__st3"
+          d="M466.72 394.05l-6.78-2.34-2.08-.03-1.57 4.32 10.06 1.28z"
         />
         <motion.path
           variants={animPath}
           initial="initial"
           animate="animate"
           exit="exit"
-          className="prefix__st2"
-          d="M1073.1 532.3c-.4 0-.8-.3-.9-.7-.2-.5.1-1.1.6-1.3.3-.1 26.3-9 44.6-42 .3-.5.9-.7 1.4-.4.5.3.7.9.4 1.4-18.8 33.6-45.5 42.8-45.8 42.9-.1.1-.2.1-.3.1zM1059.6 644.9c-.4 0-.8-.3-1-.7-.2-.5.1-1.1.7-1.2.3-.1 31.2-9.8 49.7-37.8.3-.5.9-.6 1.4-.3.5.3.6.9.3 1.4-18.9 28.6-50.4 38.5-50.7 38.6h-.4z"
+          className="prefix__st4"
+          d="M471.69 395.14l37.03-140.68 10.32 140.68h17.92l-8.28-154.78-34.99-7.31-42.62 162.09z"
         />
         <motion.path
           variants={animPath}
           initial="initial"
           animate="animate"
           exit="exit"
-          className="prefix__st2"
-          d="M1058.5 644.8c-.1 0-.3 0-.4-.1-.3-.1-26-12-41.2-47.4-.2-.5 0-1.1.5-1.3.5-.2 1.1 0 1.3.5 14.9 34.6 40 46.2 40.2 46.3.5.2.7.8.5 1.3-.1.5-.5.7-.9.7z"
+          className="prefix__st1"
+          d="M511.95 175.26l-18.26 57.79 34.99 7.31 3.64-59.82z"
         />
+        <motion.path
+          variants={animPath}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+          className="prefix__st1"
+          d="M527.65 176.31l4.67 4.23s-11.45 5.97-16.36 3.61-4.02-8.89-4.02-8.89l4.12.25 11.59.8z"
+        />
+        <circle
+          transform="rotate(-80.747 550.748 161.09)"
+          className="prefix__st4"
+          cx={550.75}
+          cy={161.1}
+          r={12.16}
+        />
+        <circle className="prefix__st4" cx={529.48} cy={153.1} r={18.05} />
+        <motion.path
+          variants={animPath}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+          className="prefix__st5"
+          d="M527.43 179.16l6.83-13.69s5.69 4.03 7.7-.99c1.79-4.47-3.11-6.29-6.16-4.84 0 0 9.04-14.81-4.49-20.16-13.54-5.36-19.26 13.66-20.66 18.25-2.48 8.09 2.21 13.7 6.31 15.34l-1.78 4.88s-1.61 4.26 2.44 5.63c2.16.73 4.03.42 5.51-.21 1.89-.8 3.38-2.35 4.3-4.21z"
+        />
+        <motion.path
+          variants={animPath}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+          className="prefix__st1"
+          d="M523 161.14c-1.74.94-3.76 1.35-5.73 1.16.49.85 1.07 1.78 2 2.11.93.33 2.03.23 2.81-.37.79-.6 1.28-1.98.92-2.9z"
+        />
+        <motion.path
+          variants={animPath}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+          className="prefix__st6"
+          d="M520.37 160.18c-.03-.01-.07-.01-.1-.03-.59-.26-1.04-.73-1.26-1.33-.22-.6-.18-1.25.1-1.83l1.65-3.33c.1-.2.34-.28.53-.18.2.1.28.34.18.54l-1.65 3.33c-.19.38-.21.8-.07 1.2.14.4.44.71.82.87.2.09.3.32.21.52-.06.18-.24.27-.41.24z"
+        />
+        <motion.path
+          variants={animPath}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+          className="prefix__st4"
+          d="M516.57 148.93c-.52-1.75 5.07-1.6 4.13-.55-.66.75-3.8 1.67-4.13.55zM525.45 156.2a1.56 1.56 0 11-3.09-.45c.12-.85.91-1.44 1.77-1.32.85.13 1.44.92 1.32 1.77zM518.19 154.13a1.56 1.56 0 11-3.09-.45c.12-.85.91-1.44 1.77-1.32.86.13 1.45.92 1.32 1.77z"
+        />
+        <motion.path
+          variants={animPath}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+          className="prefix__st6"
+          d="M535.95 163.65c-.03 0-.05-.01-.08-.02a.399.399 0 01-.23-.52c.35-.91 1.16-1.62 2.1-1.86.95-.24 1.99.01 2.73.64.17.14.19.4.04.56-.14.17-.4.19-.56.04-.55-.47-1.32-.65-2.01-.48-.7.17-1.29.7-1.55 1.37-.08.19-.26.29-.44.27z"
+        />
+        <motion.path
+          variants={animPath}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+          d="M516.95 173.08c4.91 1.67 10.84-.21 10.84-.21s-5.02 3.37-11.45 1.89l.61-1.68z"
+          fill="#da857c"
+        />
+        <motion.path
+          variants={animPath}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+          className="prefix__st8"
+          d="M525.96 161.11a1.14 1.14 0 002.28-.03c-.01-.63-.53-1.13-1.15-1.12-.64.01-1.14.52-1.13 1.15zM512.62 158.19a1.14 1.14 0 002.28-.03 1.14 1.14 0 00-1.16-1.12c-.63 0-1.13.52-1.12 1.15z"
+        />
+        <circle
+          transform="rotate(-45.001 550.022 144.456)"
+          className="prefix__st4"
+          cx={550.02}
+          cy={144.45}
+          r={8.61}
+        />
+        <motion.path
+          variants={animPath}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+          className="prefix__st4"
+          d="M512.41 152.39s2.15-5.71 7.83-8.02c0 0 1.64 4.31 11.5 11.84 0 0-2.49 8-1.55 8.3.94.3 3.15-2.41 5.62-4.85 2.46-2.44 5.5-4.39 5.5-4.39l-3.4-13.91-3.89-2.81-5.17-1.83-5.27.6-4.43 1.29-4.6 4.66-2.11 4.26-.03 4.86z"
+        />
+        <motion.path
+          variants={animPath}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+          className="prefix__st9"
+          d="M520.48 153.3c0 2.29-1.86 4.14-4.14 4.14-2.29 0-4.14-1.86-4.14-4.14 0-2.29 1.86-4.14 4.14-4.14 2.29 0 4.14 1.85 4.14 4.14zM528.79 156.15c0 2.29-1.86 4.14-4.14 4.14-2.29 0-4.14-1.86-4.14-4.14s1.86-4.14 4.14-4.14c2.29 0 4.14 1.85 4.14 4.14z"
+        />
+        <motion.path
+          variants={animPath}
+          initial="initial"
+          animate="animate"
+          exit="exit" className="prefix__st5" d="M475.62 126.49l8.53 6.1-8.53-.46z" />
+        <motion.path
+          variants={animPath}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+          className="prefix__st10"
+          d="M511.95 175.26l-32.57 112.21-5.85-2.13 21.76-76.52s-3.71-7.16-3.47-10.81c.24-3.65 4.3-8.79 4.3-8.79s-21.56-1.93-24.04-3.35c-2.48-1.41.96-50.03.96-50.03l14.3 1.35-.91 35.03 25.52 3.04z"
+        />
+        <g>
+          <motion.path
+          variants={animPath}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+            className="prefix__st4"
+            d="M460.66 364.03H72.92c-5.52 0-10-4.48-10-10V102.07c0-5.52 4.48-10 10-10h387.74c5.52 0 10 4.48 10 10v251.96c0 5.52-4.48 10-10 10z"
+          />
+          <motion.path
+          variants={animPath}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+            transform="rotate(90 266.787 213.734)"
+            fill="#cec8fc"
+            d="M154.13 18.86h225.32V408.6H154.13z"
+          />
+          <motion.path
+          variants={animPath}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+            d="M312.88 101.07H334L108.68 326.39H87.56l225.32-225.32zm148.78 28.71v-28.7H351.57L126.25 326.39h138.79l196.62-196.61zM71.92 264.85L235.7 101.07H168l-96.08 96.08v67.7zm389.74-26.62v-21.12L352.37 326.39h21.12l88.17-88.16z"
+            opacity={0.3}
+            fill="#fff"
+          />
+          <motion.path
+          variants={animPath}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+            className="prefix__st13"
+            d="M229.95 357.26h73.67v41.68h-73.67z"
+          />
+          <motion.path
+          variants={animPath}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+            className="prefix__st4"
+            d="M229.95 357.26h73.67v11.88h-73.67z"
+          />
+          <motion.path
+          variants={animPath}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+            className="prefix__st1"
+            d="M207.74 398.94h118.09v7.43H207.74zM62.92 335.39v18.63c0 5.52 4.48 10 10 10h387.74c5.52 0 10-4.48 10-10v-18.63H62.92z"
+          />
+        </g>
+        <g>
+          <motion.path
+          variants={animPath}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+            className="prefix__st14"
+            d="M424.99 290.32H274.1c-2.21 0-4-1.79-4-4v-92.98c0-2.21 1.79-4 4-4H425c2.21 0 4 1.79 4 4v92.98c-.01 2.21-1.8 4-4.01 4z"
+          />
+          <motion.path
+          variants={animPath}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+            className="prefix__st13"
+            d="M426.44 288.87h-150.9c-2.21 0-4-1.79-4-4v-92.98c0-2.21 1.79-4 4-4h150.9c2.21 0 4 1.79 4 4v92.98c0 2.21-1.79 4-4 4z"
+          />
+          <motion.path
+          variants={animPath}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+            transform="rotate(90 350.992 238.382)"
+            fill="#dfdbfc"
+            d="M306.5 164.93h88.98v146.9H306.5z"
+          />
+          <motion.path
+          variants={animPath}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+            opacity={0.31}
+            fill="#a797fb"
+            d="M424.44 247.38l-30.49-30.49-47.11 47.1-31.99-31.98-37.31 37.31v13.55h146.9z"
+          />
+          <circle
+            transform="rotate(-80.822 346.821 224.789)"
+            className="prefix__st17"
+            cx={346.84}
+            cy={224.79}
+            r={12.75}
+          />
+        </g>
+        <g>
+          <motion.path
+          variants={animPath}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+            className="prefix__st14"
+            d="M470.66 113.13H355.89c-2.21 0-4 1.79-4 2.43v71.61c0 3.78 1.79 5.57 4 5.57h114.76v-79.61z"
+          />
+          <motion.path
+          variants={animPath}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+            className="prefix__st18"
+            d="M473.08 190.33H358.31c-2.21 0-4-1.79-4-4v-71.61c0-2.21 1.79-4 4-4h114.77c2.21 0 4 1.79 4 4v71.61c0 2.21-1.8 4-4 4z"
+          />
+          <motion.path
+          variants={animPath}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+            className="prefix__st5"
+            d="M477.08 136.22c0-3.3-6.42-2.67-6.42-4.92s12.18.47 13.49 1.28c1.31.82.53 4.35.53 4.35l-7.6-.71z"
+          />
+          <motion.path
+          variants={animPath}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+            className="prefix__st6"
+            d="M468.83 182.84h-73.58a1.83 1.83 0 010-3.66h73.58a1.83 1.83 0 010 3.66z"
+          />
+          <motion.path
+          variants={animPath}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+            className="prefix__st19"
+            d="M395.25 182.84h-32.69a1.83 1.83 0 010-3.66h32.69a1.83 1.83 0 010 3.66z"
+          />
+          <circle className="prefix__st17" cx={395.25} cy={181.01} r={3.9} />
+          <g>
+            <circle className="prefix__st17" cx={415.69} cy={147.6} r={23.94} />
+            <motion.path
+          variants={animPath}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+              className="prefix__st19"
+              d="M427.34 147.6l-9.09 5.25-9.08 5.24v-20.98l9.08 5.24z"
+            />
+          </g>
+        </g>
+        <g>
+          <motion.path
+          variants={animPath}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+            className="prefix__st17"
+            d="M252.98 326.39H100.1V131.62h122.54l30.34 30.34v164.43z"
+          />
+          <motion.path
+          variants={animPath}
+          initial="initial"
+          animate="animate"
+          exit="exit" className="prefix__st20" d="M222.64 131.62v30.35h30.34z" />
+          <motion.path
+          variants={animPath}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+            className="prefix__st21"
+            d="M144.13 155.93h-9.7v29.44h-8.63v-29.44h-9.7v-8.3h28.04v8.3z"
+          />
+          <motion.path
+          variants={animPath}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+            className="prefix__st20"
+            d="M144.26 195.85H116.1v-3.62h28.16v3.62zm0 44.11H116.1v3.62h28.16v-3.62zm0 47.73H116.1v3.62h28.16v-3.62zm61.45 19.09H116.1v3.62h89.61v-3.62zm-28.12-116.36h-3.62v3.62h3.62v-3.62zm-40.48 106.81H116.1v3.61h21.01v-3.61zm3.61 3.62h34.99v-3.61h-34.99v3.61zm38.6-3.62v3.61h57.66v-3.61h-57.66zm-63.22-44.11h38.65v-3.62H116.1v3.62zm42.27 0h31.22v-3.62h-31.22v3.62zm34.83-3.61v3.62h43.78v-3.62H193.2zm-77.1 9.54v3.61h56.07v-3.59l-56.07-.02zm59.68.03v3.59h61.19v-3.61l-61.19.02zm-59.68-38.21v3.62h15.33v-3.62H116.1zm18.94 0v3.62h27.76v-3.62h-27.76zm17.87-9.55v3.62h35.63v-3.62h-35.63zm-36.81 0v3.62h33.19v-3.62H116.1zm76.05 0v3.62h44.83v-3.62h-44.83zm-76.05-9.54v3.62h57.88v-3.62H116.1zm96.49 0v3.62h24.39v-3.62h-24.39zm-35 0v3.62h31.38v-3.62h-31.38zm-40.61 66.82H116.1v3.62h20.88v-3.62zm3.61 0v3.62h68.73v-3.62h-68.73z"
+          />
+        </g>
+        <motion.path
+          variants={animPath}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+          className="prefix__st14"
+          d="M210.82 99.53c0 9.05 7.33 16.38 16.38 16.38h50.79c7.79 0 14.11-6.31 14.11-14.1 0-3.78-1.49-7.2-3.91-9.73h-75.56a16.205 16.205 0 00-1.81 7.45z"
+        />
+        <motion.path
+          variants={animPath}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+          className="prefix__st21"
+          d="M279.63 86.18c-.1-13.29-10.9-24.03-24.21-24.03-11.84 0-21.7 8.51-23.79 19.74-.94-.17-1.91-.27-2.9-.27-9.05 0-16.38 7.33-16.38 16.38 0 9.05 7.33 16.38 16.38 16.38h50.79c7.79 0 14.11-6.31 14.11-14.1-.01-7.75-6.27-14.03-14-14.1z"
+        />
+        <g>
+          <circle className="prefix__st14" cx={393.72} cy={328.84} r={26.83} />
+          <circle className="prefix__st19" cx={395.84} cy={326.72} r={26.83} />
+          <motion.path
+          variants={animPath}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+            className="prefix__st1"
+            d="M400.41 339l-4.62 2.99-4.62-2.98c-11.54-7.46-11.54-12.79-11.54-14.79a8.5 8.5 0 018.5-8.5c3.36 0 6.27 1.96 7.65 4.79a8.507 8.507 0 017.65-4.79 8.5 8.5 0 018.5 8.5c.01 2 .01 7.32-11.52 14.78z"
+          />
+        </g>
+        <g>
+          <motion.path
+          variants={animPath}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+            className="prefix__st14"
+            d="M303.77 123.39c-18.54 0-33.57 11.59-33.57 25.88 0 7.39 4.02 14.05 10.46 18.76l-3.42 10.33 12.28-5.66c4.32 1.56 9.15 2.44 14.24 2.44 18.54 0 33.57-11.59 33.57-25.88s-15.03-25.87-33.56-25.87z"
+          />
+          <motion.path
+          variants={animPath}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+            className="prefix__st20"
+            d="M305.11 122.05c-18.54 0-33.57 11.59-33.57 25.88 0 7.39 4.02 14.05 10.46 18.76l-3.42 10.33 12.28-5.66c4.32 1.56 9.15 2.44 14.24 2.44 18.54 0 33.57-11.59 33.57-25.88s-15.02-25.87-33.56-25.87z"
+          />
+          <motion.path
+          variants={animPath}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+            className="prefix__st17"
+            d="M305.11 142.43c2.94 0 5.33 2.39 5.33 5.33s-2.39 5.33-5.33 5.33-5.33-2.39-5.33-5.33 2.38-5.33 5.33-5.33zm-16.82 0c-2.94 0-5.33 2.39-5.33 5.33s2.39 5.33 5.33 5.33 5.33-2.39 5.33-5.33-2.39-5.33-5.33-5.33zm28.31 5.33c0 2.94 2.39 5.33 5.33 5.33s5.33-2.39 5.33-5.33-2.39-5.33-5.33-5.33-5.33 2.39-5.33 5.33z"
+          />
+        </g>
+        <motion.path
+          variants={animPath}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+          className="prefix__st5"
+          d="M466.38 195.35l-4.72-5.03s-7.92-4.14-8.99-3.23c-1.07.91 1.07 3.23 1.07 3.23h-11.43l19.35 10.98 4.72-5.95z"
+        />
+        <motion.path
+          variants={animPath}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+          className="prefix__st10"
+          d="M532.32 180.54l-8.42 15.85-20.6 15.08-36.26-17.59-9.13 12.55s40.3 26.34 46.41 25.94c6.11-.4 16.85-8.57 16.85-8.57l1.07 68.95 18.35-1.21-2.5-83.13s7.21-10.55 7.13-14.69c-.07-4.14-12.9-13.18-12.9-13.18z"
+        />
+        <g>
+          <motion.path
+          variants={animPath}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+            className="prefix__st14"
+            d="M62.92 125.17v64.54c13.2-4.77 22.64-17.42 22.64-32.27 0-14.85-9.44-27.49-22.64-32.27z"
+          />
+          <circle
+            transform="rotate(-23.001 53.095 152.283)"
+            className="prefix__st18"
+            cx={53.08}
+            cy={152.28}
+            r={34.31}
+          />
+          <motion.path
+          variants={animPath}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+            className="prefix__st17"
+            d="M53.08 132.2l5.9 11.96 13.19 1.91-9.54 9.31 2.25 13.14-11.8-6.21-11.8 6.21 2.26-13.14-9.55-9.31 13.19-1.91z"
+          />
+        </g>
+        <g>
+          <motion.path
+          variants={animPath}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+            className="prefix__st13"
+            d="M478.67 72.31c0-.63.51-1.15 1.15-1.15h10.32c.64 0 1.15.51 1.15 1.15v9.17h9.17c.63 0 1.15.51 1.15 1.15v9.17h9.17c.64 0 1.15.51 1.15 1.15v10.32a1.15 1.15 0 01-2.3 0V94.1h-9.17c-.64 0-1.15-.51-1.15-1.15v-9.17h-9.17c-.63 0-1.15-.51-1.15-1.15v-9.17h-9.17c-.64 0-1.15-.51-1.15-1.15zM103.81 71.37c1.99 0 3.86.77 5.26 2.18.45.45.45 1.18 0 1.62-.45.45-1.18.45-1.62 0-1.94-1.94-5.33-1.95-7.28 0-2.81 2.81-7.72 2.81-10.53 0-2.01-2.01-5.27-2-7.28 0-2.81 2.81-7.71 2.81-10.53 0a1.14 1.14 0 010-1.62 1.14 1.14 0 011.62 0c1.94 1.94 5.34 1.94 7.28 0 2.9-2.9 7.62-2.9 10.53 0 1.94 1.94 5.34 1.94 7.28 0a7.439 7.439 0 015.27-2.18zm-5.27-9.48c-1.94 1.94-5.34 1.94-7.28 0-2.9-2.9-7.63-2.9-10.53 0-1.94 1.94-5.34 1.94-7.28 0a1.14 1.14 0 00-1.62 0 1.14 1.14 0 000 1.62c2.81 2.81 7.72 2.81 10.53 0a5.148 5.148 0 017.28 0c2.81 2.81 7.72 2.81 10.53 0 1.94-1.95 5.33-1.94 7.28 0 .45.45 1.18.45 1.62 0 .45-.45.45-1.18 0-1.62a7.374 7.374 0 00-5.26-2.18c-1.99 0-3.86.78-5.27 2.18zM323.93 58.71c.3 0 .6.12.81.34l8.64 8.64c.45.45.45 1.18 0 1.62l-8.64 8.64c-.45.45-1.18.45-1.62 0l-8.64-8.64a1.14 1.14 0 010-1.62l8.64-8.64c.21-.21.51-.34.81-.34zm7.01 9.79l-7.01-7.01-7.01 7.01 7.01 7.01 7.01-7.01zM142.82 377.69h12.21c.63 0 1.15.51 1.15 1.15v12.21c0 .64-.51 1.15-1.15 1.15h-12.21c-.63 0-1.15-.51-1.15-1.15v-12.21c0-.64.51-1.15 1.15-1.15zm11.06 2.3h-9.92v9.92h9.92v-9.92zM183.79 61.24c4 0 7.25 3.25 7.25 7.25s-3.25 7.26-7.25 7.26-7.26-3.25-7.26-7.26c.01-3.99 3.26-7.25 7.26-7.25zm0 12.22a4.96 4.96 0 10.002-9.922 4.96 4.96 0 00-.002 9.922zM42.73 93.82c4 0 7.26 3.25 7.26 7.26a7.255 7.255 0 01-14.51 0c-.01-4.01 3.25-7.26 7.25-7.26zm0 12.21c2.73 0 4.96-2.22 4.96-4.96 0-2.73-2.22-4.96-4.96-4.96a4.96 4.96 0 100 9.92zM33.68 286.02h12.96c.41 0 .79.22.99.57.21.36.21.79 0 1.15l-6.48 11.22c-.41.71-1.58.71-1.99 0l-6.48-11.22c-.21-.36-.21-.79 0-1.15.21-.35.59-.57 1-.57zm10.97 2.3h-8.98l4.49 7.77 4.49-7.77zM548.56 349.02l3.18 3.18 3.18-3.18a1.14 1.14 0 011.62 0c.22.22.34.52.34.81 0 .29-.11.59-.34.81l-3.18 3.18 3.18 3.18c.22.22.34.52.34.81 0 .29-.11.59-.34.81-.45.45-1.18.45-1.62 0l-3.18-3.18-3.18 3.18c-.45.45-1.18.45-1.62 0a1.14 1.14 0 010-1.62l3.18-3.18-3.18-3.18a1.14 1.14 0 010-1.62 1.14 1.14 0 011.62 0zm-1.62-16.29a1.14 1.14 0 000 1.62l3.18 3.18-3.18 3.18a1.14 1.14 0 000 1.62c.45.45 1.18.45 1.62 0l3.18-3.18 3.18 3.18c.45.45 1.18.45 1.62 0 .22-.22.34-.52.34-.81 0-.29-.11-.59-.34-.81l-3.18-3.18 3.18-3.18c.22-.22.34-.52.34-.81 0-.29-.11-.59-.34-.81a1.14 1.14 0 00-1.62 0l-3.18 3.18-3.18-3.18a1.14 1.14 0 00-1.62 0zm4.81-13.12l-3.18-3.18a1.14 1.14 0 00-1.62 0 1.14 1.14 0 000 1.62l3.18 3.18-3.18 3.18a1.14 1.14 0 000 1.62c.45.45 1.18.45 1.62 0l3.18-3.18 3.18 3.18c.45.45 1.18.45 1.62 0 .22-.22.34-.52.34-.81 0-.29-.11-.59-.34-.81l-3.18-3.18 3.18-3.18c.22-.22.34-.52.34-.81 0-.29-.11-.59-.34-.81a1.14 1.14 0 00-1.62 0l-3.18 3.18zM364.25 390.09h4.37v4.37a1.15 1.15 0 002.3 0v-4.37h4.37a1.15 1.15 0 000-2.3h-4.37v-4.37a1.15 1.15 0 00-2.3 0v4.37h-4.37a1.15 1.15 0 000 2.3z"
+          />
+        </g>
+        <g>
+          <motion.path
+          variants={animPath}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+            className="prefix__st4"
+            d="M598.24 408.91H18.15c-.66 0-1.2-.54-1.2-1.2 0-.66.54-1.2 1.2-1.2h580.1c.66 0 1.2.54 1.2 1.2 0 .66-.54 1.2-1.21 1.2z"
+          />
+        </g>
+        <g>
+          <motion.path
+          variants={animPath}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+            className="prefix__st14"
+            d="M263.82 121.01v-17.88h-19.46v17.88h-6.62l16.35 16.35 16.35-16.35z"
+          />
+          <motion.path
+          variants={animPath}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+            className="prefix__st20"
+            d="M264.67 120.16v-17.88h-19.46v17.88h-6.62l16.35 16.35 16.35-16.35z"
+          />
+        </g>
       </g>
-    </g>
-    <g>
-      <linearGradient
-        id="prefix__SVGID_11_"
-        gradientUnits="userSpaceOnUse"
-        x1={104.856}
-        y1={444.264}
-        x2={293.762}
-        y2={444.264}
-      >
-        <stop offset={0} stopColor="#cb236d" />
-        <stop offset={1} stopColor="#4c246d" />
-      </linearGradient>
-      <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-        d="M123.7 392.2c24.1-12.7 82.5-21.2 126.9 4.2 44.4 25.4 43.2 112.1 43.2 112.1s-31.9-35.3-67.8-26.8-106.5 33.9-115-7.4c-8.5-41.2-11.3-69.4 12.7-82.1z"
-        fill="url(#prefix__SVGID_11_)"
-      />
-      <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-        className="prefix__st2"
-        d="M150.8 489.4c-17.6 0-28.6-5.1-33.3-15.3-.2-.5 0-1.1.5-1.3.5-.2 1.1 0 1.3.5 5.7 12.3 21.4 16.5 48.1 12.9.5-.1 1.1.3 1.1.9.1.5-.3 1.1-.9 1.1-6.1.8-11.7 1.2-16.8 1.2zM187.3 484.6c-.5 0-.9-.3-1-.8-.1-.5.2-1.1.8-1.2 5.9-1.3 11.7-2.7 16.1-3.7.5-.1 1.1.2 1.2.7.1.5-.2 1.1-.7 1.2-4.4 1.1-10.2 2.5-16.1 3.8h-.3zM111.1 435.6c-.5 0-1-.4-1-.9-1.3-20.4 4.2-32.5 18-39.3 6.4-3.2 14.8-5.8 24.4-7.8.5-.1 1.1.2 1.2.8.1.5-.2 1.1-.8 1.2-9.4 1.9-17.7 4.5-23.9 7.6-13.1 6.5-18.1 17.7-16.8 37.4 0 .5-.4 1-1.1 1 .1 0 .1 0 0 0zM249.4 423.3c-.1 0-.2 0-.3-.1-5-1.7-10.1-3.2-15.2-4.5-.5-.1-.9-.7-.7-1.2.1-.5.7-.9 1.2-.7 5.1 1.3 10.3 2.8 15.4 4.5.5.2.8.7.6 1.3-.2.4-.6.7-1 .7zM223.8 416.6h-.2c-15.7-2.9-31.6-3.6-47.2-2-.6 0-1-.3-1.1-.9-.1-.5.3-1 .9-1.1 15.8-1.6 31.8-.9 47.8 2 .5.1.9.6.8 1.2-.1.4-.5.8-1 .8zM126.2 428.6c-.4 0-.7-.2-.9-.5-.3-.5-.1-1.1.4-1.3.2-.1 16.1-8.2 37.8-12.5.5-.1 1.1.2 1.2.8.1.5-.2 1.1-.8 1.2-21.5 4.3-37.2 12.3-37.3 12.4-.1-.2-.3-.1-.4-.1zM232.5 438.4c-.1 0-.2 0-.3-.1-6.6-2.3-14-3.9-22-4.6-.5 0-1-.5-.9-1.1.1-.5.5-1 1.1-.9 8.1.7 15.7 2.3 22.5 4.7.5.2.8.8.6 1.3-.2.4-.6.7-1 .7zM131.8 446.3c-.4 0-.8-.2-.9-.6-.2-.5 0-1.1.6-1.3.3-.1 30.7-12.1 63.5-13.1.5 0 1 .4 1 1s-.4 1-1 1c-32.4.9-62.5 12.8-62.8 12.9-.1.1-.3.1-.4.1zM244.9 460.8c-.1 0-.3 0-.4-.1-5.1-2.2-10.8-3.9-17-5.1-.5-.1-.9-.6-.8-1.2.1-.5.6-.9 1.2-.8 6.3 1.2 12.2 2.9 17.4 5.2.5.2.7.8.5 1.3-.1.5-.5.7-.9.7zM170.2 457.3c-.5 0-.9-.3-1-.8-.1-.5.3-1.1.8-1.2 17.1-3.2 32.7-4.2 46.4-3.1.6 0 1 .5.9 1.1 0 .5-.5 1-1.1.9-13.5-1.1-29 0-45.9 3.1h-.1zM137.8 465.6c-.4 0-.8-.3-.9-.7-.2-.5.1-1.1.6-1.3.1 0 9-3.1 22-6.1.5-.1 1.1.2 1.2.8.1.5-.2 1.1-.8 1.2-12.9 3-21.7 6-21.8 6.1h-.3z"
-      />
-    </g>
-    <g>
-      <linearGradient
-        id="prefix__SVGID_12_"
-        gradientUnits="userSpaceOnUse"
-        x1={723.919}
-        y1={409.984}
-        x2={714.919}
-        y2={862.96}
-      >
-        <stop offset={0} stopColor="#2b3582" />
-        <stop offset={1} stopColor="#150e42" />
-      </linearGradient>
-      <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-        d="M605.3 406.8c-.6 26.1-5.6 109.8 7.1 127.7 18 25.3 169.3 13.3 206.3 3.3s19-104 15-131-78.8-28-133.9-27c-55.1 1-94 4-94.5 27z"
-        fill="url(#prefix__SVGID_12_)"
-      />
-      <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-        className="prefix__st2"
-        d="M828.5 449.1c-.5 0-.9-.4-1-.9-1.3-11.3-2.9-21.7-4.1-29.2l-.5-3.1c-.1-.5.3-1.1.8-1.1.5-.1 1.1.3 1.1.8l.5 3.1c1.2 7.6 2.8 18 4.1 29.3.1.5-.3 1-.9 1.1.1 0 0 0 0 0zM782.5 536.9c-.5 0-.9-.4-1-.9-.1-.5.3-1.1.9-1.1 11.7-1.6 21.1-3.3 27.1-4.9 14.9-4 21.6-24.6 19.7-61.2 0-.6.4-1 .9-1s1 .4 1 .9c1.9 37.7-5.2 59-21.2 63.3-6.1 1.7-15.6 3.4-27.4 4.9.1 0 0 0 0 0zM616.1 501.8c-.5 0-.9-.4-1-.9-.7-7.7-1.1-16.9-1.2-27.5 0-.6.4-1 1-1 .5 0 1 .4 1 1 .1 10.6.5 19.8 1.2 27.4.1.4-.3.9-1 1 .1 0 .1 0 0 0zM615.4 439c-.6 0-1-.5-1-1 .2-5 .3-9.7.5-13.9.2-4.7.3-8.7.4-11.9.4-18.2 25-23 61.9-24.7.5 0 1 .4 1 1s-.4 1-1 1c-30.9 1.4-59.6 5.2-60 22.8-.1 3.1-.2 7.2-.4 11.9-.1 4.2-.3 8.9-.5 13.9.1.5-.4.9-.9.9zM697.5 494.2c-1.1 0-2-.9-2-1.9l-1.4-52.9c0-1.3.6-2.6 1.8-3.4 1.1-.7 2.6-.8 3.8-.3l52.3 24.5c1.3.6 2.2 1.9 2.2 3.4s-.8 2.8-2.1 3.5L706 491.7c-1 .5-2.2.2-2.7-.8s-.2-2.2.8-2.7l46-24.5-51.9-24.3 1.4 52.8c-.1 1-.9 2-2.1 2 .1 0 0 0 0 0z"
-      />
-    </g>
-    <g>
-      <linearGradient
-        id="prefix__SVGID_13_"
-        gradientUnits="userSpaceOnUse"
-        x1={3903.887}
-        y1={-1950.705}
-        x2={3755.888}
-        y2={-2040.4}
-        gradientTransform="matrix(.966 .2584 -.408 .8335 -3970.014 946.906)"
-      >
-        <stop offset={0} stopColor="#53d8ff" />
-        <stop offset={1} stopColor="#3840f7" />
-      </linearGradient>
-      <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-        fill="url(#prefix__SVGID_13_)"
-        d="M530.8 236.9l-13.7 30.5-14.8-22.5z"
-      />
-      <linearGradient
-        id="prefix__SVGID_14_"
-        gradientUnits="userSpaceOnUse"
-        x1={3821.745}
-        y1={-1983.867}
-        x2={3652.385}
-        y2={-2162.945}
-        gradientTransform="matrix(.966 .2584 -.408 .8335 -3970.014 946.906)"
-      >
-        <stop offset={0} stopColor="#53d8ff" />
-        <stop offset={1} stopColor="#3840f7" />
-      </linearGradient>
-      <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-        d="M401.6 157.5l49.8 109.4c1 2.1 2.7 3.7 4.9 4.5 2.2.8 4.6.6 6.6-.4l108-54.1c1.2-.6 2-1.9 1.9-3.3-.1-1.4-1-2.6-2.4-3l-168.8-53.1z"
-        fill="url(#prefix__SVGID_14_)"
-      />
-      <linearGradient
-        id="prefix__SVGID_15_"
-        gradientUnits="userSpaceOnUse"
-        x1={3893.079}
-        y1={-1952.196}
-        x2={3754.828}
-        y2={-2035.984}
-        gradientTransform="matrix(.966 .2584 -.408 .8335 -3970.014 946.906)"
-      >
-        <stop offset={0} stopColor="#53d8ff" />
-        <stop offset={1} stopColor="#3840f7" />
-      </linearGradient>
-      <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-        fill="url(#prefix__SVGID_15_)"
-        d="M530.8 236.9l-129.2-79.4 111.8 88.2-3.4 8.6z"
-      />
-      <linearGradient
-        id="prefix__SVGID_16_"
-        gradientUnits="userSpaceOnUse"
-        x1={-6553.322}
-        y1={-1731.42}
-        x2={-6490.147}
-        y2={-1749.718}
-        gradientTransform="scale(-1 1) rotate(-14.976 4071.914 -23606.686)"
-      >
-        <stop offset={0} stopColor="#53d8ff" />
-        <stop offset={1} stopColor="#3840f7" />
-      </linearGradient>
-      <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-        fill="url(#prefix__SVGID_16_)"
-        d="M503.1 250.8l14 16.6-3.7-21.7z"
-      />
-    </g>
-    <g>
-      <linearGradient
-        id="prefix__SVGID_17_"
-        gradientUnits="userSpaceOnUse"
-        x1={-3729.721}
-        y1={-1318.479}
-        x2={-3789.168}
-        y2={-1354.507}
-        gradientTransform="matrix(-.9966 -.0821 .1033 .9222 -2559.95 1199.305)"
-      >
-        <stop offset={0} stopColor="#53d8ff" />
-        <stop offset={1} stopColor="#3840f7" />
-      </linearGradient>
-      <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-        fill="url(#prefix__SVGID_17_)"
-        d="M1058.5 263.4l1.1 13.4 8.6-6.5z"
-      />
-      <linearGradient
-        id="prefix__SVGID_18_"
-        gradientUnits="userSpaceOnUse"
-        x1={-3762.715}
-        y1={-1331.8}
-        x2={-3830.743}
-        y2={-1403.731}
-        gradientTransform="matrix(-.9966 -.0821 .1033 .9222 -2559.95 1199.305)"
-      >
-        <stop offset={0} stopColor="#53d8ff" />
-        <stop offset={1} stopColor="#3840f7" />
-      </linearGradient>
-      <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-        d="M1118.1 250.9l-33.6 34.6c-.6.7-1.5 1-2.5 1-.9 0-1.8-.4-2.4-1.1l-33.5-35.1c-.4-.4-.5-1-.3-1.5s.7-.8 1.3-.8l71 2.9z"
-        fill="url(#prefix__SVGID_18_)"
-      />
-      <linearGradient
-        id="prefix__SVGID_19_"
-        gradientUnits="userSpaceOnUse"
-        x1={-3734.061}
-        y1={-1319.078}
-        x2={-3789.593}
-        y2={-1352.734}
-        gradientTransform="matrix(-.9966 -.0821 .1033 .9222 -2559.95 1199.305)"
-      >
-        <stop offset={0} stopColor="#53d8ff" />
-        <stop offset={1} stopColor="#3840f7" />
-      </linearGradient>
-      <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-        fill="url(#prefix__SVGID_19_)"
-        d="M1058.5 263.4l59.6-12.5-54.2 18.2.1 3.7z"
-      />
-      <linearGradient
-        id="prefix__SVGID_20_"
-        gradientUnits="userSpaceOnUse"
-        x1={1150.323}
-        y1={-1130.774}
-        x2={1175.7}
-        y2={-1138.123}
-        gradientTransform="rotate(4.726 -15996.368 -1636.412)"
-      >
-        <stop offset={0} stopColor="#53d8ff" />
-        <stop offset={1} stopColor="#3840f7" />
-      </linearGradient>
-      <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-        fill="url(#prefix__SVGID_20_)"
-        d="M1067.1 272.5l-7.5 4.3 4.3-7.7z"
-      />
-    </g>
-    <g>
-      <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-        className="prefix__st21"
-        d="M495.1 544.8l3 .2c.7 0 1.2.6 1.1 1.2 0 .7-.6 1.2-1.2 1.1l-3-.1c-.7 0-1.2-.6-1.1-1.2-.1-.7.5-1.2 1.2-1.2zM505.1 545.5l3 .3c.6.1 1.1.6 1 1.3-.1.6-.6 1.1-1.3 1l-3-.3c-.6-.1-1.1-.6-1.1-1.3.2-.6.7-1.1 1.4-1zM515.1 546.7l3 .5c.6.1 1 .7 1 1.3-.1.6-.7 1.1-1.3 1l-2.9-.5c-.6-.1-1.1-.7-1-1.3 0-.7.5-1.1 1.2-1zM525 548.5l3 .7c.6.1 1 .7.8 1.3-.1.6-.7 1-1.3.8l-2.9-.7c-.6-.1-1-.7-.9-1.4.1-.5.7-.9 1.3-.7zM534.8 551l2.9.9c.6.2.9.8.7 1.4-.2.6-.8.9-1.4.7l-2.8-.9c-.6-.2-.9-.8-.7-1.4s.7-.9 1.3-.7zM544.3 554.4l2.8 1.2c.6.2.8.9.6 1.4-.2.6-.9.8-1.4.6l-2.7-1.2c-.6-.2-.8-.9-.6-1.4.1-.6.7-.8 1.3-.6zM553.4 558.8l2.6 1.5c.5.3.7 1 .4 1.5-.3.5-1 .7-1.5.4l-2.6-1.5c-.5-.3-.7-1-.4-1.5.3-.5 1-.7 1.5-.4zM561.9 564.3l2.4 1.9c.5.4.5 1 .2 1.5-.4.5-1 .5-1.5.2l-2.3-1.8c-.5-.4-.5-1-.2-1.5.3-.6.9-.6 1.4-.3zM569.6 570.9l2.1 2.2c.4.4.4 1.1 0 1.5-.4.4-1.1.4-1.5 0l-2.1-2.1c-.4-.4-.4-1.1 0-1.5.4-.5 1.1-.5 1.5-.1zM576.3 578.5l1.8 2.5c.3.5.2 1.1-.2 1.4-.5.3-1.1.2-1.4-.2l-1.7-2.4c-.3-.5-.2-1.1.2-1.4.3-.4.9-.3 1.3.1zM581.8 587l1.4 2.7c.3.5.1 1.1-.4 1.4-.5.3-1.1.1-1.4-.4l-1.4-2.6c-.3-.5-.1-1.1.4-1.4.6-.4 1.2-.2 1.4.3zM586.2 596.1l.9 2.9c.2.5-.1 1.1-.6 1.2-.5.2-1.1-.1-1.2-.6v-.1l-.9-2.8v-.1c-.2-.5.1-1.1.6-1.2.5-.1 1.1.2 1.2.7zM588.2 606.3l-.2 3.1c0 .5-.5.9-1 .9s-.9-.5-.9-1v-.1l.2-2.9v-.1c0-.5.5-.9 1-.9s.9.4.9 1zM586.1 616.4l-1.4 2.8c-.2.5-.8.6-1.3.4-.5-.2-.6-.8-.4-1.3v-.1l1.3-2.6.1-.1c.2-.5.8-.7 1.3-.4.5.2.6.8.4 1.3zM580.2 624.8l-2.3 2c-.4.3-1 .3-1.3-.1-.3-.4-.3-1 .1-1.3l.1-.1 2.2-1.9.1-.1c.4-.3 1-.3 1.3.1.2.5.2 1.1-.2 1.4zM571.8 630.7l-2.9 1.2c-.5.2-1 0-1.2-.5-.2-.5 0-1 .5-1.2h.1l2.7-1.1h.1c.5-.2 1 0 1.2.5.2.4 0 .9-.5 1.1zM561.9 633.4l-3.1.1c-.5 0-.9-.4-.9-.9s.4-.9.9-.9h.1l2.9-.1h.1c.5 0 .9.4.9.9s-.4.9-.9.9zM551.7 632.1c-1-.4-1.9-.8-2.8-1.4-.4-.2-.6-.8-.3-1.2.2-.4.8-.6 1.2-.3.8.5 1.7.9 2.6 1.2.5.2.7.7.5 1.1-.3.5-.8.7-1.2.6zM543.4 625.8c-.6-.8-1.2-1.7-1.7-2.6-.2-.4-.1-.9.3-1.2.4-.2.9-.1 1.2.3.5.8 1 1.7 1.5 2.4.3.4.2.9-.2 1.2-.3.4-.8.3-1.1-.1zM539.3 616.4l-.5-3c-.1-.5.2-.9.7-1 .5-.1.9.2 1 .7v.1l.5 2.9v.1c.1.5-.2.9-.7 1-.5-.1-.9-.4-1-.8zM538.6 606.2c0-.5.1-1 .1-1.5l.2-1.5c.1-.4.5-.8.9-.7.4.1.8.5.7.9v.1l-.2 1.4c-.1.5-.1 1-.1 1.4 0 .5-.4.8-.8.8s-.8-.4-.8-.9zM541.1 596.3l1.3-2.8c.2-.4.7-.6 1.1-.4.4.2.6.7.4 1.1l-1.2 2.7v.1c-.2.4-.7.6-1.1.4-.5-.2-.7-.7-.5-1.1zM546.1 587.5l1.8-2.4c.3-.3.8-.4 1.1-.1.3.3.4.8.1 1.1l-1.8 2.3c-.3.3-.8.4-1.1.2-.3-.3-.3-.8-.1-1.1zM552.8 579.9l2.3-2c.3-.3.8-.2 1.1.1.3.3.2.8-.1 1.1l-2.2 2c-.3.3-.8.3-1.1-.1-.3-.4-.3-.9 0-1.1zM560.9 573.7l2.6-1.5c.4-.2.8-.1 1 .3.2.4.1.8-.3 1l-2.6 1.5c-.4.2-.8.1-1-.3-.2-.3-.1-.8.3-1zM570 569.3l2.9-1c.4-.1.8.1.9.5.1.4-.1.8-.5.9l-2.8.9c-.4.1-.8-.1-.9-.5-.2-.3 0-.7.4-.8zM579.8 566.8l3-.4c.4 0 .7.2.8.6 0 .4-.2.7-.6.8l-2.9.4c-.4.1-.7-.2-.8-.6-.2-.4.1-.8.5-.8zM589.9 566.2l3 .2c.4 0 .7.3.7.7 0 .4-.3.7-.7.7l-3-.1c-.4 0-.7-.3-.7-.7 0-.5.3-.8.7-.8zM599.9 567.2l3 .6c.4.1.6.4.5.8-.1.4-.4.6-.8.5l-2.9-.6c-.4-.1-.6-.4-.5-.8 0-.3.3-.5.7-.5zM609.7 569.7l2.9 1c.3.1.5.5.4.8-.1.3-.5.5-.8.4l-2.8-.9c-.3-.1-.5-.5-.4-.8s.4-.7.7-.5zM619.1 573.2l2.8 1.2c.3.1.5.5.3.8-.1.3-.5.5-.8.3l-2.7-1.2c-.3-.1-.5-.5-.3-.8 0-.3.4-.5.7-.3zM628.2 577.6l2.6 1.5c.3.2.4.5.2.8-.2.3-.5.4-.8.2l-2.6-1.4c-.3-.2-.4-.5-.2-.8.1-.4.5-.5.8-.3zM636.8 582.6l2.6 1.5c.3.2.4.5.2.8-.2.3-.5.4-.8.2l-2.6-1.5c-.3-.2-.4-.5-.2-.8.1-.2.5-.3.8-.2zM645.6 587.4l2.7 1.3c.3.1.4.5.3.8-.1.3-.5.4-.8.3l-2.7-1.3c-.3-.1-.4-.5-.3-.8.1-.3.5-.4.8-.3zM654.6 591.5l2.8 1.1c.3.1.4.4.3.7-.1.3-.4.4-.7.3l-2.8-1.1c-.3-.1-.4-.4-.3-.7.1-.3.4-.4.7-.3zM664 594.8l2.9.8c.3.1.5.4.4.7-.1.3-.4.5-.7.4l-2.9-.8c-.3-.1-.5-.4-.4-.7.1-.3.4-.5.7-.4zM673.7 597.1l2.9.5c.3 0 .5.3.4.6 0 .3-.3.5-.6.4l-3-.5c-.3 0-.5-.3-.4-.6.1-.3.4-.5.7-.4zM683.6 598.2l3 .1c.3 0 .5.2.5.5s-.2.5-.5.5l-3-.1c-.3 0-.5-.2-.5-.5-.1-.3.1-.5.5-.5zM693.5 597.9l3-.4c.3 0 .5.2.5.4 0 .3-.2.5-.4.5l-3 .4c-.3 0-.5-.2-.6-.4 0-.2.2-.4.5-.5zM703.2 596.1l2.8-.9c.3-.1.5.1.6.3.1.3-.1.5-.3.6l-2.9.9c-.3.1-.5-.1-.6-.3 0-.2.1-.5.4-.6zM712.5 592.7l2.6-1.4c.2-.1.5 0 .6.2.1.2 0 .5-.2.6l-2.7 1.4c-.2.1-.5 0-.6-.2 0-.2 0-.5.3-.6zM721 587.6l2.3-1.8c.2-.2.5-.1.6.1.1.2.1.5-.1.6l-2.4 1.9c-.2.2-.5.1-.6-.1-.1-.3 0-.6.2-.7zM728.3 580.9l1.9-2.3c.1-.2.4-.2.6-.1.2.1.2.4.1.6l-1.9 2.3c-.1.2-.4.2-.6.1-.3-.2-.3-.4-.1-.6zM733.9 572.8l1.3-2.7c.1-.2.3-.3.5-.2.2.1.3.3.2.5l-1.3 2.7c-.1.2-.3.3-.5.2-.2-.1-.3-.3-.2-.5zM737.3 563.5l.3-2.5c0-.2.2-.4.4-.3.2 0 .4.2.3.4l-.3 2.6c0 .2-.2.4-.4.3-.2 0-.4-.2-.3-.5z"
-      />
-    </g>
-    <g>
-      <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-        className="prefix__st21"
-        d="M546.8 441.3l1.1-2.8c.1-.3.4-.4.7-.3.3.1.4.4.3.7l-1.1 2.8c-.1.3-.4.4-.7.3-.3-.2-.4-.5-.3-.7zM550.7 432l1.3-2.7c.1-.3.5-.4.8-.3.3.1.4.5.3.8l-1.3 2.7c-.1.3-.5.4-.8.3-.3-.2-.5-.5-.3-.8zM555.1 423l1.4-2.7c.2-.3.6-.4.9-.3s.4.6.3.9l-1.4 2.6c-.2.3-.6.4-.9.3-.4-.1-.5-.5-.3-.8zM559.9 414.2l1.5-2.6c.2-.3.6-.5 1-.3.3.2.5.6.3 1l-1.5 2.6c-.2.3-.6.4-1 .2-.4-.1-.5-.6-.3-.9zM565.1 405.6l1.6-2.5c.2-.4.7-.5 1.1-.2s.5.7.2 1.1l-1.7 2.5c-.2.4-.7.4-1.1.2-.2-.2-.3-.7-.1-1.1zM570.7 397.3l1.8-2.4c.3-.4.8-.5 1.2-.2.4.3.5.8.2 1.2l-1.8 2.4c-.3.4-.8.4-1.2.2-.4-.3-.4-.8-.2-1.2zM576.8 389.3l1.9-2.3c.3-.4.9-.4 1.2-.1.4.3.4.9.1 1.2l-1.9 2.3c-.3.4-.8.4-1.2.1-.4-.3-.4-.8-.1-1.2zM583.3 381.7l2-2.2c.3-.4.9-.4 1.3-.1s.4.9.1 1.3l-2 2.2c-.3.4-.9.4-1.3 0-.4-.3-.4-.9-.1-1.2zM590.3 374.4l2.2-2.1c.4-.4 1-.3 1.3 0 .4.4.3 1 0 1.3l-2.2 2c-.4.4-1 .3-1.3 0-.4-.3-.4-.8 0-1.2zM597.7 367.6l2.3-1.9c.4-.3 1-.3 1.4.1.3.4.3 1-.1 1.4l-2.3 1.9c-.4.3-1 .3-1.4-.1-.4-.4-.3-1 .1-1.4zM605.6 361.4l2.5-1.7c.5-.3 1.1-.2 1.4.2.3.5.2 1.1-.2 1.4l-2.4 1.7c-.5.3-1.1.2-1.4-.3-.4-.3-.3-1 .1-1.3zM614 355.9l2.6-1.5c.5-.3 1.1-.1 1.4.4.3.5.1 1.1-.4 1.4l-2.6 1.5c-.5.3-1.1.1-1.4-.4-.2-.5-.1-1.2.4-1.4zM622.9 351.1l2.8-1.3c.5-.2 1.2 0 1.4.5s0 1.2-.5 1.4l-2.7 1.2c-.5.2-1.2 0-1.4-.5-.3-.5-.1-1.1.4-1.3zM632.2 347.2l2.9-1c.6-.2 1.2.1 1.4.7.2.6-.1 1.2-.7 1.4l-2.8 1c-.6.2-1.2-.1-1.4-.7-.2-.7.1-1.3.6-1.4zM641.9 344.2l3-.7c.6-.1 1.2.2 1.3.8.1.6-.2 1.2-.8 1.3l-2.9.7c-.6.1-1.2-.2-1.3-.8-.3-.6.1-1.2.7-1.3zM651.8 342.2l3-.4c.6-.1 1.1.3 1.2.9.1.6-.3 1.1-.9 1.2l-2.9.4c-.6.1-1.1-.3-1.2-.9-.2-.6.2-1.1.8-1.2zM661.9 341.3l3-.1c.6 0 1.1.5 1.1 1.1 0 .6-.5 1.1-1.1 1.1l-3 .1c-.6 0-1.1-.5-1.1-1.1 0-.6.4-1.1 1.1-1.1zM672 341.3l3 .2c.6 0 1.1.6 1 1.2 0 .6-.6 1.1-1.2 1l-3-.2c-.6 0-1.1-.6-1-1.2 0-.6.5-1 1.2-1zM682 342.3l3 .5c.6.1 1 .7.9 1.3-.1.6-.7 1-1.3.9l-2.9-.5c-.6-.1-1-.7-.9-1.3 0-.6.6-1 1.2-.9zM691.9 344.2l2.9.7c.6.1 1 .8.8 1.4-.1.6-.8 1-1.4.8l-2.9-.7c-.6-.1-1-.8-.8-1.4.2-.6.8-.9 1.4-.8zM701.6 346.8l2.9.8c.6.2.9.8.8 1.4-.2.6-.8.9-1.4.8l-2.9-.8c-.6-.2-.9-.8-.8-1.4.2-.6.8-1 1.4-.8zM711.3 349.3l2.9.7c.6.1.9.7.8 1.3-.1.6-.7.9-1.3.8l-2.9-.7c-.6-.1-1-.7-.8-1.3.1-.6.7-1 1.3-.8zM721 351.5l2.9.6c.6.1 1 .7.8 1.3-.1.6-.7 1-1.3.8l-2.9-.6c-.6-.1-1-.7-.8-1.3.1-.6.7-.9 1.3-.8zM730.8 353.5l2.9.5c.6.1 1 .7.9 1.2-.1.6-.6 1-1.2.9l-3-.5c-.6-.1-1-.7-.9-1.2.1-.7.7-1.1 1.3-.9zM740.6 355.1l3 .4c.6.1 1 .6.9 1.2-.1.6-.6 1-1.2.9l-3-.4c-.6-.1-1-.6-.9-1.2.1-.6.6-1 1.2-.9zM750.5 356.3l3 .3c.6.1 1 .6.9 1.1-.1.6-.5 1-1.1.9l-3-.3c-.6-.1-1-.6-.9-1.1 0-.5.5-.9 1.1-.9zM760.4 357.1l3 .1c.5 0 1 .5.9 1 0 .5-.5.9-1 .9l-3-.1c-.5 0-1-.5-1-1 .1-.5.5-.9 1.1-.9zM770.3 357.3l3-.1c.5 0 .9.4.9.9s-.4.9-.9.9l-3 .1c-.5 0-1-.4-1-.9.1-.4.5-.9 1-.9zM780.2 356.8l3-.3c.5-.1.9.3 1 .8.1.5-.3.9-.8 1l-3 .4c-.5.1-.9-.3-1-.8 0-.6.3-1 .8-1.1zM790 355.3l2.9-.7c.4-.1.9.2 1 .6.1.4-.2.9-.6 1l-2.9.7c-.5.1-.9-.2-1-.6-.2-.4.1-.9.6-1zM799.5 352.5l2.7-1.2c.4-.2.8 0 1 .4.2.4 0 .8-.4 1-.9.5-1.8.9-2.8 1.3-.4.2-.9 0-1-.4-.1-.5.1-.9.5-1.1zM808.1 347.9c.8-.6 1.5-1.2 2.3-1.9.3-.3.7-.2 1 0 .2.3.2.7 0 .9-.7.7-1.5 1.4-2.3 2-.3.2-.7.2-1-.1-.4-.2-.3-.7 0-.9zM814.7 340.8c.5-.8 1-1.7 1.4-2.6.1-.3.5-.4.8-.3.3.1.4.5.3.8-.4.9-.9 1.9-1.4 2.7-.2.3-.6.4-.8.2-.4-.1-.5-.5-.3-.8zM817.9 331.7c.1-1 .2-2 .2-2.9 0-.3.2-.5.5-.5s.5.2.5.5c0 1 0 2-.1 3.1 0 .3-.3.5-.6.5-.3-.2-.6-.4-.5-.7z"
-      />
-    </g>
-    <linearGradient
-      id="prefix__SVGID_21_"
-      gradientUnits="userSpaceOnUse"
-      x1={903.549}
-      y1={-131.843}
-      x2={1184.178}
-      y2={-74.601}
-      gradientTransform="rotate(6.586 -3046.326 -461.856)"
-    >
-      <stop offset={0} stopColor="#b37cff" />
-      <stop offset={1} stopColor="#f895e7" />
-    </linearGradient>
-    <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-      d="M866.5 341.9c.1-27.4 30.6-63 75.3-24.4 2.7-12.7 67.2-46.7 86.5 40.2 6.9-19.9 49.7-5.3 54 29.9 17.4-6.9 52.6 39.8-.6 41.9-68 2.8-221.1-15.2-243.8-64.6-22.8-49.3 28.6-23 28.6-23z"
-      opacity={0.5}
-      fill="url(#prefix__SVGID_21_)"
-    />
-    <linearGradient
-      id="prefix__SVGID_22_"
-      gradientUnits="userSpaceOnUse"
-      x1={909.572}
-      y1={-140.73}
-      x2={1092.649}
-      y2={-103.386}
-      gradientTransform="rotate(10.603 -3095.122 -183.38)"
-    >
-      <stop offset={0} stopColor="#b37cff" />
-      <stop offset={1} stopColor="#f895e7" />
-    </linearGradient>
-    <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-      d="M851.3 603.8c1.3-17.8 21.5-29.7 48.8-2.6 2.3-8.1 46.8-24.6 55.3 32.7 5.4-12.6 30.7-2.9 31.9 20.2 11.6-3.7 35.1 18.8.3 19.8-47.1 1.5-143.2-20-155.7-53.1-12.4-33 19.4-17 19.4-17z"
-      opacity={0.5}
-      fill="url(#prefix__SVGID_22_)"
-    />
-    <linearGradient
-      id="prefix__SVGID_23_"
-      gradientUnits="userSpaceOnUse"
-      x1={161.63}
-      y1={-209.717}
-      x2={326.831}
-      y2={-176.019}
-      gradientTransform="rotate(12.013 -3196.28 -208.446)"
-    >
-      <stop offset={0} stopColor="#b37cff" />
-      <stop offset={1} stopColor="#f895e7" />
-    </linearGradient>
-    <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-      d="M104.4 497.4c1.6-16.1 20.1-26.3 44.1-1.2 2.3-7.3 42.7-21.2 49.2 30.8 5.1-11.3 27.8-1.9 28.3 18.9 10.6-3.1 31.2 17.7-.1 17.9-42.5.3-128.8-21.2-139.3-51.4-10.6-30.2 17.8-15 17.8-15z"
-      opacity={0.5}
-      fill="url(#prefix__SVGID_23_)"
-    />
-    <g>
-      <linearGradient
-        id="prefix__SVGID_24_"
-        gradientUnits="userSpaceOnUse"
-        x1={511.335}
-        y1={-245.411}
-        x2={473.87}
-        y2={-154.835}
-        gradientTransform="rotate(9.249 -3398.816 -491.982)"
-      >
-        <stop offset={0} stopColor="#2b3582" />
-        <stop offset={1} stopColor="#150e42" />
-      </linearGradient>
-      <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-        d="M376.4 394.1c-.3.5-8.4 6.2-8.4 6.2s-5.6 31 4.7 46.3c10.3 15.3 45.5-11.9 45.5-11.9s19.8-3.1 29.7-42c2.3-8.9-12-2.1-27.9-.5-20.4 2.1-43.6 1.9-43.6 1.9z"
-        fill="url(#prefix__SVGID_24_)"
-      />
-      <linearGradient
-        id="prefix__SVGID_25_"
-        gradientUnits="userSpaceOnUse"
-        x1={395.191}
-        y1={466.439}
-        x2={411.044}
-        y2={945.989}
-      >
-        <stop offset={0} stopColor="#fdf53f" />
-        <stop offset={1} stopColor="#d93c65" />
-      </linearGradient>
-      <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-        d="M343 482c6.3-4.3 13.2-7.6 20.5-9.6 2.8-.8 17.7 3.6 26.9 3.4 12.6-.3 25.5-6 35.9-3.4 10.3 2.6 18.8 5.9 23.7 9.4 14.6 10.4 23.2 29.8 28.5 49.1-9.9 10.2-22.4 14.7-22.4 14.7l-2.3 93.5-55.3 28.3-63.1-31.7 2.3-91.3s-20-9.3-21.5-12.7c-1.4-3.5 9.2-37.6 26.8-49.7z"
-        fill="url(#prefix__SVGID_25_)"
-      />
-      <linearGradient
-        id="prefix__SVGID_26_"
-        gradientUnits="userSpaceOnUse"
-        x1={303.447}
-        y1={511.142}
-        x2={408.482}
-        y2={764.862}
-      >
-        <stop offset={0} stopColor="#f9b776" />
-        <stop offset={1} stopColor="#f47960" />
-      </linearGradient>
-      <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-        d="M317.2 531.2s-26.8 74.4 34.4 105c12.7-1.7 7.8-22.8 7.8-22.8s-26.6-5.9-18.6-68c-7.4-6.1-23.6-14.2-23.6-14.2z"
-        fill="url(#prefix__SVGID_26_)"
-      />
-      <linearGradient
-        id="prefix__SVGID_27_"
-        gradientUnits="userSpaceOnUse"
-        x1={-7166.723}
-        y1={510.596}
-        x2={-7061.689}
-        y2={764.316}
-        gradientTransform="matrix(-1 0 0 1 -6677.074 0)"
-      >
-        <stop offset={0} stopColor="#f9b776" />
-        <stop offset={1} stopColor="#f47960" />
-      </linearGradient>
-      <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-        d="M477.2 531.2s18.5 77.7-34.4 105c-12.7-1.7-7.8-22.8-7.8-22.8s21.4-10.6 18.6-68c7.4-6.1 23.6-14.2 23.6-14.2z"
-        fill="url(#prefix__SVGID_27_)"
-      />
-      <linearGradient
-        id="prefix__SVGID_28_"
-        gradientUnits="userSpaceOnUse"
-        x1={396.742}
-        y1={544.092}
-        x2={391.298}
-        y2={764.594}
-      >
-        <stop offset={0} stopColor="#53d8ff" />
-        <stop offset={1} stopColor="#3840f7" />
-      </linearGradient>
-      <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-        d="M447.5 641.4H343.2c-4.6 0-8.4-3.8-8.4-8.4v-65c0-4.6 3.8-8.4 8.4-8.4h104.4c4.6 0 8.4 3.8 8.4 8.4v65c0 4.6-3.8 8.4-8.5 8.4z"
-        fill="url(#prefix__SVGID_28_)"
-      />
-      <linearGradient
-        id="prefix__SVGID_29_"
-        gradientUnits="userSpaceOnUse"
-        x1={395.459}
-        y1={571.453}
-        x2={401.459}
-        y2={434.119}
-      >
-        <stop offset={0} stopColor="#53d8ff" />
-        <stop offset={1} stopColor="#3840f7" />
-      </linearGradient>
-      <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-        d="M402.5 581.7c.6 4.3-1.7 8.3-6 8.9-4.3.6-8.4-2.4-9-6.7-.6-4.3 1.3-8.7 5.7-9.3 4.3-.6 8.7 2.8 9.3 7.1z"
-        fill="url(#prefix__SVGID_29_)"
-      />
-      <linearGradient
-        id="prefix__SVGID_30_"
-        gradientUnits="userSpaceOnUse"
-        x1={460.418}
-        y1={677.679}
-        x2={517.815}
-        y2={677.679}
-        gradientTransform="matrix(1 .0077 -.0077 1 4.587 -4.24)"
-      >
-        <stop offset={0} stopColor="#2c759e" />
-        <stop offset={1} stopColor="#051042" />
-      </linearGradient>
-      <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-        d="M509.1 665.7c-13.9-3.2-45.9-1.5-45.9-1.5l-1.3 3.5-2.2 17.6s30.5 5.5 45.6 5.5c1.5 0 2.9-.2 4.2-.6.5-.4.9-.8 1.3-1.3 6.4-7 4.6-17.3-1.7-23.2z"
-        fill="url(#prefix__SVGID_30_)"
-      />
-      <linearGradient
-        id="prefix__SVGID_31_"
-        gradientUnits="userSpaceOnUse"
-        x1={524.864}
-        y1={678.391}
-        x2={474.467}
-        y2={677.787}
-        gradientTransform="matrix(1 .0077 -.0077 1 4.587 -4.24)"
-      >
-        <stop offset={0} stopColor="#9cfffb" />
-        <stop offset={1} stopColor="#9bfffa" />
-      </linearGradient>
-      <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-        d="M510.5 666c-.4-.1-.9-.2-1.4-.3 6.3 6 8.1 16.2 1.7 23.2-.4.5-.9.9-1.3 1.3 11.3-3.6 12.7-20.9 1-24.2z"
-        fill="url(#prefix__SVGID_31_)"
-      />
-      <linearGradient
-        id="prefix__SVGID_32_"
-        gradientUnits="userSpaceOnUse"
-        x1={497.671}
-        y1={573.495}
-        x2={437.084}
-        y2={737.602}
-      >
-        <stop offset={0} stopColor="#f9b776" />
-        <stop offset={1} stopColor="#f47960" />
-      </linearGradient>
-      <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-        d="M454 663.2l5.4.2c2.9.1 5.7 1.5 7.6 3.9 2 2.4 3 5.6 2.8 8.8-.1 2.6-1.2 5-2.9 6.7-1.7 1.7-4 2.6-6.4 2.4l-8.3-.6 1.8-21.4z"
-        fill="url(#prefix__SVGID_32_)"
-      />
-      <linearGradient
-        id="prefix__SVGID_33_"
-        gradientUnits="userSpaceOnUse"
-        x1={524.987}
-        y1={676.236}
-        x2={474.58}
-        y2={675.631}
-        gradientTransform="matrix(1 .0077 -.0077 1 4.587 -4.24)"
-      >
-        <stop offset={0} stopColor="#9cfffb" />
-        <stop offset={1} stopColor="#9bfffa" />
-      </linearGradient>
-      <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-        d="M483.1 681.8c-.4 0-.7-.3-.8-.7-1.4-5.5-6.8-11.1-6.8-11.2-.3-.3-.3-.9 0-1.3s.8-.4 1.1 0c.2.2 5.8 6 7.3 12 .1.5-.1 1-.6 1.1-.1.1-.2.1-.2.1z"
-        fill="url(#prefix__SVGID_33_)"
-      />
-      <linearGradient
-        id="prefix__SVGID_34_"
-        gradientUnits="userSpaceOnUse"
-        x1={524.779}
-        y1={675.893}
-        x2={474.611}
-        y2={675.291}
-        gradientTransform="matrix(1 .0077 -.0077 1 4.587 -4.24)"
-      >
-        <stop offset={0} stopColor="#9cfffb" />
-        <stop offset={1} stopColor="#9bfffa" />
-      </linearGradient>
-      <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-        d="M475.7 681.4h-.2c-.4-.1-.7-.6-.5-1.1 1.8-6.5 8.7-11.6 8.9-11.8.4-.3.9-.2 1.1.2.2.4.2 1-.2 1.2-.1 0-6.7 5-8.3 10.9-.1.4-.4.6-.8.6z"
-        fill="url(#prefix__SVGID_34_)"
-      />
-      <linearGradient
-        id="prefix__SVGID_35_"
-        gradientUnits="userSpaceOnUse"
-        x1={527.926}
-        y1={689.676}
-        x2={477.186}
-        y2={689.067}
-        gradientTransform="rotate(3.242 735.008 622.035)"
-      >
-        <stop offset={0} stopColor="#9cfffb" />
-        <stop offset={1} stopColor="#9bfffa" />
-      </linearGradient>
-      <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-        d="M497.8 682.7c-.4 0-.7-.3-.8-.7-1.1-5.6-6.3-11.5-6.3-11.5-.3-.4-.3-.9 0-1.3.3-.3.8-.3 1.1 0 .2.3 5.5 6.3 6.8 12.4.1.5-.2 1-.6 1.1h-.2z"
-        fill="url(#prefix__SVGID_35_)"
-      />
-      <linearGradient
-        id="prefix__SVGID_36_"
-        gradientUnits="userSpaceOnUse"
-        x1={527.446}
-        y1={689.333}
-        x2={477.528}
-        y2={688.734}
-        gradientTransform="rotate(3.242 735.008 622.035)"
-      >
-        <stop offset={0} stopColor="#9cfffb" />
-        <stop offset={1} stopColor="#9bfffa" />
-      </linearGradient>
-      <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-        d="M490.5 681.9c-.1 0-.2 0-.3-.1-.4-.2-.6-.7-.5-1.1 2.1-6.4 9.2-11.1 9.5-11.3.4-.3.9-.1 1.1.3.2.4.1 1-.3 1.2-.1 0-6.9 4.7-8.8 10.4-.1.3-.4.6-.7.6z"
-        fill="url(#prefix__SVGID_36_)"
-      />
-      <linearGradient
-        id="prefix__SVGID_37_"
-        gradientUnits="userSpaceOnUse"
-        x1={328.333}
-        y1={679.532}
-        x2={385.755}
-        y2={679.532}
-        gradientTransform="matrix(-.9998 -.02 -.02 .9998 662.345 3.872)"
-      >
-        <stop offset={0} stopColor="#2c759e" />
-        <stop offset={1} stopColor="#051042" />
-      </linearGradient>
-      <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-        d="M271.4 664c13.9-2.8 46-.1 46-.1l1.2 3.6 1.7 17.6s-30.7 4.6-45.7 4.1c-1.5 0-2.9-.3-4.2-.8l-1.3-1.3c-6.2-7.2-4.1-17.4 2.3-23.1z"
-        fill="url(#prefix__SVGID_37_)"
-      />
-      <linearGradient
-        id="prefix__SVGID_38_"
-        gradientUnits="userSpaceOnUse"
-        x1={392.788}
-        y1={680.201}
-        x2={342.556}
-        y2={679.598}
-        gradientTransform="matrix(-.9998 -.02 -.02 .9998 662.345 3.872)"
-      >
-        <stop offset={0} stopColor="#9cfffb" />
-        <stop offset={1} stopColor="#9bfffa" />
-      </linearGradient>
-      <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-        d="M270 664.3c.4-.1.9-.2 1.4-.3-6.4 5.8-8.5 15.9-2.3 23.1.4.5.9.9 1.3 1.3-11.2-3.8-12.1-21.2-.4-24.1z"
-        fill="url(#prefix__SVGID_38_)"
-      />
-      <linearGradient
-        id="prefix__SVGID_39_"
-        gradientUnits="userSpaceOnUse"
-        x1={376.284}
-        y1={524.04}
-        x2={315.664}
-        y2={688.234}
-      >
-        <stop offset={0} stopColor="#f9b776" />
-        <stop offset={1} stopColor="#f47960" />
-      </linearGradient>
-      <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-        d="M326.6 663.2l-5.4.1c-2.9 0-5.7 1.4-7.7 3.7-2 2.3-3.1 5.5-3 8.7.1 2.6 1.1 5 2.8 6.8s4 2.7 6.3 2.6l8.3-.3-1.3-21.6z"
-        fill="url(#prefix__SVGID_39_)"
-      />
-      <linearGradient
-        id="prefix__SVGID_40_"
-        gradientUnits="userSpaceOnUse"
-        x1={392.773}
-        y1={678.133}
-        x2={342.545}
-        y2={677.53}
-        gradientTransform="matrix(-.9998 -.02 -.02 .9998 662.345 3.872)"
-      >
-        <stop offset={0} stopColor="#9cfffb" />
-        <stop offset={1} stopColor="#9bfffa" />
-      </linearGradient>
-      <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-        d="M297.1 681c.3 0 .7-.2.8-.6 1.5-5.5 7.1-10.9 7.1-11 .3-.3.4-.9.1-1.3-.3-.4-.8-.4-1.1-.1-.2.2-5.9 5.8-7.6 11.8-.1.5.1 1 .5 1.1 0 0 .1.1.2.1z"
-        fill="url(#prefix__SVGID_40_)"
-      />
-      <linearGradient
-        id="prefix__SVGID_41_"
-        gradientUnits="userSpaceOnUse"
-        x1={392.865}
-        y1={677.792}
-        x2={342.538}
-        y2={677.188}
-        gradientTransform="matrix(-.9998 -.02 -.02 .9998 662.345 3.872)"
-      >
-        <stop offset={0} stopColor="#9cfffb" />
-        <stop offset={1} stopColor="#9bfffa" />
-      </linearGradient>
-      <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-        d="M304.4 680.7h.2c.4-.1.7-.6.6-1.1-1.7-6.5-8.4-11.9-8.6-12.1-.4-.3-.9-.2-1.1.2-.3.4-.2 1 .2 1.2.1.1 6.5 5.2 8 11.1.1.5.4.7.7.7z"
-        fill="url(#prefix__SVGID_41_)"
-      />
-      <linearGradient
-        id="prefix__SVGID_42_"
-        gradientUnits="userSpaceOnUse"
-        x1={396.188}
-        y1={696.922}
-        x2={345.639}
-        y2={696.315}
-        gradientTransform="scale(-1 1) rotate(1.65 803.315 -21951.59)"
-      >
-        <stop offset={0} stopColor="#9cfffb" />
-        <stop offset={1} stopColor="#9bfffa" />
-      </linearGradient>
-      <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-        d="M282.3 681.4c.4 0 .7-.3.8-.7 1.3-5.6 6.6-11.3 6.6-11.3.3-.3.3-.9 0-1.3s-.8-.4-1.1 0c-.2.2-5.7 6.1-7.1 12.2-.1.5.2 1 .6 1.1h.2z"
-        fill="url(#prefix__SVGID_42_)"
-      />
-      <linearGradient
-        id="prefix__SVGID_43_"
-        gradientUnits="userSpaceOnUse"
-        x1={395.901}
-        y1={696.58}
-        x2={345.846}
-        y2={695.979}
-        gradientTransform="scale(-1 1) rotate(1.65 803.315 -21951.59)"
-      >
-        <stop offset={0} stopColor="#9cfffb" />
-        <stop offset={1} stopColor="#9bfffa" />
-      </linearGradient>
-      <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-        d="M289.7 680.7h.3c.4-.2.6-.7.5-1.1-1.9-6.4-8.9-11.4-9.2-11.6-.4-.3-.9-.1-1.1.3-.2.4-.1 1 .2 1.2.1 0 6.8 4.9 8.5 10.7.1.3.4.5.8.5z"
-        fill="url(#prefix__SVGID_43_)"
-      />
-      <linearGradient
-        id="prefix__SVGID_44_"
-        gradientUnits="userSpaceOnUse"
-        x1={523.351}
-        y1={570.327}
-        x2={365.847}
-        y2={688.644}
-      >
-        <stop offset={0} stopColor="#7c27dd" />
-        <stop offset={1} stopColor="#2b41d9" />
-      </linearGradient>
-      <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-        d="M513 610.6c-6.3-14.5-21.7-16.8-34.8-10.1-.2.3-83.2 42.8-156.3 61.4 2.1 6.7 3.2 13.9 3.4 20.9 0 1.6 0 3.1-.1 4.6 56.1-2.9 117-21.6 169.3-38 16.2-5.1 25.5-22.7 18.5-38.8z"
-        fill="url(#prefix__SVGID_44_)"
-      />
-      <linearGradient
-        id="prefix__SVGID_45_"
-        gradientUnits="userSpaceOnUse"
-        x1={380.996}
-        y1={676.416}
-        x2={339.716}
-        y2={571.152}
-      >
-        <stop offset={0} stopColor="#7c27dd" />
-        <stop offset={1} stopColor="#2b41d9" />
-      </linearGradient>
-      <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-        d="M454.4 684c-.2-8.1 1.4-15.6 4.7-22.6l.3-.9c-4.2-1.3-9.6-3-16.7-5.5-51.9-17.8-91.6-35.7-129.4-56.4-14.7-8-31.4-2.6-36.1 14.7-4.2 15.5 5.3 27.9 19 33.4 47 18.9 116.1 36.2 158.2 39V684z"
-        fill="url(#prefix__SVGID_45_)"
-      />
-      <linearGradient
-        id="prefix__SVGID_46_"
-        gradientUnits="userSpaceOnUse"
-        x1={395.652}
-        y1={532.091}
-        x2={394.255}
-        y2={410.495}
-      >
-        <stop offset={0} stopColor="#f9b776" />
-        <stop offset={1} stopColor="#f47960" />
-      </linearGradient>
-      <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-        d="M363.6 472.4s5.6 24.2 32.7 23.7c27.6-.5 30.1-23.8 30.1-23.8l-18-3.9-1.5-20.1-27.1 2-.5 19.1-15.7 3z"
-        fill="url(#prefix__SVGID_46_)"
-      />
-      <linearGradient
-        id="prefix__SVGID_47_"
-        gradientUnits="userSpaceOnUse"
-        x1={496.042}
-        y1={-157.35}
-        x2={500.396}
-        y2={-263.159}
-        gradientTransform="rotate(9.249 -3398.816 -491.982)"
-      >
-        <stop offset={0} stopColor="#f9b776" />
-        <stop offset={1} stopColor="#f47960" />
-      </linearGradient>
-      <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-        d="M383.5 391.4s-31.1 60.2 5.8 74.9c26 10.3 42.3-40 37.5-53.6-7.5-21.1-12.5-18.6-12.5-18.6l-30.8-2.7z"
-        fill="url(#prefix__SVGID_47_)"
-      />
-      <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-        className="prefix__st2"
-        d="M426.7 412.7c-.1-.2-.2-.5-.2-.7.1 1.1.2 2.3.2 3.5 0-.8.1-1.7.1-2.6 0-.1 0-.2-.1-.2zM426.5 412c0-.4-.1-.8-.2-1.2 1.7 2.6-1.4-3.6.2 1.2z"
-      />
-      <linearGradient
-        id="prefix__SVGID_48_"
-        gradientUnits="userSpaceOnUse"
-        x1={509.041}
-        y1={-246.422}
-        x2={471.904}
-        y2={-156.642}
-        gradientTransform="rotate(9.249 -3398.816 -491.982)"
-      >
-        <stop offset={0} stopColor="#2b3582" />
-        <stop offset={1} stopColor="#150e42" />
-      </linearGradient>
-      <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-        d="M441.1 375.3c16.7-3.8 5.1 47.8-19.7 39.3-24.8-8.5-36.4-13.6-40.2-6.8-3.9 6.8-10.3 34.7-12.4 20.2-2-13.5-3.9-38.3 9.1-43.7 7.4-3.1 13.9 3.6 19 1.9 7.9-2.6 15.4-2.6 20.1 0 8.8 5.2 13.6-8.5 24.1-10.9z"
-        fill="url(#prefix__SVGID_48_)"
-      />
-      <linearGradient
-        id="prefix__SVGID_49_"
-        gradientUnits="userSpaceOnUse"
-        x1={395.452}
-        y1={365.722}
-        x2={402.275}
-        y2={199.908}
-        gradientTransform="rotate(1.754 -3226.55 -404.47)"
-      >
-        <stop offset={0} stopColor="#f9b776" />
-        <stop offset={1} stopColor="#f47960" />
-      </linearGradient>
-      <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-        d="M378.4 417.8s-5.4-8.1-7.8.2c-2.5 8.3-.9 19.8 4 14.5 5-5.4 3.8-14.7 3.8-14.7z"
-        fill="url(#prefix__SVGID_49_)"
-      />
-      <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-        d="M395.5 497.2c-16.1 0-28.3-9.1-32.9-24.4-.2-.5.1-1.1.7-1.2.5-.2 1.1.1 1.2.7 1.6 5.5 8.7 23.4 31.7 23 6.5-.1 12-1.5 16.6-4.2.5-.3 1.1-.1 1.4.4.3.5.1 1.1-.4 1.4-4.8 2.8-10.7 4.3-17.5 4.5-.3-.3-.5-.2-.8-.2z"
-        fill="#5436df"
-      />
-    </g>
-    <g>
-      <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-        className="prefix__st21"
-        d="M430.8 519.7l2.2-2.1c.5-.4 1.2-.4 1.7.1.4.5.4 1.2-.1 1.7l-2.2 2.1c-.5.4-1.2.4-1.7 0-.4-.6-.4-1.4.1-1.8zM438.1 512.9l2.2-2c.5-.4 1.2-.4 1.7.1.4.5.4 1.2-.1 1.7l-2.2 2.1c-.5.4-1.2.4-1.7-.1-.4-.6-.4-1.4.1-1.8zM445.3 506l2.2-2.1c.5-.4 1.2-.4 1.6 0 .4.5.4 1.2 0 1.6l-2.2 2.1c-.5.4-1.2.4-1.6 0-.4-.4-.4-1.1 0-1.6zM452.5 499l2.1-2.1c.4-.5 1.2-.5 1.6 0 .5.4.5 1.2 0 1.6l-2.1 2.1c-.4.5-1.2.5-1.6 0-.5-.4-.5-1.1 0-1.6zM459.4 491.9l2-2.2c.4-.5 1.1-.5 1.6-.1s.5 1.1.1 1.6l-2 2.2c-.4.5-1.1.5-1.6.1s-.6-1.2-.1-1.6zM466 484.5l1.9-2.3c.4-.5 1.1-.5 1.6-.1s.5 1.1.1 1.6l-1.9 2.3c-.4.5-1.1.5-1.6.1-.4-.4-.5-1.1-.1-1.6zM472.4 476.8l1.8-2.4c.4-.5 1.1-.6 1.6-.2.5.4.6 1.1.2 1.6l-1.8 2.4c-.4.5-1.1.6-1.6.2-.5-.4-.6-1.1-.2-1.6zM478.3 468.8l1.7-2.4c.3-.5 1-.6 1.5-.3s.6 1 .3 1.5l-1.7 2.5c-.3.5-1 .6-1.5.3-.5-.4-.7-1-.3-1.6zM483.8 460.6l1.5-2.5c.3-.5 1-.7 1.5-.4.5.3.7 1 .4 1.5l-1.6 2.6c-.3.5-1 .7-1.5.4-.5-.4-.6-1.1-.3-1.6zM488.8 452l1.4-2.6c.3-.5.9-.7 1.4-.5.5.3.7.9.5 1.4l-1.4 2.7c-.3.5-.9.7-1.4.5-.6-.3-.8-1-.5-1.5zM493.1 443.1l1.2-2.7c.2-.5.8-.8 1.4-.6.5.2.8.8.6 1.4l-1.2 2.8c-.2.5-.9.8-1.4.6-.6-.3-.9-1-.6-1.5zM496.6 433.8l.9-2.8c.2-.6.8-.9 1.3-.7.6.2.9.8.7 1.3l-.9 2.9c-.2.6-.8.9-1.3.7-.5-.2-.8-.8-.7-1.4zM499.4 424.3l.6-2.9c.1-.6.7-.9 1.2-.8.6.1.9.7.8 1.2l-.6 3c-.1.6-.7.9-1.2.8-.6-.1-1-.7-.8-1.3zM501.1 414.6l.3-2.9c.1-.6.6-1 1.1-.9.6.1 1 .6.9 1.1l-.3 3c-.1.6-.6 1-1.1.9-.5-.1-.9-.6-.9-1.2zM501.8 404.7v-3c0-.6.5-1 1-1 .6 0 1 .5 1 1v3c0 .6-.5 1-1 1s-1-.4-1-1zM501.5 394.8l-.3-2.9c-.1-.5.3-1 .9-1.1.5-.1 1 .3 1.1.9l.3 3c.1.6-.3 1-.9 1.1-.6 0-1.1-.4-1.1-1zM500 385.1l-.6-2.9c-.1-.5.2-1.1.8-1.2.5-.1 1.1.2 1.2.8l.7 3c.1.5-.2 1.1-.8 1.2-.6 0-1.1-.4-1.3-.9zM497.6 375.5l-.9-2.8c-.2-.5.1-1.1.6-1.2s1.1.1 1.2.6l.9 2.9c.2.5-.1 1.1-.6 1.2-.5.1-1-.2-1.2-.7zM494.2 366.2l-1.2-2.7c-.2-.5 0-1.1.5-1.3.5-.2 1.1 0 1.3.5l1.2 2.8c.2.5 0 1.1-.5 1.3-.5.1-1.1-.1-1.3-.6zM490 357.2l-1.4-2.6c-.2-.5-.1-1 .4-1.3.5-.2 1-.1 1.3.4l1.4 2.7c.2.5.1 1-.4 1.3-.4.2-1 0-1.3-.5zM485.1 348.6l-1.6-2.5c-.3-.4-.1-1 .3-1.3.4-.3 1-.1 1.3.3l1.6 2.5c.3.4.2 1-.3 1.3-.4.3-1 .1-1.3-.3zM479.6 340.3l-1.8-2.4c-.3-.4-.2-1 .2-1.3.4-.3 1-.2 1.3.2l1.8 2.4c.3.4.2 1-.2 1.3-.4.3-1 .2-1.3-.2zM473.6 332.4l-1.9-2.3c-.3-.4-.3-1 .1-1.3.4-.3 1-.3 1.3.1l1.9 2.3c.3.4.3 1-.1 1.3-.4.3-1 .3-1.3-.1zM467.1 324.8l-2-2.2c-.3-.4-.3-.9 0-1.3.4-.3.9-.3 1.3 0l2.1 2.2c.3.4.3.9 0 1.3-.4.4-1 .4-1.4 0zM460.2 317.7l-2.2-2c-.4-.3-.4-.9 0-1.3.3-.4.9-.4 1.3 0l2.2 2.1c.4.3.4.9 0 1.3-.4.2-.9.2-1.3-.1zM452.7 311.2l-2.4-1.8c-.4-.3-.5-.8-.2-1.2.3-.4.8-.5 1.2-.2l2.4 1.8c.4.3.5.8.2 1.2-.2.4-.8.5-1.2.2zM444.6 305.6l-2.6-1.4c-.4-.2-.6-.8-.3-1.2.2-.4.8-.6 1.2-.3l2.7 1.5c.4.2.6.8.3 1.2-.3.3-.9.4-1.3.2zM435.7 301.3l-2.8-.9h-.1c-.5-.1-.7-.6-.6-1.1.1-.5.6-.7 1.1-.6l2.9.9c.5.1.7.6.6 1.1-.1.5-.6.8-1.1.6zM426.2 299.4l-2.9.1h-.1c-.5 0-.9-.4-.9-.8 0-.5.3-.9.8-.9l3.1-.1c.5 0 .9.3.9.8s-.3.9-.8.9h-.1zM416.9 301.3c-.8.4-1.7.9-2.4 1.5-.4.3-.9.2-1.2-.2-.3-.4-.2-.9.2-1.2.8-.6 1.7-1.2 2.7-1.7.4-.2.9 0 1.1.4.2.5 0 1-.4 1.2zM410.2 307.8c-.5.8-.9 1.7-1.2 2.6-.2.4-.6.6-1 .5-.4-.2-.6-.6-.5-1 .4-1 .8-1.9 1.3-2.9.2-.4.7-.5 1.1-.3.4.2.5.7.3 1.1zM407.8 317.1l.1 2.9v.1c0 .4-.3.8-.8.8-.4 0-.8-.3-.8-.8l-.1-3.1c0-.4.3-.8.8-.8.4 0 .8.3.8.9zM409.1 326.7l1 2.8v.1c.1.4-.1.9-.5 1-.4.1-.9-.1-1-.5l-1-2.9c-.1-.4.1-.9.5-1 .4-.2.8 0 1 .5zM413.1 335.6l1.6 2.5c.2.4.1.8-.2 1.1-.4.2-.8.1-1.1-.2l-1.6-2.6c-.2-.4-.1-.9.2-1.1.3-.2.8-.1 1.1.3zM418.9 343.5l2 2.2c.3.3.3.8 0 1.1-.3.3-.8.3-1.1 0l-2.1-2.2c-.3-.3-.3-.8 0-1.1.4-.3.9-.3 1.2 0zM426 350.4l2.3 1.8c.3.3.4.7.1 1.1-.3.3-.7.4-1.1.1l-2.4-1.9c-.3-.3-.4-.7-.1-1.1.4-.3.9-.3 1.2 0zM434.1 356.1l2.6 1.5c.4.2.5.7.3 1-.2.4-.7.5-1 .3l-2.6-1.5c-.4-.2-.5-.7-.3-1 .1-.4.6-.5 1-.3zM442.9 360.5l2.8 1.1c.4.1.6.6.4 1-.1.4-.6.6-1 .4l-2.8-1.1c-.4-.1-.6-.6-.4-1 .2-.4.6-.5 1-.4zM452.3 363.7l2.9.7c.4.1.6.5.5.9-.1.4-.5.6-.9.5l-2.9-.8c-.4-.1-.6-.5-.5-.9 0-.2.4-.5.9-.4zM461.9 365.9l2.9.4c.4.1.7.4.6.8-.1.4-.4.7-.8.6l-3-.4c-.4-.1-.7-.4-.6-.8.2-.4.5-.7.9-.6zM471.8 367l3 .2c.4 0 .7.4.7.7 0 .4-.3.7-.7.7l-3-.2c-.4 0-.7-.4-.7-.7 0-.4.3-.7.7-.7zM481.7 367.3l3-.1c.4 0 .7.3.7.7 0 .4-.3.7-.7.7l-3 .1c-.4 0-.7-.3-.7-.7 0-.4.3-.7.7-.7z"
-      />
-      <motion.path
-          variants={animPath}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-        className="prefix__st21"
-        d="M491.7 366.6l3-.4c.4 0 .7.2.8.6 0 .4-.2.7-.6.8l-3 .4c-.4 0-.7-.2-.8-.6s.2-.7.6-.8zM501.5 365.1l2.9-.6c.4-.1.7.2.8.5.1.4-.2.7-.5.8l-3 .6c-.4.1-.7-.2-.8-.5 0-.3.2-.7.6-.8zM511.1 362.8l2.8-.9c.3-.1.7.1.8.4.1.3-.1.7-.4.8l-2.9.9c-.3.1-.7-.1-.8-.4 0-.4.2-.7.5-.8zM520.5 359.5l2.7-1.2c.3-.1.7 0 .8.3.1.3 0 .7-.3.8l-2.8 1.2c-.3.1-.7 0-.8-.3-.1-.3.1-.7.4-.8zM529.4 355.2l2.6-1.5c.3-.2.7-.1.9.2.2.3.1.7-.2.9l-2.6 1.5c-.3.2-.7.1-.9-.2s-.1-.7.2-.9zM537.7 349.7l2.3-1.9c.3-.2.6-.2.9.1.2.3.2.6-.1.9l-2.3 1.9c-.3.2-.7.2-.9-.1-.2-.3-.2-.6.1-.9zM544.9 343l1.9-2.3c.2-.3.6-.3.8-.1.3.2.3.6.1.8l-1.9 2.4c-.2.3-.6.3-.9.1-.2-.3-.2-.6 0-.9zM550.4 334.8l1.2-2.7c.1-.3.5-.4.8-.3.3.1.4.5.3.8l-1.2 2.8c-.1.3-.5.4-.8.3-.3-.2-.4-.5-.3-.9zM553.5 325.5l.4-2.9v-.1c0-.3.3-.5.6-.5s.5.3.5.6l-.4 3c0 .3-.3.5-.6.5-.3.1-.5-.2-.5-.6zM553.7 315.7l-.5-2.9c-.1-.3.2-.6.5-.7.3-.1.6.2.6.5l.5 3c.1.3-.2.6-.5.7-.3 0-.5-.2-.6-.6zM551.3 306.2l-1.1-2.7c-.1-.3 0-.6.3-.7.3-.1.6 0 .7.3l1.2 2.8c.1.3 0 .6-.3.7-.4.1-.7-.1-.8-.4zM547 297.3l-1.4-2.3c-.2-.3-.1-.6.2-.7.3-.2.6-.1.7.2l1.4 2.3c.2.3.1.6-.2.8-.2.1-.6 0-.7-.3z"
-      />
-    </g>
-  </svg>
+    </svg>
   )
 }
 

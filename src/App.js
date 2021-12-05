@@ -6,6 +6,7 @@ import About from "./About";
 import Feedback from './Feedback';
 import Social from './Social';
 import Blog from './Blog';
+import Blogs from './Blogs';
 import { AnimatePresence } from "framer-motion";
 import Home from "./Home"
 import {Switch, Route, useLocation} from "react-router-dom";
@@ -47,6 +48,9 @@ function App() {
         <Route path="/Blog">
           <NavBar keyID={location.pathname}/>
           <Blog />
+        </Route>
+        <Route path="/Blogs">
+          <Blogs/>
         </Route>
         </Switch>
        
