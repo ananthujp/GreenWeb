@@ -1,16 +1,19 @@
 import './App.css';
 import {useState,useEffect} from 'react';
 import NavBar from "./NavBar";
-import Sample from "./Sample"
+import Sample from "./Captain"
 import About from "./About";
 import Feedback from './Feedback';
 import Social from './Social';
 import Blog from './Blog';
 import Blogs from './Blogs';
+import Green from './Green';
 import { AnimatePresence } from "framer-motion";
 import Home from "./Home"
 import {Switch, Route, useLocation} from "react-router-dom";
 import Preloader from './Preloader';
+import Captain from './Captain';
+import Campus from './Campus';
 function App() {
   const location = useLocation();
   const [isLoaded,setLoaded]=useState(false);
@@ -29,10 +32,7 @@ function App() {
          <NavBar keyID={location.pathname}/>
          {isLoaded?<Home />:<Preloader />}
         </Route>
-        <Route path="/Title">
-          <NavBar keyID={location.pathname}/>
-          <Sample />
-        </Route>
+        
         <Route path="/Feedback">
           <NavBar keyID={location.pathname}/>
           <Feedback />
@@ -50,7 +50,20 @@ function App() {
           <Blog />
         </Route>
         <Route path="/Blogs">
+          <NavBar keyID={location.pathname}/>
           <Blogs/>
+        </Route>
+        <Route path="/Green">
+          <NavBar keyID='/Home'/>
+          <Green/>
+        </Route>
+        <Route path="/Captain">
+          <NavBar keyID='/Home'/>
+          <Captain />
+        </Route>
+        <Route path="/Campus">
+          <NavBar keyID='/Home'/>
+          <Campus />
         </Route>
         </Switch>
        

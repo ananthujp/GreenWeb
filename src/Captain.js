@@ -5,7 +5,7 @@ import {animH1,animH2,animMainDiv} from "./Animations"
 import {
     Link,
   } from "react-router-dom";
-function Sample() {
+function Captain() {
   const svgColor="#8B5Cf6"
     return (
       <div className="bg-purple-900">
@@ -153,4 +153,4 @@ function Sample() {
     )
 }
 
-export default Sample
+export default Captain
