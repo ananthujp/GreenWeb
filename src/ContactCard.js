@@ -33,12 +33,17 @@ function ContactCard({name,role,img}) {
                 initial="initial"
                 animate="animate"
                 exit="exit" className="m-8 flex flex-col">
-            <div className="bg-purple-400 overflow-hidden flex rounded-full  border-8 border-white shadow-md border-double">
-              <img className="rounded-full lg:w-36 md:w-32 w-24 filter grayscale" src={img} alt=""/>
+            <div className="bg-purple-400 transition-all hover:bg-purple-200 overflow-hidden flex rounded-full  border-8 border-white shadow-md border-double">
+              <img className="rounded-full lg:w-36 md:w-32 w-24 h-24 lg:h-36 md:h-32 filter grayscale object-cover" src={img} alt=""/>
             </div>
             <h1 className="font-treb text-xl mx-auto mt-3 text-gray-500">{name}</h1>
             <h1 className="font-treb text-base mx-auto text-gray-300">{role}</h1>
-            <div className="flex justify-between mt-2 text-gray-400 stroke-current"><Insta/><Linkd/><Fb/><Gmail/></div>
+            <div className="flex justify-between mt-2 text-gray-400 stroke-current">
+              <div className="hover:text-purple-200 transition-all"><Insta/></div>
+              <div className="hover:text-purple-200 transition-all"><Linkd/></div>
+              <div className="hover:text-purple-200 transition-all"><Fb/></div>
+              <div className="hover:text-purple-200 transition-all"><Gmail/></div>
+            </div>
         </motion.div>
     )
 }

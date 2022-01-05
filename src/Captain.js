@@ -102,7 +102,20 @@ function Captain() {
                 initial={{opacity:0 }}
                 animate={{opacity:1,transition:{duration:1.2,delay:0.6}}}
                 exit={{opacity:0 }}
-                className="md:w-1/2 text-justify w-5/7 mx-auto font-treb text-sm text-purple-400">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</motion.h4>
+                className="md:w-1/2 text-justify w-5/7 mx-auto font-treb text-sm text-purple-400">
+                  Captain Kachra is a game designed to increase awareness of waste segregation as an initiative by the Green Office. The game teaches what various products go into which bin in a fun mini-game.<br/><br/>
+
+                  <b>Rules for the game:</b>
+                  <ul className="ml-4 mt-2 list-disc">
+                    <li className="my-1">When the game starts, daily waste items will pop up, which are to be then correctly segregated into the correct bin: 
+                    </li>
+                    <li className="my-1">Green bin for putting organic wastes such as vegetable peels, food remains, etc. Do not put any plastic or paper waste in this bin as it does not deteriorate in the biogas/compost pit.
+                    </li><li className="my-1">Blue bin is for throwing away plastic or other recyclable materials. For e.g. Dry paper, Plastic Bottles, Cans etc. Do not put any wet or contaminated paper or plastic that has food, oil or any other wet liquid on it.
+                    </li><li className="my-1">Red bin is for tossing out materials that can neither be decomposed nor recycled. Anything that you are not sure about, it is best to put in this category. The materials in the red bin will go to landfills.
+
+                    </li><li className="my-1">Based on the number of correct bins, the participant's score is calculated.
+                    </li></ul>
+              </motion.h4>
               <motion.svg xmlns="http://www.w3.org/2000/svg"
                  animate={{ rotate: [0,180,0] }}
                  style={{ originX: 0 ,originY: 0,originZ:0 }}

@@ -13,13 +13,13 @@ function SlideBar() {
         {
             title: "Green",
             subtitle: "IIT GN",
-            content: "IIT Gandhinagar has one of the most efficient campuses in terms of green development and eco-friendly initiatives, including the promotion of aesthetic value and preservation of the campus’s biodiversity. For a greater impact, the Green Office, one of the Institute’s committees promoting the campus’s cleanliness and sensitivity to environmental issues, encourages the student community to work towards and develop innovative startup ideas.",
+            content: "The Green Club is IIT Gandhinagar’s sustainability club which aims to promote cleanliness and sensitivity to environmental issues. IIT Gandhinagar has one of the most efficient campuses in terms of green development and eco-friendly initiatives, including the promotion of aesthetic value and preservation of the campus’s biodiversity. The Green Club facilitates this further, by encouraging the student community to also work towards making the campus sustainable and develop innovative ideas for conserving the environment.",
             logo: Iit,
         },
         {
             title: "Captain",
             subtitle: "Kachra",
-            content: "This game is aimed to increase awareness of waste segregation as an initiative by the Green Office. The game is structured as such when the game starts, daily wastage products pop up on the screen and the participant is required to find the correct bin for the disposal of the product",
+            content: "Captain Kachra is a game designed to increase awareness of waste segregation as an initiative by the Green Office. The game teaches what various products go into which bin in a fun mini-game.",
             logo: Captain,
         },
         {

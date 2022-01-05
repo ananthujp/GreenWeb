@@ -2,6 +2,12 @@ import {AboutSVG} from "./vectors/importSVG"
 import {motion} from "framer-motion"
 import {animImg,animH1,animH2,animMainDiv} from "./Animations"
 import ContactCard from "./ContactCard"
+const AboutData=[
+    {
+        name: 'Name',
+        role: 'Role'
+    }
+]
 function About() {
     return (
         <motion.div 
@@ -34,15 +40,17 @@ function About() {
                 exit="exit"
                 className="ftext-center mx-auto font-treb text-md text-purple-300">Meet Our Team</motion.h1>
         </div>
-        <div className="flex flex-row mx-auto">
-            <ContactCard 
-                name="Name"
-                role="Role"
-                img="https://pbs.twimg.com/profile_images/888341377729273856/OJGYfJTs_400x400.jpg"/>
-            <ContactCard 
-                name="Name"
-                role="Role"
-                img="https://pbs.twimg.com/profile_images/888341377729273856/OJGYfJTs_400x400.jpg"/>
+        <div className="flex flex-row flex-wrap mx-auto justify-center item-center">
+            {AboutData.map((data)=>
+                <ContactCard 
+                name={data.name}
+                role={data.role}
+                img="https://static.toiimg.com/photo/80831586.cms"/>
+            )}
+            
+            
+            
+            
         </div>
         <motion.h1
                 variants={animH2}
