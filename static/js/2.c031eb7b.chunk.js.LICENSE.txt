@@ -105,6 +105,17 @@ PERFORMANCE OF THIS SOFTWARE.
   */
 
 /**
+ * @file embedo.js
+ *
+ * Embedo is third party content embed plugin with features having events and resizing.
+ * It provides a layer above popular social media sites native embed snippets
+ * making it easier to hook content without modifying much code.
+ *
+ * @author Shobhit Sharma <hi@shobh.it>
+ * @license MIT
+ */
+
+/**
  * @license
  * Copyright 2017 Google LLC
  *
