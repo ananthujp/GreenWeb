@@ -15,9 +15,6 @@ function Captain() {
             animate="animate"
             exit="exit"
         >
-
-              
-              
               <motion.h1
                 variants={animH1}
                 initial="initial"
@@ -30,11 +27,7 @@ function Captain() {
                 animate="animate"
                 exit="exit"
                 className={"font-beb   text-transparent bg-clip-text bg-gradient-to-br from-purple-500 to-pink-300  mx-auto lg:text-6xl md:text-4xl text-2xl"}>Kachra</motion.h1>
-              <div
-               //animate={{ rotate: 180 }}
-              //style={{ originX: 0 ,originY: -1.5,originZ:0 }}
-              //transition={{ repeat: Infinity, duration: 2 }}
-              >
+              <div>
               <motion.svg
                 animate={{ rotate: [0,90,0] }}
                 style={{ originX: 0 ,originY: 0,originZ:0 }}
@@ -78,7 +71,7 @@ function Captain() {
                     width="2000"
                     height="2000"
                     overflow="visible"
-                    transform="translate(-75.721 -158.407) scale(.2956)"
+                    transform="translate(-75.721 45.407) scale(.2956)"
                     xlinkHref={'https://sites.iitgn.ac.in/greenoffice/game/img/logo_m.png'}
                     className="filter"></image>
                 </motion.g>
@@ -114,8 +107,12 @@ function Captain() {
                     </li><li className="my-1">Red bin is for tossing out materials that can neither be decomposed nor recycled. Anything that you are not sure about, it is best to put in this category. The materials in the red bin will go to landfills.
 
                     </li><li className="my-1">Based on the number of correct bins, the participant's score is calculated.
-                    </li></ul>
+                    </li>
+                    </ul>
+                    
+                    
               </motion.h4>
+              
               <motion.svg xmlns="http://www.w3.org/2000/svg"
                  animate={{ rotate: [0,180,0] }}
                  style={{ originX: 0 ,originY: 0,originZ:0 }}
@@ -157,10 +154,16 @@ function Captain() {
                 style={{ originX: 0 ,originY: 0,originZ:0 }}
                 transition={{ repeat: Infinity, duration: 12 }}
                 id="Layer_1" className="relative ml-12 top w-6" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.47 29.47"><defs></defs><polygon fill={svgColor} points="23.76 0 0 19.96 29.46 29.46 23.76 0"/></motion.svg>
-              
+             
               </div>
+              <div className="flex justify-center">
+                    <button onClick={()=>window.location.assign('./game/')} class="py-2 cursor-pointer my-2 px-4 bg-white text-indigo-500 font-semibold rounded-lg shadow-md hover:bg-indigo-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-75">
+                    Play Game!
+                    </button>
+                    </div>
               <div className="mx-auto pt-10 w-full text-center text-purple-700 flex justify-center"><Link to="/"><div ><RewindIcon/>BACK</div></Link> </div>
         </motion.div>
+        
         </div>
 
     )

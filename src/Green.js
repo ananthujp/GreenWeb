@@ -79,7 +79,7 @@ function Green() {
                     width="2000"
                     height="2000"
                     overflow="visible"
-                    transform="translate(-75.721 -158.407) scale(.2956)"
+                    transform="translate(-75.721 -128.407) scale(.2956)"
                     xlinkHref={logoImg}
                     className="filter"></image>
                 </motion.g>
@@ -103,7 +103,18 @@ function Green() {
                 initial={{opacity:0 }}
                 animate={{opacity:1,transition:{duration:1.2,delay:0.6}}}
                 exit={{opacity:0 }}
-                className="md:w-1/2 text-justify w-5/7 mx-auto font-treb text-sm text-purple-400">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</motion.h4>
+                className="md:w-1/2 text-justify w-5/7 mx-auto font-treb text-sm text-purple-400">
+                  IIT Gandhinagar is one of the most efficient campuses in keeping the benchmark in green development through different initiatives. The Institute has integrated various green initiatives to maximize the use of available space and preserve the campus's biodiversity and aesthetic value. The Green Office initiatives help the student community to work towards or even develop innovative startup ideas; however, without community support, the activities of Green Office have a limited impact. Through the creation of a Green Club, we propose to actively engage the students of IIT Gandhinagar to help minimize the impact of the campus on the environment. Students can use this opportunity to share their love for nature, innovate solutions to reduce waste, and decrease the overall carbon footprint of the Institute. The primary objectives of such a club are to: 
+                  <ul className="ml-4 mt-2 list-disc mb-2">
+                      <li>Build awareness in the student and Housing community about climate change and sustainability action through an intersection of society, market, and environmental science. 
+                      </li><li>Engage students at an early age in climate action, leading to informed daily choices that continue long after leaving the campus. Such a change is beneficial for the country as a whole. 
+                      </li><li>Innovate creative solutions to reduce the impact of the student lifestyle (different options). 
+                      </li><li>Encourage assisting local communities in selling sustainable products and services.
+                      </li>
+                  </ul>
+Hence, IIT Gandhinagar students should have a platform to explore and promote sustainable practices through different activities. The proposed club will aim to develop various sustainable solutions tailored for IIT Gandhinagar.
+
+                  </motion.h4>
               <motion.svg xmlns="http://www.w3.org/2000/svg"
                  animate={{ rotate: [0,180,0] }}
                  style={{ originX: 0 ,originY: 0,originZ:0 }}

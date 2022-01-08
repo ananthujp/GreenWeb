@@ -1,4 +1,4 @@
-
+import {useState} from 'react'
 import {animMainDiv} from "./Animations"
 import {motion} from "framer-motion"
 const Insta=()=>{return(
@@ -26,23 +26,32 @@ const Fb=()=>{return(
       <path d="M3.5 1A2.507 2.507 0 001 3.5v8C1 12.875 2.125 14 3.5 14h8c1.375 0 2.5-1.125 2.5-2.5v-8C14 2.125 12.875 1 11.5 1h-8zm0 1h8c.835 0 1.5.665 1.5 1.5v8c0 .835-.665 1.5-1.5 1.5H9.904V8.967h1.397l.209-1.61H9.904V6.332c0-.466.13-.783.803-.783h.86v-1.44c-.15-.02-.66-.062-1.253-.062-1.238 0-2.084.749-2.084 2.125v1.185L7 7.354v1.609l1.23.004V13H3.5c-.835 0-1.5-.665-1.5-1.5v-8C2 2.665 2.665 2 3.5 2z" />
     </svg>
 )}
-function ContactCard({name,role,img}) {
+function ContactCard({name,role,img,i,insta,linkd,fb,email}) {
+  const [hover,setHover]=useState(false);
     return (
         <motion.div
                 variants={animMainDiv}
-                initial="initial"
-                animate="animate"
-                exit="exit" className="m-8 flex flex-col">
-            <div className="bg-purple-400 transition-all hover:bg-purple-200 overflow-hidden flex rounded-full  border-8 border-white shadow-md border-double">
-              <img className="rounded-full lg:w-36 md:w-32 w-24 h-24 lg:h-36 md:h-32 filter grayscale object-cover" src={img} alt=""/>
+                initial={{opacity:0 }}
+                animate={{opacity:1,transition:{delay: i*0.2} }}
+                exit="exit"
+                onMouseEnter={()=>setHover(true)} // Or onMouseOver
+                onMouseLeave={()=>setHover(false)}
+                className="my-12 mx-8 transition-all duration-500 flex flex-col rounded-md"
+                // style={{padding:'1rem',border: '2px solid ',borderColor: '#f3e8ff',backgroundColor:'#faf5ff',...hover && {borderColor: '#e9d5ff',backgroundColor: '#f3e8ff'}}}
+                
+                >
+            
+            <div
+              className="transition-all bg-purple-100 hover:bg-purple-300 flex justify-end rounded-full  border-8 lg:w-36 md:w-32 w-24 lg:h-36 md:h-32 h-24 border-white shadow-md border-double" >
+              <img className="-mt-12 rounded-b-full transition-all duration-500 lg:w-36 md:w-32 w-24 lg:h-44 md:h-40 h-32   object-cover" style={{filter: 'grayscale(100%)',...(hover && {filter: 'grayscale(0%)'})}} src={img} alt=""/>
             </div>
             <h1 className="font-treb text-xl mx-auto mt-3 text-gray-500">{name}</h1>
             <h1 className="font-treb text-base mx-auto text-gray-300">{role}</h1>
-            <div className="flex justify-between mt-2 text-gray-400 stroke-current">
-              <div className="hover:text-purple-200 transition-all"><Insta/></div>
-              <div className="hover:text-purple-200 transition-all"><Linkd/></div>
-              <div className="hover:text-purple-200 transition-all"><Fb/></div>
-              <div className="hover:text-purple-200 transition-all"><Gmail/></div>
+            <div className="flex justify-between mt-2 text-gray-400 stroke-current ">
+              {[insta,linkd,fb,email].map((data,index)=>
+                (data&&<div className="hover:text-fuchsia-200 transition-all" onClick={()=>window.location.assign(data)}>
+                  {[<Insta/>,<Linkd/>,<Fb/>,<Gmail/>][index]}</div>))}
+              
             </div>
         </motion.div>
     )

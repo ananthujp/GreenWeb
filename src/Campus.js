@@ -103,7 +103,31 @@ function Campus() {
                 initial={{opacity:0 }}
                 animate={{opacity:1,transition:{duration:1.2,delay:0.6}}}
                 exit={{opacity:0 }}
-                className="md:w-1/2 text-justify w-5/7 mx-auto font-treb text-sm text-purple-400">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</motion.h4>
+                className="md:w-1/2 text-justify w-5/7 mx-auto font-treb text-sm text-purple-400">
+                <ul className="mx-0.5">
+                 <li className="my-2">Plogging: In order to maintain cleanliness in the IITGN campus, the Green Club organized a plogging drive (waste collection drive) at IITGN on the 4th of September, 2021. We received an enthusiastic response from the student community as more than 15 students participated in the drive. Through their collective efforts, we were able to collect 65 kgs of waste.
+
+                 </li><li className="my-2">Essay Writing: The best way to make the world a sustainable place is to educate the people, and what better time to educate them than when they are young! In order to raise awareness about subjects like Waste Management, Green Campus, Environment, and Pollution among children, the Green Club organised an essay writing competition. We received more than 20 responses from children around the campus and they displayed an inspiring desire to make the world sustainable.
+
+                 </li><li className="my-2">E-waste collection: Being a technical institute, it is evident that the students at IITGN use electronic items for academic as well as leisure purposes. To keep such electronic items out of landfills in order to keep the environment safe, Green Club set up boxes for collecting e-waste across the campus on the 3rd of September.
+
+                 </li><li className="my-2">On the auspicious occasion of Rakshabandhan, where brothers pledge to protect their sisters from all harm, we at Green Club took a pledge to protect the environment. For this very reason, we celebrated an eco-friendly Rakshabandhan and promoted it across the campus by giving away eco-friendly rakhis which were wholly biodegradable. 
+
+                 </li><li className="my-2">Paperless Diwali: During the Diwali of 2021, the Green Club created a platform to create e-greeting cards to share with loved ones. The cards were personalised and had various themes and colors to choose from, and could be shared through a link. A total of 229 festive e-cards were generated.
+
+                 </li><li className="my-2">Awareness Talk: As part of Swachhata Pakhwada, Green Club organised a webinar by Mr. Vijay Kothari, CEO of a creative waste management start-up company, WOW (Wealth Out of Waste) Waste Management Pvt. Ltd. 
+                WOW collects dry recyclable waste from customers, pays them, and recycles the waste, also collaborating with corporations to help them achieve a zero carbon footprint.
+
+                </li><li className="my-2">Cleanest Hostel Competition: The hostels of IIT GN were put up against one another in a contest for the most clean hostel. For two weeks from September 1st to 15th, every hostel was evaluated and the cleanest hostel was awarded with a 'Swachhata Shield'.
+
+
+                </li><li className="my-2">Sustainable Menstrual Campaign
+                This initiative began with a survey among the female students of IIT Gandhinagar, the majority of whom reported using plastic-based period products. Menstruating members who haven't taken the survey are encouraged to do so. This survey helps you understand why plastic-based menstrual products are a huge issue and introduce you to the many sustainable options in the market.
+                </li><li className="my-2">
+                swachhata pakhwada
+                The Swachhta Pakhwada launched by Government of India, is a fortnight-long program observed to ensure mass participation of citizens in Swachhta activities and to truly transform Swachh Bharat into a citizen’s movement.
+                </li></ul>
+              </motion.h4>
               <motion.svg xmlns="http://www.w3.org/2000/svg"
                  animate={{ rotate: [0,180,0] }}
                  style={{ originX: 0 ,originY: 0,originZ:0 }}
