@@ -1,24 +1,27 @@
 {
   "files": {
-    "main.css": "./static/css/main.efebda5b.chunk.css",
-    "main.js": "./static/js/main.d8e75ada.chunk.js",
-    "main.js.map": "./static/js/main.d8e75ada.chunk.js.map",
+    "main.css": "./static/css/main.bca04d2d.chunk.css",
+    "main.js": "./static/js/main.81f5c357.chunk.js",
+    "main.js.map": "./static/js/main.81f5c357.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.27339fe6.js",
     "runtime-main.js.map": "./static/js/runtime-main.27339fe6.js.map",
     "static/js/2.c031eb7b.chunk.js": "./static/js/2.c031eb7b.chunk.js",
     "static/js/2.c031eb7b.chunk.js.map": "./static/js/2.c031eb7b.chunk.js.map",
     "index.html": "./index.html",
-    "static/css/main.efebda5b.chunk.css.map": "./static/css/main.efebda5b.chunk.css.map",
+    "static/css/main.bca04d2d.chunk.css.map": "./static/css/main.bca04d2d.chunk.css.map",
     "static/js/2.c031eb7b.chunk.js.LICENSE.txt": "./static/js/2.c031eb7b.chunk.js.LICENSE.txt",
     "static/media/index.css": "./static/media/trebuc.8dc5d2dd.ttf",
     "static/media/LogoD.2b2a74f7.svg": "./static/media/LogoD.2b2a74f7.svg",
     "static/media/LogoW.32dde7f1.svg": "./static/media/LogoW.32dde7f1.svg",
     "static/media/acitivity.986c547c.svg": "./static/media/acitivity.986c547c.svg",
+    "static/media/amitesh.28cc4675.png": "./static/media/amitesh.28cc4675.png",
+    "static/media/anuj.2143461e.png": "./static/media/anuj.2143461e.png",
     "static/media/blogico.cb86da81.svg": "./static/media/blogico.cb86da81.svg",
     "static/media/bottom-1.b5d61284.svg": "./static/media/bottom-1.b5d61284.svg",
     "static/media/bottom-2.1b25a41e.svg": "./static/media/bottom-2.1b25a41e.svg",
     "static/media/bottom-3.59e17cd8.svg": "./static/media/bottom-3.59e17cd8.svg",
     "static/media/captn.7bfb13db.svg": "./static/media/captn.7bfb13db.svg",
+    "static/media/dhanesh.b2fe75c3.png": "./static/media/dhanesh.b2fe75c3.png",
     "static/media/dp.c2c14829.png": "./static/media/dp.c2c14829.png",
     "static/media/firebase.c1c611b7.png": "./static/media/firebase.c1c611b7.png",
     "static/media/hero.c5f58067.png": "./static/media/hero.c5f58067.png",
@@ -26,8 +29,11 @@
     "static/media/logo_main_comp_2.de217f61.gif": "./static/media/logo_main_comp_2.de217f61.gif",
     "static/media/moon.9ebb6a89.svg": "./static/media/moon.9ebb6a89.svg",
     "static/media/motion.59aa937a.png": "./static/media/motion.59aa937a.png",
+    "static/media/nandana.82b0cfad.png": "./static/media/nandana.82b0cfad.png",
     "static/media/react.b3322f27.png": "./static/media/react.b3322f27.png",
     "static/media/redux.32b42487.png": "./static/media/redux.32b42487.png",
+    "static/media/shashi.ccd858b0.png": "./static/media/shashi.ccd858b0.png",
+    "static/media/shekhar.381a81ca.png": "./static/media/shekhar.381a81ca.png",
     "static/media/stone.8bcc2b16.svg": "./static/media/stone.8bcc2b16.svg",
     "static/media/store.607cbdc5.svg": "./static/media/store.607cbdc5.svg",
     "static/media/tw.3ded1eef.png": "./static/media/tw.3ded1eef.png"
@@ -35,7 +41,7 @@
   "entrypoints": [
     "static/js/runtime-main.27339fe6.js",
     "static/js/2.c031eb7b.chunk.js",
-    "static/css/main.efebda5b.chunk.css",
-    "static/js/main.d8e75ada.chunk.js"
+    "static/css/main.bca04d2d.chunk.css",
+    "static/js/main.81f5c357.chunk.js"
   ]
 }
