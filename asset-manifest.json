@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "./static/css/main.a77fee85.chunk.css",
-    "main.js": "./static/js/main.90372922.chunk.js",
-    "main.js.map": "./static/js/main.90372922.chunk.js.map",
+    "main.css": "./static/css/main.225a0d56.chunk.css",
+    "main.js": "./static/js/main.99e624c1.chunk.js",
+    "main.js.map": "./static/js/main.99e624c1.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.27339fe6.js",
     "runtime-main.js.map": "./static/js/runtime-main.27339fe6.js.map",
-    "static/js/2.c031eb7b.chunk.js": "./static/js/2.c031eb7b.chunk.js",
-    "static/js/2.c031eb7b.chunk.js.map": "./static/js/2.c031eb7b.chunk.js.map",
+    "static/js/2.ffcb2205.chunk.js": "./static/js/2.ffcb2205.chunk.js",
+    "static/js/2.ffcb2205.chunk.js.map": "./static/js/2.ffcb2205.chunk.js.map",
     "index.html": "./index.html",
-    "static/css/main.a77fee85.chunk.css.map": "./static/css/main.a77fee85.chunk.css.map",
-    "static/js/2.c031eb7b.chunk.js.LICENSE.txt": "./static/js/2.c031eb7b.chunk.js.LICENSE.txt",
+    "static/css/main.225a0d56.chunk.css.map": "./static/css/main.225a0d56.chunk.css.map",
+    "static/js/2.ffcb2205.chunk.js.LICENSE.txt": "./static/js/2.ffcb2205.chunk.js.LICENSE.txt",
     "static/media/index.css": "./static/media/trebuc.8dc5d2dd.ttf",
     "static/media/LogoD.2b2a74f7.svg": "./static/media/LogoD.2b2a74f7.svg",
     "static/media/LogoW.32dde7f1.svg": "./static/media/LogoW.32dde7f1.svg",
@@ -23,25 +23,25 @@
     "static/media/captn.7bfb13db.svg": "./static/media/captn.7bfb13db.svg",
     "static/media/dhanesh.b2fe75c3.png": "./static/media/dhanesh.b2fe75c3.png",
     "static/media/dp.c2c14829.png": "./static/media/dp.c2c14829.png",
-    "static/media/firebase.c1c611b7.png": "./static/media/firebase.c1c611b7.png",
-    "static/media/hero.c5f58067.png": "./static/media/hero.c5f58067.png",
+    "static/media/firebase.bf28194c.png": "./static/media/firebase.bf28194c.png",
+    "static/media/hero.09a1e129.png": "./static/media/hero.09a1e129.png",
     "static/media/iit.ca256d03.svg": "./static/media/iit.ca256d03.svg",
     "static/media/logo_main_comp_2.de217f61.gif": "./static/media/logo_main_comp_2.de217f61.gif",
     "static/media/moon.9ebb6a89.svg": "./static/media/moon.9ebb6a89.svg",
-    "static/media/motion.59aa937a.png": "./static/media/motion.59aa937a.png",
+    "static/media/motion.bfdfa681.png": "./static/media/motion.bfdfa681.png",
     "static/media/nandana.82b0cfad.png": "./static/media/nandana.82b0cfad.png",
-    "static/media/react.b3322f27.png": "./static/media/react.b3322f27.png",
-    "static/media/redux.32b42487.png": "./static/media/redux.32b42487.png",
+    "static/media/react.01f7688a.png": "./static/media/react.01f7688a.png",
+    "static/media/redux.c8d82b3b.png": "./static/media/redux.c8d82b3b.png",
     "static/media/shashi.ccd858b0.png": "./static/media/shashi.ccd858b0.png",
     "static/media/shekhar.381a81ca.png": "./static/media/shekhar.381a81ca.png",
     "static/media/stone.8bcc2b16.svg": "./static/media/stone.8bcc2b16.svg",
     "static/media/store.607cbdc5.svg": "./static/media/store.607cbdc5.svg",
-    "static/media/tw.3ded1eef.png": "./static/media/tw.3ded1eef.png"
+    "static/media/tw.89f0fc7a.png": "./static/media/tw.89f0fc7a.png"
   },
   "entrypoints": [
     "static/js/runtime-main.27339fe6.js",
-    "static/js/2.c031eb7b.chunk.js",
-    "static/css/main.a77fee85.chunk.css",
-    "static/js/main.90372922.chunk.js"
+    "static/js/2.ffcb2205.chunk.js",
+    "static/css/main.225a0d56.chunk.css",
+    "static/js/main.99e624c1.chunk.js"
   ]
 }
