@@ -109,7 +109,7 @@ const EmbedoItem = ({ id, name, href, ...props }) => {
     );
 }    
 function Social() {
-    const [socialClr,setSocial]=useState('insta')
+    const [socialClr,setSocial]=useState('twitter')
     return (
         <motion.div
             variants={animMainDiv}
@@ -139,16 +139,16 @@ function Social() {
                 animate="animate"
                 exit="exit"
                 className="ftext-center mx-auto font-treb text-md text-purple-300">Connect with us</motion.h1>
-            <div className="flex rounded-3xl overflow-hidden bg-purple-50  justify-between my-8">
-                <div onClick={()=>setSocial('twitter')} className={"hover:bg-purple-100 cursor-pointer md:py-4 md:px-4 py-1 px-1 flex flex-row items-center justify-center"+((socialClr==='insta')?'bg-purple-200':'bg-purple-50')}>
+            <div className="flex rounded-3xl w-full overflow-hidden bg-gray-50 border-2 border-gray-100  justify-between my-8">
+                <div onClick={()=>setSocial('twitter')} className={"hover:bg-gray-100 cursor-pointer md:py-4 md:px-4 py-1 px-1 flex flex-row items-center justify-center "+((socialClr==='twitter')?'bg-gray-200':'bg-gray-50')}>
                     <TwitterIcon/>
                     <h1 className='md:flex hidden'>Twitter</h1>
                 </div> 
-                <div onClick={()=>setSocial('insta')} className={"hover:bg-purple-100 cursor-pointer  md:py-4 md:px-4 py-1 px-1 flex flex-row items-center justify-center"+((socialClr==='insta')?'bg-purple-200':'bg-purple-50')}>
+                <div onClick={()=>setSocial('insta')} className={"hover:bg-gray-100 cursor-pointer  md:py-4 md:px-4 py-1 px-1 flex flex-row items-center justify-center "+((socialClr==='insta')?'bg-gray-200':'bg-gray-50')}>
                     <InstaIcon/>
                     <h1 className='md:flex hidden'>Instagram</h1>
                 </div> 
-                <div onClick={()=>setSocial('fb')} className={"hover:bg-purple-100 cursor-pointer md:py-4 md:px-4 py-1 px-1 flex flex-row items-center rounded-r-3xl justify-center"+((socialClr==='insta')?'bg-purple-200':'bg-purple-50')}>
+                <div onClick={()=>setSocial('fb')} className={"hover:bg-gray-100 cursor-pointer md:py-4 md:px-4 py-1 px-1 flex flex-row items-center rounded-r-3xl justify-center"+((socialClr==='fb')?'bg-gray-200':'bg-gray-50')}>
                     <FbIcon/>
                     <h1 className='md:flex hidden'>Facebook</h1>
                 </div> 

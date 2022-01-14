@@ -6,6 +6,8 @@ import { TrashIcon } from '@heroicons/react/outline'
 import {useSelector} from "react-redux"
 import { selectUser} from './features/userSlice';
 import colorsClass from "./Colors"
+import {animMainDiv} from "./Animations"
+
 function FbCard({name,batch,img,msg,i,keyID}) {
     const [like,setLike]=useState(0);
     const [liked,setLiked]=useState(false);
@@ -16,10 +18,9 @@ function FbCard({name,batch,img,msg,i,keyID}) {
             setLike((doc.data().like))})
     }, [like])// eslint-disable-line react-hooks/exhaustive-deps
     
-    const svgClass1="mb-5 fill-current text-" + colorsClass[i][0]
-    const imgClass="w-12 h-12 rounded-full bg-"+colorsClass[i][0]
-    const spanClass="text-"+colorsClass[i][0]
-    const gradientClass="flex items-center space-x-4 p-6 md:px-10 md:py-6 bg-gradient-to-br rounded-b-xl leading-6 font-semibold text-white from-"+colorsClass[i][1]+" to-"+colorsClass[i][2]
+    const svgClass1="mb-5 fill-current " + colorsClass[i][0]
+    const spanClass=colorsClass[i][0]
+    const gradientClass="flex items-center space-x-4 p-6 md:px-10 md:py-6 bg-gradient-to-br rounded-b-xl leading-6 font-semibold text-white "+colorsClass[i][2]
     
       const handleLike=()=>{
             if(liked){
@@ -41,11 +42,15 @@ function FbCard({name,batch,img,msg,i,keyID}) {
       }
    
     return (
-        <motion.div initial={{opacity:0}}
-        animate={{opacity:1,transition:{duration: 0.5,delay:0.2}}} className="w-full">
-        <li
-            className="px-3 md:px-4 flex-none my-4 w-full">
-                    <figure className="shadow-lg rounded-xl flex-none md:w-xl">
+        <motion.div
+            variants={animMainDiv}
+            initial={{opacity:0 }}
+            animate={{opacity:1,transition:{delay: i*0.2} }}
+            exit="exit"
+            className="md:w-1/3 w-full">
+        <div
+            className="px-3 md:px-4 flex-none my-4 w-full h-full">
+                    <figure className="shadow-lg rounded-xl flex-none ">
                         
                         <blockquote className="rounded-t-xl bg-white px-6 py-8 md:p-10 text-lg md:text-xl leading-8 md:leading-8 font-semibold text-gray-900">
                         {(user&&(user.email==="greenclub@iitgn.ac.in"))?<TrashIcon onClick={handleDelete} className="ml-auto -mt-3 h-7 w-7 text-blue-300 hover:text-blue-600 transition-all"/>:<></>}
@@ -53,15 +58,15 @@ function FbCard({name,batch,img,msg,i,keyID}) {
                                 <path d="M13.415.001C6.07 5.185.887 13.681.887 23.041c0 7.632 4.608 12.096 9.936 12.096 5.04 0 8.784-4.032 8.784-8.784 0-4.752-3.312-8.208-7.632-8.208-.864 0-2.016.144-2.304.288.72-4.896 5.328-10.656 9.936-13.536L13.415.001zm24.768 0c-7.2 5.184-12.384 13.68-12.384 23.04 0 7.632 4.608 12.096 9.936 12.096 4.896 0 8.784-4.032 8.784-8.784 0-4.752-3.456-8.208-7.776-8.208-.864 0-1.872.144-2.16.288.72-4.896 5.184-10.656 9.792-13.536L38.183.001z">
                                 </path>
                             </svg>
-                            <p>{msg}</p>
+                            <p className="text-base">{msg}</p>
                         </blockquote>
                         <figcaption className={gradientClass}>
                             <div className="flex-none w-14 h-14 bg-white rounded-full flex items-center justify-center">
-                                <img src={img} alt="" className={imgClass} loading="lazy"/></div>
+                                <img src={img} alt="" className={"w-12 h-12 rounded-full "+colorsClass[i][1]} /></div>
                                 <div className="flex-auto">{name}<br/>
                                 <span className={spanClass}>{batch}</span></div>
                                 <cite className="flex"><div onClick={handleLike} className="opacity-50 hover:opacity-75 transition-opacity duration-200">
-                                    <span className="sr-only">Original tweet by Guillermo Rauch</span>
+                                    <span className="sr-only"></span>
                                     <div className="flex flex-col">
                                     {liked?
                                     <motion.svg
@@ -74,13 +79,13 @@ function FbCard({name,batch,img,msg,i,keyID}) {
                                      <path
                                         stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                                     </motion.svg>}
-                                    <div class="not-italic font-treb text-sm mx-auto">{like} likes</div>
+                                    <div class="not-italic font-treb text-sm mx-auto">{like}</div>
                                     </div>
                                     
                                     
                                     
                                     </div></cite></figcaption></figure>
-        </li>
+        </div>
         </motion.div>
     )
 }

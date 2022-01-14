@@ -7,6 +7,7 @@ import {useDispatch} from "react-redux"
 import {useEffect,useState} from "react"
 import Dropdown from "./Dropdown"
 import {serverTimestamp} from "firebase/firestore"
+import { GIcon } from "./vectors/importSVG";
 // Add a new document in collection "cities"
 
 function FbInput({img,name,batch}) {
@@ -14,7 +15,7 @@ function FbInput({img,name,batch}) {
     const user=useSelector(selectUser);
     const batchrole=useSelector(selectBatch);
     const dispatch = useDispatch();
-    const [batchHint,setBatchHint]=useState("ml-1");
+    const [batchHint,setBatchHint]=useState("mt-4");
     const handleWrite = (()=>{addDoc(collection(db, "docs"), {
         name: user.displayName,
         batch: batchrole.batch,
@@ -28,10 +29,13 @@ function FbInput({img,name,batch}) {
     });
     const handleLogin = (()=>{
         (batchrole.batch)?
-        signInWithPopup(auth, provider):setBatchHint("font-bold ml-1 text-red-600 animate-pulse")
+        signInWithPopup(auth, provider):setBatchHint("ring-2 transition-all ring-red-600 rounded-md mt-4 text-red-600 animate-pulse")
     });
     const checkLogin=()=>(batchrole &&(batchrole.batch!=null)?null:dispatch(
       logout()))
+    useEffect(() => {
+      batchrole&&batchrole.batch&&setBatchHint("mt-4")
+    }, [batchrole])
 
     useEffect(() => {
      
@@ -54,6 +58,7 @@ function FbInput({img,name,batch}) {
   }, [dispatch])// eslint-disable-line react-hooks/exhaustive-deps
   checkLogin();
     return (
+      <div className="md:w-1/3 w-full h-128">
         <div className="px-3 md:px-4 flex-none my-4 w-full">
                     {(user&&user.email)?<figure className="shadow-lg rounded-xl flex-none md:w-xl">
                         
@@ -77,7 +82,7 @@ function FbInput({img,name,batch}) {
                                 <path d="M13.415.001C6.07 5.185.887 13.681.887 23.041c0 7.632 4.608 12.096 9.936 12.096 5.04 0 8.784-4.032 8.784-8.784 0-4.752-3.312-8.208-7.632-8.208-.864 0-2.016.144-2.304.288.72-4.896 5.328-10.656 9.936-13.536L13.415.001zm24.768 0c-7.2 5.184-12.384 13.68-12.384 23.04 0 7.632 4.608 12.096 9.936 12.096 4.896 0 8.784-4.032 8.784-8.784 0-4.752-3.456-8.208-7.776-8.208-.864 0-1.872.144-2.16.288.72-4.896 5.184-10.656 9.792-13.536L38.183.001z">
                                 </path>
                             </svg>
-                            <textarea id="fbInputMsg" className="w-full placeholder-gray-400 text-gray-800" placeholder="Whats on your mind!" name="Text1" cols="40" rows="3"></textarea>
+                            <textarea id="fbInputMsg" className="w-full placeholder-gray-400 outline-none focus:bg-purple-50 rounded-xl p-2 text-gray-600" placeholder="Whats on your mind!" name="Text1" cols="40" rows="3"></textarea>
                             <div className="w-full flex border-t border-gray-100">
                             <button onClick={handleWrite} class="mt-4 my-auto ml-auto px-6 py-3 text-sm transition-all text-white bg-purple-600 font-semibold rounded-3xl border border-purple-200 hover:text-white hover:bg-purple-800 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">Submit</button>
                             </div>
@@ -87,7 +92,7 @@ function FbInput({img,name,batch}) {
                         
                         <figcaption className="flex items-center space-x-4 p-6 md:px-10 md:py-6 bg-gradient-to-br rounded-t-xl leading-6 font-semibold text-white from-purple-500 to-indigo-500">
                             
-                                <div className="flex-auto px-4 text-xl">Login<br/>
+                                <div className="flex-auto px-4 text-xl"> Login<br/>
                                 </div>
                                 <cite className="flex"><div href="" className="opacity-50 hover:opacity-75 transition-opacity duration-200 cursor:pointer">
                                     <span className="sr-only">Original tweet by Guillermo Rauch</span>
@@ -104,24 +109,22 @@ function FbInput({img,name,batch}) {
         clipRule="evenodd"
       />
     </svg></div></cite></figcaption>
-                            <blockquote className="rounded-b-xl bg-white px-6 py-4 md:p-6 text-lg md:text-xl leading-8 md:leading-8 font-semibold text-gray-900">
-                            <div className="mb-5 fill-current text-gray-400 font-thin flex flex-row"> Please select your <div className={batchHint}>role</div></div>
+                            
+                            <blockquote className="rounded-b-xl bg-white px-6 py-4 md:p-6 text-base md:text-lg leading-8 md:leading-8 font-semibold text-gray-900">
+                            <div className="mb-5 fill-current text-gray-400 font-thin flex flex-row text-left text-base"> Start posting feedbacks by selecting your role followed by login with your Google ID. </div>
 
-                            <Dropdown/>
-                            <div class="relative inline-block text-left">
-  
-</div>
-
-
-
-                            <div className="w-full flex border-t border-gray-100">
-                            <button onClick={handleLogin} class="mt-4 flex flex-row my-auto mx-auto px-6 py-3 text-sm transition-all text-white bg-purple-600 font-semibold rounded-3xl border border-purple-200 hover:text-white hover:bg-purple-800 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">Login</button>
+                            
+                           
+                            <div className="w-full items-center flex border-t border-gray-100">
+                            <div className={batchHint}><Dropdown/></div>
+                            <button onClick={handleLogin} class="mt-4 flex flex-row my-auto mx-auto px-6 py-2 text-sm items-center transition-all text-gray-600 bg-gray-50 font-semibold rounded-3xl border border-purple-200 hover:text-gray-800 hover:bg-gray-200 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2"><GIcon/>&nbsp; 2. Login</button>
                             </div>
                         </blockquote>
                         </figure>
                         
                         
                         }
+        </div>
         </div>
     )
 }

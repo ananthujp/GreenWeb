@@ -10,12 +10,33 @@
     font-family: 'Trebuchet';
     src: local('Trebuchet'), url(/src/fonts/trebuc.ttf);
   }
+  @font-face {
+    font-family: 'Poppins';
+    src: local('Poppins'), url(/src/fonts/Poppins-Regular.ttf);
+  }
+  @font-face {
+    font-family: 'Poppins-Bold';
+    src: local('Poppins-Bold'), url(/src/fonts/Poppins-Bold.ttf);
+  }
+  @font-face {
+    font-family: 'Poppins-Light';
+    src: local('Poppins-Light'), url(/src/fonts/Poppins-Thin.ttf);
+  }
 }
 @layer components {
+  
   /* .nav-btn {
     @apply 
   } */
-
+  #vertical-rl{
+    writingMode: 'vertical-lr';
+  }
+  #glassBg{background: rgba( 255, 255, 255, 0.05 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 2.5px );
+  -webkit-backdrop-filter: blur( 2.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );}
 #stars {
   width: 1px;
   height: 1px;

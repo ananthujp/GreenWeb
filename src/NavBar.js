@@ -2,13 +2,13 @@ import {Link,} from "react-router-dom";
 import {motion} from "framer-motion"
 import colorsClass from "./Colors"
 import BurgerMenuSm from './BurgerMenuSm';
-import { HomeIcon } from '@heroicons/react/outline'
-import { AnnotationIcon } from '@heroicons/react/outline'
-import { NewspaperIcon } from '@heroicons/react/outline'
-import { OfficeBuildingIcon } from '@heroicons/react/outline'
-import { ChatAltIcon } from '@heroicons/react/outline'
+import { HomeIcon,AnnotationIcon,NewspaperIcon,OfficeBuildingIcon,ChatAltIcon } from '@heroicons/react/outline'
+
 import LogoW from "./vectors/LogoW.svg"
 import LogoD from "./vectors/LogoD.svg"
+import { useSelector } from "react-redux";
+import {selectChannelName} from './features/appSlice';
+
 const variants = {
     open: {
       y: 0,
@@ -52,8 +52,10 @@ export  const MenuItem = ({ i ,toggle}) => {
 function NavBar({keyID}) {
   // const location = useLocation();
   const colorVar=3;
-  const bgClass="fixed z-20 top-0 w-full flex justify-between drop-shadow-md px-2 " + (((keyID==="/Home")||(keyID==="/")||(keyID==="/Title"))?" " : " bg-gradient-to-br from-"+colorsClass[colorVar][1]+" to-"+colorsClass[colorVar][2]);
-    return (
+  const slider=useSelector(selectChannelName);
+  const bgClass="fixed z-20 top-0 w-full flex justify-between drop-shadow-md px-2 " + (((keyID==="/Home")||(keyID==="/")||(keyID==="/Title"))?" " : " bg-gradient-to-br "+colorsClass[colorVar][2]);
+  if(slider){
+    return(
         <div>
             <BurgerMenuSm className="md:hidden block"/>
         <div className={bgClass}>
@@ -65,7 +67,7 @@ function NavBar({keyID}) {
             
             <div className="md:flex md:flex-row hidden mx-2  rounded-full mt-1 h-8">
             {itemIds.map((i) => ( 
-            <button autoFocus className="px-4 py-1 transition-colors cursor-pointer hover:bg-white text-gray-100 hover:text-indigo-500 rounded-2xl my-2 focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-75" 
+            <button key={`navbar-btn-key${i}`} autoFocus className="px-4 py-1 transition-colors cursor-pointer hover:bg-white text-gray-100 hover:text-indigo-500 rounded-2xl my-2 focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-75" 
             style={{ margin: "0px 0px 0px 0px"}}
             ><Link to={"/"+NavI[i]}> <div className="flex flex-row"><div className="w-6 mx-1 my-auto px-0.5 lg:block md:hidden">{Icons[i]}</div>{NavI[i]}</div></Link></button>
                 ))}
@@ -74,7 +76,10 @@ function NavBar({keyID}) {
             </div>
         </div>
        </div>
-    )
+    )}
+    else{
+      return(<></>)
+    }
 }
 
 export default NavBar

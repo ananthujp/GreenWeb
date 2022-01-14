@@ -3,7 +3,14 @@ module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    
     extend: {
+      minWidth: {
+        '64': '14rem',
+      },
+      maxWidth: {
+        '64': '16rem',
+      },
       colors: {
         fuchsia : colors.fuchsia,
         cyan : colors.cyan,
@@ -11,6 +18,9 @@ module.exports = {
         orange:colors.orange,
         pink:colors.pink,
         rose:colors.rose,
+        cust:{ 
+          bg:'#26003A',
+        }
       },
       spacing: {
         'w-110':'150%',
@@ -21,6 +31,9 @@ module.exports = {
       fontFamily: {
         'beb': 'Bebas, Arial',
         'treb': 'Trebuchet, Arial',
+        'pop': 'Poppins, Arial',
+        'popb': 'Poppins-Bold, Arial',
+        'popt': 'Poppins-Light, Arial',
         
       },
       backgroundImage: {

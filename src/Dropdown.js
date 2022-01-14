@@ -3,13 +3,13 @@ import { setbatch} from './features/userSlice';
 import {useDispatch} from "react-redux"
 function Dropdown() {
     const [visible,setVisible]=useState(false);
-    const [batch,setBatch]=useState("Select");
+    const [batch,setBatch]=useState("1.Select Role");
     const handleVisibility=()=>setVisible(!visible)
     const dispatch = useDispatch();
     useEffect(() => {
         dispatch(
             setbatch({
-            batch: (batch!=="Select")?batch:null
+            batch: (batch!=="1.Select Role")?batch:null
           }));
     }, [batch])// eslint-disable-line react-hooks/exhaustive-deps
     return (

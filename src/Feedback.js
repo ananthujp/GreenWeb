@@ -56,18 +56,13 @@ function Suggestions() {
                 initial="initial"
                 animate="animate"
                 exit="exit"
-                className="ftext-center mx-auto font-treb text-md text-purple-300">Lorem Ipsum</motion.h1>
-            <motion.div 
-                initial={{opacity:0}}
-                animate={{opacity:1,transition:{duration: 0.5, staggerChildren: 0.5,delay: 1.0}}}
-                exit={{opacity:0}} className=" mx-auto  w-full">
-                
-                <FbInput />
-            </motion.div>
+                className="ftext-center mx-auto font-treb text-md text-purple-300">Share your thoughts</motion.h1>
+            
             </motion.div>
             <div className="md:w-1 w-full flex md:border-l border-t border-gray-100"></div>
-            <div className="mx-auto md:w-3/5 w-4/5 flex overflow-hidden -my-8">
-            <ul className="flex flex-col items-center w-full py-8">
+            <div className="mx-auto md:w-full w-full flex overflow-hidden -my-8">
+            <div className="flex md:flex-row flex-col items-center md:flex-wrap w-full py-8">
+            <FbInput />
             {docs.map((doc,index)=>
                 <FbCard 
                 name={doc.data.name}
@@ -79,7 +74,7 @@ function Suggestions() {
                 keyID={doc.id}
             />)}
     
-            </ul>
+            </div>
            
             </div>
         </div>

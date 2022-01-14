@@ -36,7 +36,7 @@ function ContactCard({name,role,img,i,insta,linkd,fb,email}) {
                 exit="exit"
                 onMouseEnter={()=>setHover(true)} // Or onMouseOver
                 onMouseLeave={()=>setHover(false)}
-                className="my-12 mx-8 transition-all duration-500 flex flex-col rounded-md"
+                className="my-12 mx-8 items-center transition-all duration-500 flex flex-col rounded-md"
                 // style={{padding:'1rem',border: '2px solid ',borderColor: '#f3e8ff',backgroundColor:'#faf5ff',...hover && {borderColor: '#e9d5ff',backgroundColor: '#f3e8ff'}}}
                 
                 >
@@ -47,9 +47,9 @@ function ContactCard({name,role,img,i,insta,linkd,fb,email}) {
             </div>
             <h1 className="font-treb text-xl mx-auto mt-3 text-gray-500">{name}</h1>
             <h1 className="font-treb text-base mx-auto text-gray-300">{role}</h1>
-            <div className="flex justify-between mt-2 text-gray-400 stroke-current ">
+            <div className="flex justify-between w-full mt-2 text-gray-400 stroke-current ">
               {[insta,linkd,fb,email].map((data,index)=>
-                (data&&<div className="hover:text-fuchsia-200 transition-all" onClick={()=>window.location.assign(data)}>
+                (data&&<div className="hover:text-fuchsia-200 transition-all" onClick={index===3?()=>window.open(`mailto:${data}`):()=>window.location.assign(data)}>
                   {[<Insta/>,<Linkd/>,<Fb/>,<Gmail/>][index]}</div>))}
               
             </div>
