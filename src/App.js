@@ -14,6 +14,7 @@ import {Switch, Route, useLocation} from "react-router-dom";
 import Preloader from './Preloader';
 import Captain from './Captain';
 import Campus from './Campus';
+import Campaigns from './Campaigns';
 function App() {
   const location = useLocation();
   const [isLoaded,setLoaded]=useState(false);
@@ -64,6 +65,10 @@ function App() {
         <Route path="/Campus">
           <NavBar keyID='/Home'/>
           <Campus />
+        </Route>
+        <Route path="/Campaigns">
+          <NavBar keyID='/Home'/>
+          <Campaigns />
         </Route>
         </Switch>
        

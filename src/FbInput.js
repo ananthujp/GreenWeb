@@ -24,17 +24,25 @@ function FbInput({img,name,batch}) {
         email: user.email,
         date:serverTimestamp(),
         like: "0",
+        show:false,
       });
       document.getElementById("fbInputMsg").value=""
     });
     const handleLogin = (()=>{
         (batchrole.batch)?
-        signInWithPopup(auth, provider):setBatchHint("ring-2 transition-all ring-red-600 rounded-md mt-4 text-red-600 animate-pulse")
+        signInWithPopup(auth, provider).then((response)=>console.log(response.uid),(err)=>console.log(err)):setBatchHint("ring-2 transition-all ring-red-600 rounded-md mt-4 text-red-600 animate-pulse")
     });
     const checkLogin=()=>(batchrole &&(batchrole.batch!=null)?null:dispatch(
       logout()))
+
     useEffect(() => {
       batchrole&&batchrole.batch&&setBatchHint("mt-4")
+      dispatch(
+        login({
+        ...user,
+        batch: batchrole?batchrole.batch:"null",
+        
+      }))
     }, [batchrole])
 
     useEffect(() => {
@@ -56,17 +64,17 @@ function FbInput({img,name,batch}) {
       }
     })
   }, [dispatch])// eslint-disable-line react-hooks/exhaustive-deps
-  checkLogin();
+
     return (
       <div className="md:w-1/3 w-full h-128">
         <div className="px-3 md:px-4 flex-none my-4 w-full">
-                    {(user&&user.email)?<figure className="shadow-lg rounded-xl flex-none md:w-xl">
+                    {(user&&user.email&&batchrole&&batchrole.batch)?<figure className="shadow-lg rounded-xl flex-none md:w-xl">
                         
                         <figcaption className="flex items-center space-x-4 p-6 md:px-10 md:py-6 bg-gradient-to-br rounded-t-xl leading-6 font-semibold text-white from-purple-500 to-indigo-500">
                             <div className="flex-none w-14 h-14 bg-white rounded-full flex items-center justify-center">
                                 <img src={user.photo} alt="" className="w-12 h-12 rounded-full bg-purple-100" loading="lazy"/></div>
                                 <div className="flex-auto">{user.displayName}<br/>
-                                <span className="text-purple-100">{user.batch}</span></div>
+                                <span className="text-purple-100">{batchrole.batch}</span></div>
                                 <cite className="flex">
                                     <div 
                                      onClick={()=>auth.signOut()} 

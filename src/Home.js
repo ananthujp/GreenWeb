@@ -57,7 +57,9 @@ function Home() {
         exit={{opacity:1,transition: { duration: 0.5 , delay: 0.5, when: "afterChildren"}}}>
             
              <div className="relative h-screen w-screen z-0"></div><div className="relative h-screen w-screen z-0"></div>
-             {slider?<SlideBar/>:<></>}
+             {/* {slider? */}
+             <SlideBar/>
+             {/* :<></>} */}
              
             <div className="top-0 fixed z-5" onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}>
             <div style={{ transform: props.xy.interpolate(trans1)}} className="bg-sky w-screen h-screen bg-no-repeat bg-cover z-0"></div>
