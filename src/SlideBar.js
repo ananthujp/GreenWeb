@@ -89,23 +89,23 @@ function SlideBar() {
             className="bg-gray-300 bg-opacity-25 cursor-pointer hover:bg-gray-100 rounded-full w-px p-2 mx-auto my-2"
           ></div>
           <div
-            onClick={(e) => window.scrollTo(0, (window.innerHeight * 1.3) / 5)}
+            onClick={(e) => window.scrollTo(0, (window.innerHeight * 1.21) / 6)}
             className="bg-gray-300 bg-opacity-25 cursor-pointer hover:bg-gray-100 rounded-full w-px p-2 mx-auto my-2"
           ></div>
           <div
-            onClick={(e) => window.scrollTo(0, (window.innerHeight * 2.55) / 5)}
+            onClick={(e) => window.scrollTo(0, (window.innerHeight * 2.41) / 6)}
             className="bg-gray-300 bg-opacity-25 cursor-pointer hover:bg-gray-100 rounded-full w-px p-2 mx-auto my-2"
           ></div>
           <div
-            onClick={(e) => window.scrollTo(0, (window.innerHeight * 3.85) / 5)}
+            onClick={(e) => window.scrollTo(0, (window.innerHeight * 3.61) / 6)}
             className="bg-gray-300 bg-opacity-25 cursor-pointer hover:bg-gray-100 rounded-full w-px p-2 mx-auto my-2"
           ></div>
           <div
-            onClick={(e) => window.scrollTo(0, (window.innerHeight * 5) / 5)}
+            onClick={(e) => window.scrollTo(0, (window.innerHeight * 4.81) / 6)}
             className="bg-gray-300 bg-opacity-25 cursor-pointer hover:bg-gray-100 rounded-full w-px p-2 mx-auto my-2"
           ></div>
           <div
-            onClick={(e) => window.scrollTo(0, (window.innerHeight * 5) / 5)}
+            onClick={(e) => window.scrollTo(0, (window.innerHeight * 6) / 6)}
             className="bg-gray-300 bg-opacity-25 cursor-pointer hover:bg-gray-100 rounded-full w-px p-2 mx-auto my-2"
           ></div>
         </div>
