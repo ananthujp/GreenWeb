@@ -125,9 +125,10 @@ function HomeComponent() {
                 )}
               </div>
             </ScrollContainer>
+
             <div
               onClick={useCallback(() => history.push("/Feedback"), [history])}
-              className="flex flex-col cursor-pointer mr-2 items-start justify-start bg-opacity-25 w-6 transition-all h-28 mt-1 mx-2 hover:border-4 bg-white hover:bg-indigo-600  rounded-r-3xl"
+              className="flex flex-col animate-pulse cursor-pointer mr-2 items-start justify-start bg-opacity-25 w-6 transition-all h-28 mt-1 mx-2 hover:border-4 bg-white hover:bg-purple-600  rounded-r-3xl"
             >
               <h1 className="whitespace-nowrap text-purple-100 text-xs transform origin-bottom-left rotate-90">
                 Write a Review

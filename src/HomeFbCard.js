@@ -1,14 +1,19 @@
 import { motion } from "framer-motion";
 import colorsClass from "./Colors";
+import { useHistory } from "react-router-dom";
+import { useCallback } from "react";
+
 function HomeFbCard({ name, img, msg, i }) {
+  const history = useHistory();
   return (
     <motion.div
+      onClick={useCallback(() => history.push("/Feedback"), [history])}
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
         transition: { duration: 0.2, delay: 0.2 * parseInt(i) },
       }}
-      className="flex select-none w-64 min-w-64 max-w-64  h-28 bg-white bg-opacity-25 transition-all hover:bg-opacity-10 rounded-3xl mx-2 my-1"
+      className="flex cursor-pointer select-none w-64 min-w-64 max-w-64  h-28 bg-white bg-opacity-25 transition-all hover:bg-opacity-10 rounded-3xl mx-2 my-1"
     >
       <div
         className={

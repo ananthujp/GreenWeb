@@ -28,16 +28,14 @@ function SlideBar() {
     },
     {
       title: "Campaigns",
-      subtitle: "Campaigns",
-      content:
-        "Captain Kachra is a game designed to increase awareness of waste segregation as an initiative by the Green Office. The game teaches what various products go into which bin in a fun mini-game.",
+      subtitle: "On going",
+      content: "Be a part of the green movement!",
       logo: CampaignSVG,
     },
     {
       title: "Campus",
       subtitle: "Activities",
-      content:
-        "This game is aimed to increase awareness of waste segregation as an initiative by the Green Office. The game is structured as such when the game starts, daily wastage products pop up on the screen and the participant is required to find the correct bin for the disposal of the product",
+      content: "Explore our in campus activities!",
       logo: Activities,
     },
     {
