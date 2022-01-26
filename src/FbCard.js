@@ -88,10 +88,9 @@ function FbCard({ name, batch, img, msg, show, i, keyID }) {
 
   return (
     <motion.div
-      variants={animMainDiv}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { delay: i * 0.2 } }}
-      exit="exit"
+      exit={{ opacity: 0 }}
       className="md:w-1/3 w-full"
     >
       <div className="px-3 md:px-4 flex-none my-4 w-full h-full">

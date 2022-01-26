@@ -83,10 +83,10 @@ const AboutData = [
 function About() {
   return (
     <motion.div
-      variants={animMainDiv}
-      initial="initial"
-      animate="animate"
-      exit="exit"
+    // variants={animMainDiv}
+    // initial="initial"
+    // animate="animate"
+    // exit="exit"
     >
       <div className="w-full mt-12 flex flex-col items-center mb-10">
         <div className="flex flex-col w-3/4 md:w-1/2  mx-auto">
@@ -143,11 +143,16 @@ function About() {
           initial="initial"
           animate="animate"
           exit="exit"
-          className="ftext-center mx-auto font-treb text-xl text-purple-600 mt-8 mb-2"
+          className="text-center mx-auto font-treb text-xl text-purple-600 mt-8 mb-2"
         >
           Technical Details
         </motion.h1>
-        <div className="flex flex-col w-6/7 items-center justify-center transition-all bg-gray-50 hover:bg-purple-50 rounded-xl border-2 border-gray-100 hover:border-purple-100">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          className="flex flex-col w-6/7 items-center justify-center transition-all bg-gray-50 hover:bg-purple-50 rounded-xl border-2 border-gray-100 hover:border-purple-100"
+        >
           <div className="flex flex-row flex-wrap mt-2 mb-2 p-2">
             <img
               onClick={() =>
@@ -209,7 +214,7 @@ function About() {
               {Illustrations.map((item) => item + ", ")}
             </h1>
           </div>
-        </div>
+        </motion.div>
       </div>
     </motion.div>
   );
