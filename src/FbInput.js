@@ -2,11 +2,11 @@ import { collection, addDoc } from "firebase/firestore";
 import { db, provider, auth } from "./firebase";
 import { useSelector } from "react-redux";
 import { selectUser, selectBatch, login, logout } from "./features/userSlice";
+import { serverTimestamp } from "firebase/firestore";
 import { signInWithPopup } from "firebase/auth";
 import { useDispatch } from "react-redux";
 import { useEffect, useState } from "react";
 import Dropdown from "./Dropdown";
-import { serverTimestamp } from "firebase/firestore";
 import { GIcon } from "./vectors/importSVG";
 import { motion } from "framer-motion";
 // Add a new document in collection "cities"

@@ -14,6 +14,7 @@ import Preloader from "./Preloader";
 import Captain from "./Captain";
 import Campus from "./Campus";
 import Campaigns from "./Campaigns";
+import SustainableCampusInput from "./SustainableCampusInput";
 function App() {
   const location = useLocation();
   const [isLoaded, setLoaded] = useState(false);
@@ -61,9 +62,9 @@ function App() {
             <NavBar keyID="/Title" />
             <Campus />
           </Route>
-          <Route path="/Campaigns">
-            <NavBar keyID="/Title" />
-            <Campaigns />
+          <Route path="/AddData">
+            <NavBar keyID="/AddData" />
+            <SustainableCampusInput />
           </Route>
         </Switch>
       </AnimatePresence>
