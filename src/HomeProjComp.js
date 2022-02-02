@@ -33,7 +33,10 @@ function HomeProjComp() {
     },
   ]);
   return (
-    <div className="flex flex-col w-full h-full justify-between bg-white bg-opacity-5 rounded-3xl -ml-2">
+    <div
+      id="projComp"
+      className="flex flex-col w-full h-full justify-between bg-white bg-opacity-5 rounded-3xl -ml-2"
+    >
       <div className="flex flex-row m-2 h-12 py-2 bg-white bg-opacity-10 items-center rounded-3xl">
         <div className="flex w-9 h-9 ml-2 items-center justify-center p-1 rounded-full text-green-400 ">
           <CalendarIcon />

@@ -9,6 +9,7 @@ import { setChannelInfo } from "./features/appSlice";
 import HomeProjComp from "./HomeProjComp";
 import { motion } from "framer-motion";
 import { useHistory } from "react-router-dom";
+import SustainableCampus from "./SustainableCampus";
 
 function HomeComponent() {
   const history = useHistory();
@@ -99,7 +100,15 @@ function HomeComponent() {
           </motion.div>
         </div>
         <div className="max-w-xs md:flex hidden items-end ml-4 justify-center">
-          <img className=" w-4/5" src={Logo} alt="" />
+          <img className="w-4/5" src={Logo} alt="" />
+        </div>
+        <div className="flex flex-col -ml-8 max-w-xs my-2">
+          <h1 className="text-white font-pop mb-2 text-left ml-4 text-md">
+            Campus Footprint
+          </h1>
+          <SustainableCampus
+            height={document.getElementById("projComp")?.clientHeight}
+          />
         </div>
         <div className="flex flex-row max-w-xs justify-center items-center mx-6">
           <HomeProjComp />

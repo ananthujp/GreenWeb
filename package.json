@@ -29,6 +29,7 @@
     "react-scripts": "4.0.3",
     "react-smart-slider": "^0.1.2",
     "react-spring": "^9.3.0",
+    "recharts": "^2.1.8",
     "social-media-icons-react": "^1.1.10"
   },
   "scripts": {
