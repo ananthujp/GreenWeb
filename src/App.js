@@ -17,9 +17,13 @@ import Campaigns from "./Campaigns";
 import SustainableCampusInput from "./SustainableCampusInput";
 function App() {
   const location = useLocation();
+
+  const [initialFlag, setFlag] = useState(true);
   const [isLoaded, setLoaded] = useState(false);
   useEffect(() => {
-    setTimeout(() => setLoaded(true), 5500);
+    setTimeout(() => setLoaded(true), 550);
+
+    setTimeout(() => setFlag(false), 3550);
   }, []);
   return (
     <div>
@@ -27,7 +31,7 @@ function App() {
         <Switch location={location} key={location.pathname}>
           <Route exact path={["/", "/Home"]}>
             <NavBar keyID={location.pathname} />
-            {isLoaded ? <Home /> : <Preloader />}
+            {isLoaded ? <Home initialFlag={initialFlag} /> : <Preloader />}
           </Route>
 
           <Route path="/Feedback">

@@ -37,7 +37,7 @@ function HomeComponent() {
       id="glassBg"
       className="md:w-3/4 w-full overflow-y-auto md:mr-0 mr-4 md:h-3/5 h-4/5  flex flex-col md:justify-between justify-around rounded-xl overflow-hidden"
     >
-      <div className="flex md:flex-row flex-col justify-between md:h-full overflow-y-auto w-full m-4">
+      <div className="flex md:flex-row flex-col justify-between md:h-full md:overflow-hidden overflow-y-auto w-full m-4">
         <div className="flex flex-row">
           <motion.div
             initial={{ opacity: 0 }}
@@ -102,7 +102,7 @@ function HomeComponent() {
         <div className="max-w-xs md:flex hidden items-end ml-4 justify-center">
           <img className="w-4/5" src={Logo} alt="" />
         </div>
-        <div className="flex flex-col -ml-8 max-w-xs my-2">
+        <div className="flex flex-col md:-ml-8 max-w-xs my-2">
           <h1 className="text-white font-pop mb-2 text-left ml-4 text-md">
             Campus Footprint
           </h1>
