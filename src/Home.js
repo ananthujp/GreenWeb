@@ -29,10 +29,11 @@ function Home({ initialFlag }) {
   const dispatch = useDispatch();
   const h = window.screen.height / 2 - 200;
   //const yvalues = [-220, -150, -328, -200, -93];
-  const yvalues = [-h - 20, -h + 50, -128 - 8 - h, -h, -h + 107];
-  // const yvalues = window.matchMedia("(min-width: 640px)")
-  //   ? [-h + 5, -h + 50, -250 - h, -h, -h + 10]
-  //   : [-h - 20, -h + 50, -128 - h, -h, -h + 107];
+  //const yvalues = [-h - 20, -h + 50, -128 - 8 - h, -h, -h + 107];
+  const yvalues =
+    window.innerWidth < 640
+      ? [-h + 10, -h + 50, -58 - 8 - h, -h, -h + 107]
+      : [-h - 20, -h + 50, -128 - 8 - h, -h, -h + 107];
   const { scrollYProgress } = useViewportScroll();
   const scale = useTransform(scrollYProgress, [0, 100], [-152, -25]);
   const [props, set] = useSpring(() => ({
@@ -201,7 +202,7 @@ function Home({ initialFlag }) {
           >
             <h1
               style={{ transform: props.xy.interpolate(trans6) }}
-              className="absolute tracking-widexl w-full text-center text-white font-pop text-xl z-18 md:-bottom-12 bottom-4"
+              className="absolute tracking-widexl w-full md:text-xl  text-sm text-center text-white font-pop z-18 md:-bottom-12 bottom-4"
             >
               WELCOME TO
             </h1>
@@ -216,7 +217,7 @@ function Home({ initialFlag }) {
           >
             <h1
               style={{ transform: props.xy.interpolate(trans6) }}
-              className="absolute tracking-widest w-full text-center text-white font-beb text-9xl z-18 md:-bottom-12 bottom-4"
+              className="absolute tracking-widest md:text-9xl text-6xl w-full text-center text-white font-beb z-18 md:-bottom-12 bottom-4"
             >
               Green CLUB
             </h1>
