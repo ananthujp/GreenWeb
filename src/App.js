@@ -17,13 +17,13 @@ import Campaigns from "./Campaigns";
 import SustainableCampusInput from "./SustainableCampusInput";
 function App() {
   const location = useLocation();
-
+  const Load = Math.floor(Math.random() * (5000 - 1000 + 1) + 1000);
   const [initialFlag, setFlag] = useState(true);
   const [isLoaded, setLoaded] = useState(false);
   useEffect(() => {
-    setTimeout(() => setLoaded(true), 550);
+    setTimeout(() => setLoaded(true), Load);
 
-    setTimeout(() => setFlag(false), 3550);
+    setTimeout(() => setFlag(false), 6000 + Load);
   }, []);
   return (
     <div>

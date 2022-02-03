@@ -29,7 +29,7 @@ function Home({ initialFlag }) {
   const dispatch = useDispatch();
   const h = window.screen.height / 2 - 200;
   //const yvalues = [-220, -150, -328, -200, -93];
-  const yvalues = [-h - 20, -h + 50, -128 - h, -h, -h + 107];
+  const yvalues = [-h - 20, -h + 50, -128 - 8 - h, -h, -h + 107];
   // const yvalues = window.matchMedia("(min-width: 640px)")
   //   ? [-h + 5, -h + 50, -250 - h, -h, -h + 10]
   //   : [-h - 20, -h + 50, -128 - h, -h, -h + 107];
@@ -162,6 +162,9 @@ function Home({ initialFlag }) {
           <motion.div
             animate={{
               y: initialFlag ? [0, yvalues[0], yvalues[0], 0] : 0,
+              scale: initialFlag
+                ? [(1, 1), (1.2, 1.2), (1.2, 1.2), (1, 1)]
+                : [1, 1],
               transition: { duration: 3 },
             }}
           >
@@ -175,6 +178,9 @@ function Home({ initialFlag }) {
           <motion.div
             animate={{
               y: initialFlag ? [0, yvalues[1], yvalues[1], 0] : 0,
+              scale: initialFlag
+                ? [(1, 1), (1.2, 1.2), (1.2, 1.2), (1, 1)]
+                : [1, 1],
               transition: { duration: 3 },
             }}
           >
@@ -187,8 +193,9 @@ function Home({ initialFlag }) {
           </motion.div>
           <motion.div
             animate={{
-              y: initialFlag ? [-360, yvalues[2], yvalues[2], 4000] : 4000,
+              y: initialFlag ? [-360, yvalues[2], yvalues[2], 400] : 4000,
               opacity: initialFlag ? [0, 1, 1, 0] : 0,
+              scale: initialFlag ? [(1, 1), (1, 1), (1, 1), (1, 1)] : [1, 1],
               transition: initialFlag ? { duration: 3 } : { duration: 0 },
             }}
           >
@@ -201,8 +208,9 @@ function Home({ initialFlag }) {
           </motion.div>
           <motion.div
             animate={{
-              y: initialFlag ? [0, yvalues[3], yvalues[3], 4000] : 4000,
+              y: initialFlag ? [0, yvalues[3], yvalues[3], 400] : 4000,
               opacity: initialFlag ? [1, 1, 1, 0] : 0,
+              scale: initialFlag ? [(1, 1), (1, 1), (1, 1), (1, 1)] : [1, 1],
               transition: initialFlag ? { duration: 3 } : { duration: 0 },
             }}
           >
@@ -216,7 +224,10 @@ function Home({ initialFlag }) {
           <motion.div
             animate={{
               y: initialFlag ? [0, yvalues[4], yvalues[4], 0] : 0,
-              transition: initialFlag ? { duration: 3 } : { duration: 0 },
+              scale: initialFlag
+                ? [(1, 1), (1.2, 1.2), (1.2, 1.2), (1, 1)]
+                : [1, 1],
+              transition: { duration: 3 },
             }}
           >
             <animated.img
