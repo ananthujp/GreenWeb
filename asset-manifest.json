@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "./static/css/main.b23bff89.chunk.css",
-    "main.js": "./static/js/main.4f804352.chunk.js",
-    "main.js.map": "./static/js/main.4f804352.chunk.js.map",
+    "main.js": "./static/js/main.c3edfcd3.chunk.js",
+    "main.js.map": "./static/js/main.c3edfcd3.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.27339fe6.js",
     "runtime-main.js.map": "./static/js/runtime-main.27339fe6.js.map",
     "static/js/2.3e11c811.chunk.js": "./static/js/2.3e11c811.chunk.js",
@@ -23,7 +23,6 @@
     "static/media/campaign.6bca0b98.svg": "./static/media/campaign.6bca0b98.svg",
     "static/media/captn.7bfb13db.svg": "./static/media/captn.7bfb13db.svg",
     "static/media/dhanesh.b2fe75c3.png": "./static/media/dhanesh.b2fe75c3.png",
-    "static/media/dp.c2c14829.png": "./static/media/dp.c2c14829.png",
     "static/media/firebase.bf28194c.png": "./static/media/firebase.bf28194c.png",
     "static/media/hero.09a1e129.png": "./static/media/hero.09a1e129.png",
     "static/media/iit.ca256d03.svg": "./static/media/iit.ca256d03.svg",
@@ -44,6 +43,6 @@
     "static/js/runtime-main.27339fe6.js",
     "static/js/2.3e11c811.chunk.js",
     "static/css/main.b23bff89.chunk.css",
-    "static/js/main.4f804352.chunk.js"
+    "static/js/main.c3edfcd3.chunk.js"
   ]
 }
