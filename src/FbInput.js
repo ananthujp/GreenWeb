@@ -150,7 +150,6 @@ function FbInput({ img, name, batch }) {
           <figure className="shadow-lg rounded-xl flex-none md:w-xl">
             <figcaption className="flex items-center space-x-4 p-6 md:px-10 md:py-6 bg-gradient-to-br rounded-t-xl leading-6 font-semibold text-white from-purple-500 to-indigo-500">
               <div className="flex-auto px-4 text-xl">
-                {" "}
                 Login
                 <br />
               </div>

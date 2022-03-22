@@ -4,6 +4,10 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      inset: {
+        "-82": "-22.8rem",
+        "-81": "-22rem",
+      },
       letterSpacing: {
         widexl: "1.2em",
       },
@@ -22,6 +26,7 @@ module.exports = {
         rose: colors.rose,
         cust: {
           bg: "#26003A",
+          bg2: "#410063",
         },
       },
       spacing: {

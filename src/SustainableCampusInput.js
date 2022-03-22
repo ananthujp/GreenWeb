@@ -31,10 +31,109 @@ function SustainableCampusInput() {
     "December",
   ];
   const [docs, setDoc] = useState([]);
-  const [dtype, setDtype] = useState("F");
+  const [dtype, setDtype] = useState("E");
+  const Dropdown = () => {
+    const [visible, setVisible] = useState(false);
+    const handleVisibility = () => setVisible(!visible);
+    return (
+      <div className="relative">
+        <div>
+          <button
+            type="button"
+            onClick={handleVisibility}
+            class="inline-flex justify-center w-32 rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500"
+            id="menu-button"
+            aria-expanded="true"
+            aria-haspopup="true"
+          >
+            {retType(dtype)}
+
+            <svg
+              class="-mr-1 ml-2 h-5 w-5"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+        </div>
+
+        {visible ? (
+          <div
+            class="origin-top-center absolute right-0 mt-2 w-full rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
+            role="menu"
+            aria-orientation="vertical"
+            aria-labelledby="menu-button"
+            tabindex="-1"
+          >
+            <div class="py-1 " role="none">
+              <div
+                onClick={() => {
+                  setDtype("F");
+                  handleVisibility();
+                }}
+                class="cursor-default text-gray-700 block px-4 py-2 text-sm text-left hover:bg-purple-50"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-0"
+              >
+                Food
+              </div>
+              <div
+                onClick={() => {
+                  setDtype("E");
+                  handleVisibility();
+                }}
+                class="cursor-default text-gray-700 block px-4 py-2 text-sm text-left hover:bg-purple-50"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-1"
+              >
+                Electricity
+              </div>
+              <div
+                onClick={() => {
+                  setDtype("W");
+                  handleVisibility();
+                }}
+                class="cursor-default text-gray-700 block px-4 py-2 text-sm text-left hover:bg-purple-50"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-2"
+              >
+                Water
+              </div>
+
+              <div
+                onClick={() => {
+                  setDtype("S");
+                  handleVisibility();
+                }}
+                class="cursor-default text-gray-700 block px-4 py-2 text-sm text-left hover:bg-purple-50"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-2"
+              >
+                Segregation
+              </div>
+            </div>
+          </div>
+        ) : (
+          <></>
+        )}
+      </div>
+    );
+  };
+
   const dataRef = collection(db, "SCamp");
-  const nextMonth = () => {
-    return docs.length > 11 ? months[docs.length % 12] : months[docs.length];
+  const nextMonth = (n) => {
+    return n > 11 ? months[n % 12] : months[n];
   };
   useEffect(() => {
     onSnapshot(query(dataRef, orderBy("timestamp", "asc")), (doc) => {
@@ -47,6 +146,8 @@ function SustainableCampusInput() {
         return "Electricity";
       case "W":
         return "Water";
+      case "F":
+        return "Food";
       case "S":
         return "Segregation";
       default:
@@ -102,7 +203,7 @@ function SustainableCampusInput() {
   };
   const handleWrite = () => {
     addDoc(collection(db, "SCamp"), {
-      month: nextMonth(),
+      month: nextMonth(docs.length + 7),
       Eusage: 0,
       Wusage: 0,
       Susage: 0,
@@ -143,15 +244,16 @@ function SustainableCampusInput() {
             initial="initial"
             animate="animate"
             exit="exit"
-            className="ftext-center mx-auto font-treb text-md text-purple-300"
+            className="text-center mx-auto font-treb text-md text-purple-300"
           >
             Connect with us
           </motion.h1>
           <div className="flex flex-col shadow-md rounded-xl">
-            <div className="rounded-t-xl p-4 bg-gradient-to-br from-purple-500 to-indigo-500">
+            <div className="rounded-t-xl p-4 flex flex-row justify-between bg-gradient-to-br from-purple-500 to-indigo-500">
               <h1 className="font-treb text-white text-lg">
                 Please Enter Data
               </h1>
+              <Dropdown />
             </div>
             <div className="flex flex-col p-4 justify-center">
               <div className="bg-gray-100 font-bold text-indigo-800 font-pop p-2 rounded-t-lg flex flex-row justify-between w-full">

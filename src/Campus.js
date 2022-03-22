@@ -8,7 +8,7 @@ const CampusActivities = [
   {
     name: "Plogging",
     details:
-      "In order to maintain cleanliness in the IITGN campus, the Green Club organized a plogging drive (waste collection drive) at IITGN on the 4th of September, 2021. We received an enthusiastic response from the student community as more than 15 students participated in the drive. Through their collective efforts, we were able to collect 65 kgs of waste.",
+      "We thought it’s time we sync together the two good habits of jogging and cleaning. So, we organised a plogging drive in September 2021 and through collective efforts of the student and green community we collected and cleared 65kgs of waste.",
     logo: "1Q1i7QjNTvCFAweWDzqO3I5VhYMQ8Y7gW",
     images: [
       "1lYM8xl1rqoEzKXYHY9_RZlnAwgkP-Pkj",
@@ -21,7 +21,7 @@ const CampusActivities = [
   {
     name: "Essay Writing",
     details:
-      "The best way to make the world a sustainable place is to educate the people, and what better time to educate them than when they are young! In order to raise awareness about subjects like Waste Management, Green Campus, Environment, and Pollution among children, the Green Club organised an essay writing competition. We received more than 20 responses from children around the campus and they displayed an inspiring desire to make the world sustainable.",
+      "The best way to make the world a sustainable place is to educate the people, and what better time to educate them than when they are young! In order to raise awareness about subjects like Waste Management, Green Campus, Environment, and Pollution among children, we organised an essay writing competition. We received more than 20 responses from children around the campus who displayed an inspiring desire to make the world sustainable.",
     logo: "1LKBrppT_B6cdWJ8VS4Hpb55ppR19nir-",
     images: [
       "1_lxjRg4QyvvzWr56h16X4S0iKvrxTl8m",
@@ -32,14 +32,14 @@ const CampusActivities = [
   {
     name: "E-waste collection",
     details:
-      "Being a technical institute, it is evident that the students at IITGN use electronic items for academic as well as leisure purposes. To keep such electronic items out of landfills in order to keep the environment safe, Green Club set up boxes for collecting e-waste across the campus on the 3rd of September.",
+      "Being a technical institute, we no doubt generate a whopping amount of e-waste.  To create awareness and curtail unscientific disposal of e-waste Green Club set up  public drop boxes at a convenient location for people to drop their e-waste.",
     logo: "1mCYZonQJlJEkZsNC3qVVi5n7MuqvHWp3",
     images: ["1mCYZonQJlJEkZsNC3qVVi5n7MuqvHWp3"],
   },
   {
     name: "Eco-friendly Rakshabandhan",
     details:
-      "On the auspicious occasion of Rakshabandhan, where brothers pledge to protect their sisters from all harm, we at Green Club took a pledge to protect the environment. For this very reason, we celebrated an eco-friendly Rakshabandhan and promoted it across the campus by giving away eco-friendly rakhis which were wholly biodegradable.",
+      "On the auspicious occasion of Rakshabandhan, we decided not just to celebrate our close relationships and protect our loved ones but also strengthen our relationship with Mother Earth. We at Green Club took a pledge to protect the environment and prepared biodegradable rakhis and paved the way for an eco-friendly rakhshabandhan.",
     logo: "19lfd4ZMzfVmp8dbhOJoH4FNMaGBl-znI",
     images: [
       "1iFor-00dEgqT-K7kRHVRg6rFjoCfbhsJ",
@@ -50,28 +50,23 @@ const CampusActivities = [
   {
     name: "Paperless Diwali",
     details:
-      "During the Diwali of 2021, the Green Club created a platform to create e-greeting cards to share with loved ones. The cards were personalised and had various themes and colors to choose from, and could be shared through a link. A total of 229 festive e-cards were generated.",
+      "The Diwali of 2021 is perhaps the memorable one. A Digital Diwali of sorts, we created personalised cards with various themes and colours to choose from and shared them with our loved ones through a link. A total of 229 festive e-cards were generated.",
     logo: "1tBAdYx4y6ZDz9vaSZB1pDoZMVG4HCPP6",
     url: "./ecards",
   },
   {
     name: "Awareness Talk",
     details:
-      "As part of Swachhata Pakhwada, Green Club organised a webinar by Mr. Vijay Kothari, CEO of a creative waste management start-up company, WOW (Wealth Out of Waste) Waste Management Pvt. Ltd. WOW collects dry recyclable waste from customers, pays them, and recycles the waste, also collaborating with corporations to help them achieve a zero carbon footprint.",
+      "We believe it is important to keep having “The Green Talk”. So as part of Swachhata Pakhwada, we organised a webinar by Mr. Vijay Kothari, CEO of a creative waste management start-up company, WOW (Wealth Out of Waste) Waste Management Pvt. Ltd. WOW collects dry recyclable waste from customers, pays them, and recycles the waste and collaborates with corporations to help them achieve zero-carbon footprint.",
     logo: "1ivf4zXzxuENOT4iyKXgPJjonWNAfsp9q",
     images: ["1ivf4zXzxuENOT4iyKXgPJjonWNAfsp9q"],
   },
   {
     name: "Cleanest-Hostel Competition",
     details:
-      "The hostels of IIT GN were put up against one another in a contest for the most clean hostel. For two weeks from September 1st to 15th, every hostel was evaluated and the cleanest hostel was awarded with a Swachhata Shield",
+      "Our hostels are unique not just for their names but also in the way they compare and compete with each other. For two weeks in September 2021, every hostel was evaluated on a set of parameters and the cleanest hostel was awarded the Swachhata Shield. To say the least, a little competition never hurt anyone, it just made our hostel life happier and healthier.",
     logo: "1f3yfdrVnlnvr7pcNlmz7c2pcf1i_55Bl",
     images: ["1f3yfdrVnlnvr7pcNlmz7c2pcf1i_55Bl"],
-  },
-  {
-    name: "Sustainable Menstrual Campaign",
-    details:
-      "This initiative began with a survey among the female students of IIT Gandhinagar, the majority of whom reported using plastic-based period products. Menstruating members who haven't taken the survey are encouraged to do so. This survey helps you understand why plastic-based menstrual products are a huge issue and introduce you to the many sustainable options in the market",
   },
 ];
 function Campus() {

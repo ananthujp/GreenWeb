@@ -8,7 +8,7 @@ import Logo from "./vectors/ico/iitl.svg";
 import { setChannelInfo } from "./features/appSlice";
 import HomeProjComp from "./HomeProjComp";
 import { motion } from "framer-motion";
-import { useHistory } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import SustainableCampus from "./SustainableCampus";
 
 function HomeComponent() {
@@ -73,15 +73,20 @@ function HomeComponent() {
               variants={item}
               className="text-xs max-w-xs max-h-24 overflow-y-auto ml-4 mt-1 text-justify font-popt text-white"
             >
-              The Green Club is IIT Gandhinagar’s sustainability club which aims
-              to promote cleanliness and sensitivity to environmental issues.
-              IIT Gandhinagar has one of the most efficient campuses in terms of
-              green development and eco-friendly initiatives, including the
-              promotion of aesthetic value and preservation of the campus’s
-              biodiversity. The Green Club facilitates this further, by
-              encouraging the student community to also work towards making the
-              campus sustainable and develop innovative ideas for conserving the
-              environment.
+              IIT Gandhinagar is one of the most efficient campuses when it
+              comes to green development and eco-friendly initiatives, whereby
+              we seek to promote aesthetic value through the preservation of the
+              campus biodiversity. Through the creation of a Green Club, we
+              propose to actively encourage the IIT Gandhinagar community to
+              minimize the impact of our campus on the environment. Students and
+              staff can use this platform to share their love for nature, come
+              up with innovative solutions and start-up ideas for environmental
+              problems and reduce the overall carbon footprint of the Institute.
+              If there is one overarching aim or wish we have it is that we
+              continue to meaningfully contribute to our campus’ sustainability
+              goals but without your support, our activities will have a limited
+              impact. So, what are you waiting for? Come be a part of the green
+              movement on campus!
             </motion.h1>
             <motion.div
               variants={item}
@@ -93,9 +98,12 @@ function HomeComponent() {
               >
                 View More
               </button>
-              <button class="py-3 my-2 px-6 -ml-4 bg-white text-indigo-500 font-pop rounded-full text-xs hover:bg-indigo-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-75">
+              <Link
+                to={"/About"}
+                className="py-3 my-2 px-6 bg-white text-indigo-500 font-pop rounded-full text-xs hover:bg-indigo-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-75"
+              >
                 About
-              </button>
+              </Link>
             </motion.div>
           </motion.div>
         </div>
@@ -123,6 +131,7 @@ function HomeComponent() {
                 {docs.map((doc, index) =>
                   doc.data.show ? (
                     <HomeFbCard
+                      key={`home.fbcard.${index}`}
                       name={doc.data.name}
                       img={doc.data.img}
                       msg={doc.data.msg}

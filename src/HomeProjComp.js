@@ -42,11 +42,11 @@ function HomeProjComp() {
           <CalendarIcon />
         </div>
         <h1 className="font-pop py-2 text-gray-100 md:text-base text-sm ml-2">
-          On Going Activities
+          Ongoing Activities
         </h1>
       </div>
 
-      <motion.div className="bg-white flex- flex-col bg-opacity-5 max-h-36 h-full rounded-3xl mx-2 mb-0 -mt-1 overflow-y-auto">
+      <motion.div className="bg-white flex- flex-col bg-opacity-5 h-full rounded-3xl mx-2 mb-1 -mt-1 overflow-y-auto">
         {ProjData.map((doc, index) => (
           <motion.div
             onClick={() => {
@@ -86,7 +86,7 @@ function HomeProjComp() {
         <div
           onClick={() =>
             (window.location =
-              "mailto:greenclub@iitgn.ac.in?subject=I would like to join the Club&body=Dear Admin,%0D%0A %0D%0A I went through the Green Club website and I found following campaigns interesting :%0D%0A" +
+              "mailto:greenclub@iitgn.ac.in?subject=I would like to join the Club&body=Dear Green Club,%0D%0A %0D%0A I went through the Green Club website and I found following campaigns interesting :%0D%0A" +
               ProjData.map((doc, index) =>
                 doc.add ? "%0D%0A" + "-" + doc.name : null
               ) +
@@ -104,7 +104,7 @@ function HomeProjComp() {
         <div
           onClick={() =>
             (window.location =
-              "mailto:greenclub@iitgn.ac.in?subject=I would like to join the Club&body=Dear Admin,%0D%0A %0D%0A I went through the Green Club website and I found following campaigns interesting :%0D%0A" +
+              "mailto:greenclub@iitgn.ac.in?subject=I would like to join the Club&body=Dear Green Club,%0D%0A %0D%0A I went through the Green Club website and I found following campaigns interesting :%0D%0A" +
               ProjData.map((doc, index) =>
                 doc.add ? "%0D%0A" + "-" + doc.name : null
               ) +

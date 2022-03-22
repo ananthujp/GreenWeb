@@ -9,19 +9,19 @@ const HeroData = [
     title: "Green",
     subtitle: "IIT GN",
     content:
-      "The Green Club is IIT Gandhinagar’s sustainability club which aims to promote cleanliness and sensitivity to environmental issues. IIT Gandhinagar has one of the most efficient campuses in terms of green development and eco-friendly initiatives, including the promotion of aesthetic value and preservation of the campus’s biodiversity. The Green Club facilitates this further, by encouraging the student community to also work towards making the campus sustainable and develop innovative ideas for conserving the environment.",
+      "IIT Gandhinagar is one of the most efficient campuses when it comes to green development and eco-friendly initiatives, whereby we seek to promote aesthetic value through the preservation of the campus biodiversity. Through the creation of a Green Club, we propose to actively encourage the IIT Gandhinagar community to minimize the impact of our campus on the environment.If there is one overarching aim or wish we have it is that we continue to meaningfully contribute to our campus’ sustainability goals but without your support, our activities will have a limited impact. So, what are you waiting for? Come be a part of the green movement on campus!",
     logo: Iit,
   },
   {
     title: "Captain",
     subtitle: "Kachra",
     content:
-      "Captain Kachra is a game designed to increase awareness of waste segregation as an initiative by the Green Office. The game teaches what various products go into which bin in a fun mini-game.",
+      "Only green work and no play? Well not anymore. We have designed for you a game where something as simple as separating trash can make you a winner and a bit wealthier too! Captain Kachra is a game designed to increase awareness of waste segregation as an initiative by the Green Office. The game teaches what various products go into which bin in a fun mini-game.",
     logo: Captain,
   },
   {
     title: "Campaigns",
-    subtitle: "On going",
+    subtitle: "Ongoing",
     content: "Be a part of the green movement!",
     logo: CampaignSVG,
   },
@@ -35,14 +35,14 @@ const HeroData = [
     title: "Green",
     subtitle: "Blog",
     content:
-      "Publish your passions your way. Whether you'd like to share your knowledge, experiences or the latest news, create a unique and beautiful blog.",
+      "We want to hear your stories, your experiences, your contribution, your message to make this world a better place. Come pen down your thoughts and create a unique and beautiful blog.",
     logo: Blog,
   },
   {
     title: "Store",
     subtitle: "Green",
     content:
-      "Green Store will be a market place for all IIT GN'ians to buy, sell and explore products of various kinds. You can be a buyer or the owner of your own store. The store also helps you sell your un-used stuff, save your space and thereby helping others to get items in a cheaper way.",
+      "Looking to buy sell or just explore products? You have come to the right place! Green Store is here to help you sell your un-used stuff at affordable prices, get you that extra room space and switch to sustainable shopping. Every product you either purchase or sell is taking us a step closer to a sustainable and secure future.",
     logo: Store,
   },
 ];

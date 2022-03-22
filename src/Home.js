@@ -27,13 +27,15 @@ const trans7 = (x, y) => `translate3d(${x / 12}px,${y / 12}px,0) scaleX(1.1)`;
 
 function Home({ initialFlag }) {
   const dispatch = useDispatch();
-  const h = window.screen.height / 2 - 200;
+  //const h = window.screen.height / 2 - 200;
+  const h = window.screen.height / 2;
   //const yvalues = [-220, -150, -328, -200, -93];
   //const yvalues = [-h - 20, -h + 50, -128 - 8 - h, -h, -h + 107];
   const yvalues =
     window.innerWidth < 640
-      ? [-h + 10, -h + 50, -58 - 8 - h, -h, -h + 107]
-      : [-h - 20, -h + 50, -128 - 8 - h, -h, -h + 107];
+      ? [0.7 * -h, -h * 0.59, -h * 0.68, -h * 0.55, -h * 0.48]
+      : [0.75 * -h, -h * 0.6, -h * 0.9, -h * 0.68, -h * 0.45];
+  // : [-h - 20, -h + 50, -128 - 8 - h, -h, -h + 107];
   const { scrollYProgress } = useViewportScroll();
   const scale = useTransform(scrollYProgress, [0, 100], [-152, -25]);
   const [props, set] = useSpring(() => ({
@@ -191,6 +193,10 @@ function Home({ initialFlag }) {
               alt=""
               className="absolute z-18 md:-bottom-12 bottom-4"
             />
+            <animated.div
+              style={{ transform: props.xy.interpolate(trans5) }}
+              className="absolute bg-cust-bg2 w-full h-96 z-18 md:-bottom-96  -bottom-80"
+            />
           </motion.div>
           <motion.div
             animate={{
@@ -240,7 +246,7 @@ function Home({ initialFlag }) {
 
             <animated.div
               style={{ transform: props.xy.interpolate(trans5) }}
-              className="absolute bg-cust-bg w-full h-96 z-18 md:-bottom-96  -bottom-80"
+              className="absolute bg-cust-bg w-full h-96 z-18 md:-bottom-96  -bottom-82"
             />
           </motion.div>
         </motion.div>

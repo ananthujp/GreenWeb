@@ -132,7 +132,7 @@ function Social() {
             initial="initial"
             animate="animate"
             exit="exit"
-            className="font-beb mt-10 text-purple-300 mx-auto lg:text-8xl md:text-6xl text-4xl"
+            className="font-beb mt-10 text-purple-400 mx-auto lg:text-8xl md:text-6xl text-4xl"
           >
             SOCIAL MEDIA
           </motion.h1>
@@ -141,7 +141,7 @@ function Social() {
             initial="initial"
             animate="animate"
             exit="exit"
-            className="ftext-center mx-auto font-treb text-md text-purple-300"
+            className="ftext-center mx-auto font-treb text-md text-purple-400"
           >
             Connect with us
           </motion.h1>

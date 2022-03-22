@@ -235,7 +235,7 @@ function Captain() {
         </div>
         <div className="flex justify-center">
           <button
-            onClick={() => window.location.assign("./game/")}
+            onClick={() => window.location.assign("./game/beta/")}
             class="py-2 cursor-pointer my-2 px-4 bg-white text-indigo-500 font-semibold rounded-lg shadow-md hover:bg-indigo-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-75"
           >
             Play Game!

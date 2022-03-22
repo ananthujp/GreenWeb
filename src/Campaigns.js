@@ -29,7 +29,7 @@ function Campaigns() {
             "font-beb mt-20  text-transparent bg-clip-text bg-gradient-to-br from-purple-500 to-pink-300 mx-auto lg:text-8xl md:text-6xl text-6xl"
           }
         >
-          ON GOING
+          ONGOING
         </motion.h1>
         <motion.h1
           variants={animH2}
@@ -164,20 +164,27 @@ function Campaigns() {
                 <Vector2
                   className=""
                   color="#5f3b8f"
-                  link="https://mltmwfntn9iv.i.optimole.com/M1H_c3A.LZVM~1deda/w:auto/h:auto/q:55/https://anahatngo.org/wp-content/uploads/2021/01/DSC_0058-scaled.jpg"
+                  link={
+                    "https://drive.google.com/uc?export=view&id=135WeiEhDVFy1bIRkTGN7Ph8c2md07_O7"
+                  }
                 />
               </div>
               <div className="md:w-2/5 w-4/5 flex flex-col mx-2 md:mt-0 mt-4 justify-center text-left">
                 <h1 className="text-justify text-purple-800">
-                  This initiative began with a survey among the female students
-                  of IIT Gandhinagar, the majority of whom reported using
-                  plastic-based period products. Menstruating members who
-                  haven't taken the survey are encouraged to do so. This survey
-                  helps you understand why plastic-based menstrual products are
-                  a huge issue and introduce you to the many sustainable options
-                  in the market
+                  Sustainable Period Project: As part of the campaign, Green
+                  Club members developed an interactive google form that helped
+                  female students calculate the number of single use pads they
+                  have used since they started menstruating and the amount of
+                  money they spent for these products. The form introduced them
+                  to sustainable menstrual products while giving a comparison
+                  between the cost and impact of the sustainable and plastic
+                  based products, with sustainable products being cheaper long
+                  term and better for the planet. The form (N=80) indicated that
+                  38.8% students bought sustainable products immediately after
+                  or decided to buy in the next cycle, while 56.3% indicated
+                  that they will research the product before purchasing.
+                  <br />
                 </h1>
-                <h1 className="text-left mt-2">Contact : </h1>
               </div>
             </div>
           </motion.div>
@@ -186,14 +193,26 @@ function Campaigns() {
               initial={{ height: 0, opacity: 0 }}
               animate={{ height: "auto", opacity: 1 }}
               exit={{ height: 0 }}
-              className="md:w-1/2 w-4/5 text-sm font-treb text-purple-800  text-justify flex justify-center items-center mx-auto"
+              className="md:w-1/2 w-4/5 text-sm font-treb text-purple-800  text-justify flex flex-col justify-center items-center mx-auto"
             >
-              This initiative began with a survey among the female students of
-              IIT Gandhinagar, the majority of whom reported using plastic-based
-              period products. Menstruating members who haven't taken the survey
-              are encouraged to do so. This survey helps you understand why
-              plastic-based menstrual products are a huge issue and introduce
-              you to the many sustainable options in the market
+              <h1>
+                Continuing the sustainable period project, Green Club members
+                invited The Woman’s Company to showcase their sustainable period
+                products, offering IITGN a discount of 30% on all products to
+                encourage female students and staff to switch to sustainable
+                products (Cotton Bamboo pads and Menstrual cups).
+                <br />
+                Feel free to take the sustainable period{" "}
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSd0t12AI5HvrtCJq3iU8uV2Mjl0pV1iKLr7M3Y2G00AA9_sQA/viewform?usp=sf_link"
+                  alt=""
+                  className="text-rose-600"
+                >
+                  &nbsp;project quiz &nbsp;
+                </a>
+                to know about the cost of your period products, on your pocket
+                and the planet.
+              </h1>
             </motion.div>
           ) : (
             <></>
@@ -231,15 +250,14 @@ function Campaigns() {
             <div className="flex md:flex-row flex-col items-center justify-between  my-2">
               <div className="md:w-2/5 w-4/5 flex flex-col mx-2 md:mt-0 mt-4 justify-center text-left">
                 <h1 className="text-justify text-white">
-                  This initiative began with a survey among the female students
-                  of IIT Gandhinagar, the majority of whom reported using
-                  plastic-based period products. Menstruating members who
-                  haven't taken the survey are encouraged to do so. This survey
-                  helps you understand why plastic-based menstrual products are
-                  a huge issue and introduce you to the many sustainable options
-                  in the market
+                  Green Club members collected donated sarees to convert them to
+                  clothes with the help of NEEV tailors. Designs were chosen to
+                  keep them free size, allowing people to wear them for longer
+                  due to its ability to change fitting. Therefore, Kaftans and
+                  wrap-around skirts were created. These clothes were sold to
+                  IITGN students on campus and 100% of the proceeds were given
+                  to the NEEV tailors.
                 </h1>
-                <h1 className="text-left mt-2">Contact : </h1>
               </div>
               <div className="text-center w-3/5 md:ml-8 items-center justify-center flex flex-row">
                 <Vector1
@@ -257,12 +275,16 @@ function Campaigns() {
               exit={{ height: 0 }}
               className="md:w-1/2 w-4/5 text-sm font-treb text-white  text-justify flex justify-center items-center mx-auto"
             >
-              This initiative began with a survey among the female students of
-              IIT Gandhinagar, the majority of whom reported using plastic-based
-              period products. Menstruating members who haven't taken the survey
-              are encouraged to do so. This survey helps you understand why
-              plastic-based menstrual products are a huge issue and introduce
-              you to the many sustainable options in the market
+              <img
+                className="w-1/2 shadow-sm rounded-md"
+                src="https://drive.google.com/uc?export=view&id=1aXLm2IIjuZVqDmSpCFyupoEWPAYmjOMq"
+                alt=""
+              />
+              <img
+                className="w-1/2 shadow-sm rounded-md ml-2"
+                src="https://drive.google.com/uc?export=view&id=1D_DBTb8eS5i0Me72piqQpnizZ7gBSHJm"
+                alt=""
+              />
             </motion.div>
           ) : (
             <></>
@@ -306,15 +328,14 @@ function Campaigns() {
               </div>
               <div className="md:w-2/5 w-4/5 flex flex-col mx-2 md:mt-0 mt-4 justify-center text-left">
                 <h1 className="text-justify text-purple-800">
-                  This initiative began with a survey among the female students
-                  of IIT Gandhinagar, the majority of whom reported using
-                  plastic-based period products. Menstruating members who
-                  haven't taken the survey are encouraged to do so. This survey
-                  helps you understand why plastic-based menstrual products are
-                  a huge issue and introduce you to the many sustainable options
-                  in the market
+                  This initiative encourages the community to bring their own
+                  containers to take food and grocery at the outlets. Aim of
+                  this campaign is to reduce the disposable food containers and
+                  carry bags, encourage sustainable and reusable containers for
+                  storage purposes. Posters were placed near the outlets and
+                  student hostels to promote this campaign. We have also used
+                  our social media pages to promote this initiative.
                 </h1>
-                <h1 className="text-left mt-2">Contact : </h1>
               </div>
             </div>
           </motion.div>
@@ -325,12 +346,16 @@ function Campaigns() {
               exit={{ height: 0 }}
               className="md:w-1/2 w-4/5 text-sm font-treb text-purple-800  text-justify flex justify-center items-center mx-auto"
             >
-              This initiative began with a survey among the female students of
-              IIT Gandhinagar, the majority of whom reported using plastic-based
-              period products. Menstruating members who haven't taken the survey
-              are encouraged to do so. This survey helps you understand why
-              plastic-based menstrual products are a huge issue and introduce
-              you to the many sustainable options in the market
+              <img
+                className="w-1/2 shadow-md rounded-md"
+                src="https://drive.google.com/uc?export=view&id=1zC5BK6gYa3UGXwYKEuT1dyeEClht4LtT"
+                alt=""
+              />
+              <img
+                className="w-1/2 shadow-md rounded-md ml-2"
+                src="https://drive.google.com/uc?export=view&id=1DDjbSuyrx4P7zSON9G6oQelBOhwcJoyS"
+                alt=""
+              />
             </motion.div>
           ) : (
             <></>

@@ -7,15 +7,18 @@ import FbInput from "./FbInput";
 import { motion } from "framer-motion";
 import { useDispatch } from "react-redux";
 import { setChannelInfo } from "./features/appSlice";
+import useAnalyticsEventTracker from "./useAnalyticsEventTracker";
 //import { collection, addDoc, getDocs } from "firebase/firestore";
 
 import { collection, onSnapshot, orderBy, query } from "firebase/firestore";
 
 function Suggestions() {
+  const gaEventTracker = useAnalyticsEventTracker("Feedback");
   const [docs, setDoc] = useState([]);
   const dataRef = collection(db, "docs");
   const dispatch = useDispatch();
   useEffect(() => {
+    gaEventTracker("call");
     dispatch(setChannelInfo({ channelName: true }));
     onSnapshot(query(dataRef, orderBy("date", "desc")), (doc) => {
       setDoc(doc.docs.map((dc) => ({ data: dc.data(), id: dc.id })));
@@ -54,7 +57,7 @@ function Suggestions() {
             initial="initial"
             animate="animate"
             exit="exit"
-            className="font-beb mt-10 text-purple-300 mx-auto lg:text-8xl md:text-6xl text-4xl"
+            className="font-beb mt-10 text-purple-400 mx-auto lg:text-8xl md:text-6xl text-4xl"
           >
             FEEDBACK
           </motion.h1>
@@ -63,7 +66,7 @@ function Suggestions() {
             initial="initial"
             animate="animate"
             exit="exit"
-            className="ftext-center mx-auto font-treb text-md text-purple-300"
+            className="ftext-center mx-auto font-treb text-md text-purple-400"
           >
             Share your thoughts
           </motion.h1>

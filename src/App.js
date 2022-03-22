@@ -15,15 +15,19 @@ import Captain from "./Captain";
 import Campus from "./Campus";
 import Campaigns from "./Campaigns";
 import SustainableCampusInput from "./SustainableCampusInput";
+import ReactGA from "react-ga";
+
 function App() {
+  const TRACKING_ID = "UA-210876047-1"; // OUR_TRACKING_ID
+  ReactGA.initialize(TRACKING_ID);
   const location = useLocation();
   const Load = Math.floor(Math.random() * (5000 - 1000 + 1) + 1000);
   const [initialFlag, setFlag] = useState(true);
   const [isLoaded, setLoaded] = useState(false);
   useEffect(() => {
     setTimeout(() => setLoaded(true), Load);
-
     setTimeout(() => setFlag(false), 6000 + Load);
+    //ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
   return (
     <div>
@@ -65,6 +69,10 @@ function App() {
           <Route path="/Campus">
             <NavBar keyID="/Title" />
             <Campus />
+          </Route>
+          <Route path="/Campaigns">
+            <NavBar keyID="/Title" />
+            <Campaigns />
           </Route>
           <Route path="/AddData">
             <NavBar keyID="/AddData" />
