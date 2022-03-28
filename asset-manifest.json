@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "./static/css/main.2bef7f12.chunk.css",
-    "main.js": "./static/js/main.caf93073.chunk.js",
-    "main.js.map": "./static/js/main.caf93073.chunk.js.map",
+    "main.js": "./static/js/main.e46acd29.chunk.js",
+    "main.js.map": "./static/js/main.e46acd29.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.27339fe6.js",
     "runtime-main.js.map": "./static/js/runtime-main.27339fe6.js.map",
     "static/js/2.56705ee5.chunk.js": "./static/js/2.56705ee5.chunk.js",
@@ -28,17 +28,21 @@
     "static/media/dhanesh.b2fe75c3.png": "./static/media/dhanesh.b2fe75c3.png",
     "static/media/firebase.bf28194c.png": "./static/media/firebase.bf28194c.png",
     "static/media/hero.09a1e129.png": "./static/media/hero.09a1e129.png",
+    "static/media/hitesh.ac8ddba9.png": "./static/media/hitesh.ac8ddba9.png",
     "static/media/hrusti.787a8b92.png": "./static/media/hrusti.787a8b92.png",
     "static/media/iit.ca256d03.svg": "./static/media/iit.ca256d03.svg",
     "static/media/iitl.08fb166c.svg": "./static/media/iitl.08fb166c.svg",
     "static/media/logo_main_comp_2.de217f61.gif": "./static/media/logo_main_comp_2.de217f61.gif",
+    "static/media/me.45131638.png": "./static/media/me.45131638.png",
     "static/media/moon.9ebb6a89.svg": "./static/media/moon.9ebb6a89.svg",
     "static/media/motion.bfdfa681.png": "./static/media/motion.bfdfa681.png",
     "static/media/nandana.82b0cfad.png": "./static/media/nandana.82b0cfad.png",
     "static/media/prasanth.5c1e7645.png": "./static/media/prasanth.5c1e7645.png",
+    "static/media/rahul.87922984.png": "./static/media/rahul.87922984.png",
     "static/media/react.01f7688a.png": "./static/media/react.01f7688a.png",
     "static/media/redux.c8d82b3b.png": "./static/media/redux.c8d82b3b.png",
     "static/media/shashi.ccd858b0.png": "./static/media/shashi.ccd858b0.png",
+    "static/media/sheersha.6d680e9c.png": "./static/media/sheersha.6d680e9c.png",
     "static/media/shekhar.381a81ca.png": "./static/media/shekhar.381a81ca.png",
     "static/media/stone.8bcc2b16.svg": "./static/media/stone.8bcc2b16.svg",
     "static/media/store.607cbdc5.svg": "./static/media/store.607cbdc5.svg",
@@ -48,6 +52,6 @@
     "static/js/runtime-main.27339fe6.js",
     "static/js/2.56705ee5.chunk.js",
     "static/css/main.2bef7f12.chunk.css",
-    "static/js/main.caf93073.chunk.js"
+    "static/js/main.e46acd29.chunk.js"
   ]
 }
