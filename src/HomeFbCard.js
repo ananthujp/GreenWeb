@@ -22,7 +22,7 @@ function HomeFbCard({ name, img, msg, i }) {
         }
       >
         <h1 className="whitespace-nowrap overflow-hidden w-28 text-white text-xs ml-3  text-left font-semibold transform origin-top-left -rotate-90">
-          {name}
+          {name.length > 12 ? name.slice(0, 12) + ".." : name}
         </h1>
       </div>
       <div className="flex flex-col w-full justify-around text-white">

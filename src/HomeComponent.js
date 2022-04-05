@@ -10,11 +10,18 @@ import HomeProjComp from "./HomeProjComp";
 import { motion } from "framer-motion";
 import { Link, useHistory } from "react-router-dom";
 import SustainableCampus from "./SustainableCampus";
+import CountDown from "./CountDown";
+import {
+  ArrowLeftIcon,
+  ChevronLeftIcon,
+  ChevronRightIcon,
+} from "@heroicons/react/outline";
 
 function HomeComponent() {
   const history = useHistory();
   const dispatch = useDispatch();
   const [docs, setDoc] = useState([]);
+  const [screen, setScreen] = useState(false);
   const dataRef = collection(db, "docs");
   const item = {
     hidden: { opacity: 0 },
@@ -107,17 +114,33 @@ function HomeComponent() {
             </motion.div>
           </motion.div>
         </div>
-        <div className="max-w-xs md:flex hidden items-end ml-4 justify-center">
-          <img className="w-4/5" src={Logo} alt="" />
-        </div>
-        <div className="flex flex-col md:-ml-8 max-w-xs my-2">
-          <h1 className="text-white font-pop mb-2 text-left ml-4 text-md">
-            Campus Footprint
-          </h1>
-          <SustainableCampus
-            height={document.getElementById("projComp")?.clientHeight}
-          />
-        </div>
+        {screen ? (
+          <>
+            <ChevronLeftIcon
+              onClick={() => setScreen(false)}
+              className="w-8 ml-4 text-white hover:opacity-60"
+            />
+            <CountDown />
+          </>
+        ) : (
+          <>
+            <div className="max-w-xs md:flex hidden items-end ml-4 justify-center">
+              <img className="w-4/5" src={Logo} alt="" />
+            </div>
+            <div className="flex flex-col md:-ml-8 max-w-xs my-2">
+              <h1 className="text-white font-pop mb-2 text-left ml-4 text-md">
+                Campus Footprint
+              </h1>
+              <SustainableCampus
+                height={document.getElementById("projComp")?.clientHeight}
+              />
+            </div>
+            <ChevronRightIcon
+              onClick={() => setScreen(true)}
+              className="w-8 text-white hover:opacity-60"
+            />
+          </>
+        )}
         <div className="flex flex-row max-w-xs justify-center items-center mx-6">
           <HomeProjComp />
         </div>

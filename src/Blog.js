@@ -10,7 +10,7 @@ function Blog() {
     return (endDate - startDate) / 1000;
   };
   useEffect(() => {
-    endDate.setDate(24);
+    endDate.setDate(8);
     endDate.setHours(18);
     endDate.setMinutes(0);
     endDate.setSeconds(0);

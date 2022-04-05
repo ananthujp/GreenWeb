@@ -7,6 +7,7 @@ import Social from "./Social";
 import Blog from "./Blog";
 import Blogs from "./Blogs";
 import Green from "./Green";
+import AddEvent from "./AddEvent";
 import { AnimatePresence } from "framer-motion";
 import Home from "./Home";
 import { Switch, Route, useLocation } from "react-router-dom";
@@ -77,6 +78,10 @@ function App() {
           <Route path="/AddData">
             <NavBar keyID="/AddData" />
             <SustainableCampusInput />
+          </Route>
+          <Route path="/AddEvent">
+            <NavBar keyID="/AddEvent" />
+            <AddEvent />
           </Route>
         </Switch>
       </AnimatePresence>

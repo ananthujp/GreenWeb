@@ -1,16 +1,44 @@
 import { RewindIcon, ChevronDownIcon } from "@heroicons/react/outline";
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import ReactPlayer from "react-player";
+import { Link, useLocation } from "react-router-dom";
 import { animH1, animH2, animMainDiv } from "./Animations";
 import { Vector1, Vector2 } from "./vectors/importSVG";
+import * as Scroll from "react-scroll";
 function Campaigns() {
   const svgColor = "#8B5Cf6";
+  const location = useLocation();
+  console.log(location.pathname.split("/")[2]);
   const logoImg =
     "https://drive.google.com/uc?export=view&id=1YzjIiJSPt-oi3dpoCR3K3aAd07KwOGf9";
-  const [sec1, setSec1] = useState(false);
+  const [sec1, setSec1] = useState(
+    location.pathname.split("/")[2] === "Menstrual" ? true : false
+  );
   const [sec2, setSec2] = useState(false);
   const [sec3, setSec3] = useState(false);
+  const [sec4, setSec4] = useState(
+    location.pathname.split("/")[2] === "NoSpit" ? true : false
+  );
+  const Element = Scroll.Element;
+  const scroller = Scroll.scroller;
+  useEffect(() => {
+    location.pathname.split("/")[2] === "Menstrual" &&
+      scroller.scrollTo("scrollMenstrual", {
+        duration: 1500,
+        delay: 100,
+        smooth: true,
+        offset: 50,
+      });
+    location.pathname.split("/")[2] === "NoSpit" &&
+      scroller.scrollTo("scrollNoSpit", {
+        duration: 1500,
+        delay: 100,
+        smooth: true,
+        offset: 50,
+      });
+  }, []);
   return (
     <div className="bg-purple-900">
       <motion.div
@@ -143,93 +171,157 @@ function Campaigns() {
             points="23.76 0 0 19.96 29.46 29.46 23.76 0"
           />
         </motion.svg>
-
-        <div className="mt-4 flex flex-col w-full bg-white ">
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1, transition: { duration: 1.2, delay: 0.6 } }}
-            exit={{ opacity: 0 }}
-            className="md:w-1/2 w-5/7 my-4 mx-auto font-treb text-sm text-purple-400"
-          >
-            <div className="flex flex-col w-4/5 mx-auto">
-              <h1 className="font-treb text-purple-700  font-semibold text-left text-3xl">
-                Menstrual Sustainability
-              </h1>
-              <h1 className="font-treb text-purple-400  font-semibold text-left text-xl">
-                Menstrual Sustainability
-              </h1>
-            </div>
-            <div className="flex md:flex-row flex-col items-center justify-between  my-2">
-              <div className="text-center w-3/5 md:-ml-8 items-center justify-center flex flex-row">
-                <Vector2
-                  className=""
-                  color="#5f3b8f"
-                  link={
-                    "https://drive.google.com/uc?export=view&id=135WeiEhDVFy1bIRkTGN7Ph8c2md07_O7"
-                  }
-                />
-              </div>
-              <div className="md:w-2/5 w-4/5 flex flex-col mx-2 md:mt-0 mt-4 justify-center text-left">
-                <h1 className="text-justify text-purple-800">
-                  Sustainable Period Project: As part of the campaign, Green
-                  Club members developed an interactive google form that helped
-                  female students calculate the number of single use pads they
-                  have used since they started menstruating and the amount of
-                  money they spent for these products. The form introduced them
-                  to sustainable menstrual products while giving a comparison
-                  between the cost and impact of the sustainable and plastic
-                  based products, with sustainable products being cheaper long
-                  term and better for the planet. The form (N=80) indicated that
-                  38.8% students bought sustainable products immediately after
-                  or decided to buy in the next cycle, while 56.3% indicated
-                  that they will research the product before purchasing.
-                  <br />
-                </h1>
-              </div>
-            </div>
-          </motion.div>
-          {sec1 ? (
+        <Element name="scrollMenstrual">
+          <div className="mt-4 flex flex-col w-full bg-white ">
             <motion.div
-              initial={{ height: 0, opacity: 0 }}
-              animate={{ height: "auto", opacity: 1 }}
-              exit={{ height: 0 }}
-              className="md:w-1/2 w-4/5 text-sm font-treb text-purple-800  text-justify flex flex-col justify-center items-center mx-auto"
+              initial={{ opacity: 0 }}
+              animate={{
+                opacity: 1,
+                transition: { duration: 1.2, delay: 0.6 },
+              }}
+              exit={{ opacity: 0 }}
+              className="md:w-1/2 w-5/7 my-4 mx-auto font-treb text-sm text-purple-400"
             >
-              <h1>
-                Continuing the sustainable period project, Green Club members
-                invited The Woman’s Company to showcase their sustainable period
-                products, offering IITGN a discount of 30% on all products to
-                encourage female students and staff to switch to sustainable
-                products (Cotton Bamboo pads and Menstrual cups).
-                <br />
-                Feel free to take the sustainable period{" "}
-                <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSd0t12AI5HvrtCJq3iU8uV2Mjl0pV1iKLr7M3Y2G00AA9_sQA/viewform?usp=sf_link"
-                  alt=""
-                  className="text-rose-600"
-                >
-                  &nbsp;project quiz &nbsp;
-                </a>
-                to know about the cost of your period products, on your pocket
-                and the planet.
-              </h1>
+              <div className="flex flex-row justify-between w-full">
+                <div className="w-full"></div>
+                <div className="flex flex-col w-4/5 mx-auto">
+                  <h1 className="font-treb text-purple-700  font-semibold text-left text-3xl">
+                    The Sustainable Menstrual Project
+                  </h1>
+                  <h1 className="font-treb text-purple-400  font-semibold text-left text-xl">
+                    Menstrual Sustainability
+                  </h1>
+                </div>
+              </div>
+              <div className="flex md:flex-row flex-col items-center justify-between  my-2">
+                <div className="text-center w-3/5 md:-ml-8 items-center justify-center flex flex-row">
+                  <Vector2
+                    className=""
+                    color="#5f3b8f"
+                    link={
+                      "https://drive.google.com/uc?export=view&id=135WeiEhDVFy1bIRkTGN7Ph8c2md07_O7"
+                    }
+                  />
+                </div>
+                <div className="md:w-2/5 w-4/5 flex flex-col mx-2 md:mt-0 mt-4 justify-center text-left">
+                  <h1 className="text-justify text-purple-800">
+                    Sustainable Period Project: As part of the campaign, Green
+                    Club members developed an interactive google form that
+                    helped female students calculate the number of single use
+                    pads they have used since they started menstruating and the
+                    amount of money they spent for these products. The form
+                    introduced them to sustainable menstrual products while
+                    giving a comparison between the cost and impact of the
+                    sustainable and plastic based products, with sustainable
+                    products being cheaper long term and better for the planet.
+                    The form (N=80) indicated that 38.8% students bought
+                    sustainable products immediately after or decided to buy in
+                    the next cycle, while 56.3% indicated that they will
+                    research the product before purchasing.
+                    <br />
+                  </h1>
+                </div>
+              </div>
             </motion.div>
-          ) : (
-            <></>
-          )}
-          <div
-            onClick={() => setSec1(!sec1)}
-            className="flex flex-row cursor-pointer text-sm mt-2 text-rose-600
-            hover:text-rose-400 mx-auto text-center mb-2 bg-purple-100 transition-all py-1 px-2 rounded-full"
-          >
-            {" "}
-            See {sec1 ? "less" : "more"}
-            <ChevronDownIcon
-              className={"w-5 ml-1 transform " + (sec1 ? "rotate-180" : "")}
-            />
-          </div>
-        </div>
+            {sec1 ? (
+              <motion.div
+                initial={{ height: 0, opacity: 0 }}
+                animate={{ height: "auto", opacity: 1 }}
+                exit={{ height: 0 }}
+                className="md:w-1/2 w-4/5 text-sm font-treb text-purple-800  text-justify flex flex-col justify-center items-center mx-auto"
+              >
+                <h1>
+                  Continuing the sustainable period project, Green Club members
+                  invited The Woman’s Company to showcase their sustainable
+                  period products, offering IITGN a discount of 30% on all
+                  products to encourage female students and staff to switch to
+                  sustainable products (Cotton Bamboo pads and Menstrual cups).
+                  <br />
+                  Feel free to take the sustainable period{" "}
+                  <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSd0t12AI5HvrtCJq3iU8uV2Mjl0pV1iKLr7M3Y2G00AA9_sQA/viewform?usp=sf_link"
+                    alt=""
+                    className="text-rose-600"
+                  >
+                    &nbsp;project quiz &nbsp;
+                  </a>
+                  to know about the cost of your period products, on your pocket
+                  and the planet.
+                </h1>
+                <div className="flex mt-4 flex-row w-full rounded-md bg-indigo-100">
+                  <img
+                    src="https://drive.google.com/uc?export=view&id=1exqsV9meobN5EwxWuldra-LYy-otmRrF"
+                    alt=""
+                    className="w-1/2 m-4 rounded-lg mr-6"
+                  />
+                  <div className="flex flex-col w-1/2 m-4">
+                    <h1 className="font-popb text-purple-800 text-lg">
+                      Webinar by Dr Mira Butani : 31 March 2022
+                    </h1>
+                    <h1 className=" text-pop text-purple-800 mt-2">
+                      Bio of the speaker : Dr Mira is a gynaecologist at IIT
+                      Gandhinagar. She has started her career as a doctor in
+                      1983.{" "}
+                    </h1>
+                    <h1 className=" text-pop text-purple-800 mt-2">
+                      She had talked about Periods, Best practices, Hygiene and
+                      Menstrual disorders
+                    </h1>
+                    <h1 className=" text-pop text-purple-800 mt-2">
+                      Find the recording of the event here :
+                    </h1>
+                    <ReactPlayer
+                      width="100%"
+                      url="https://www.youtube.com/watch?v=aUu1CV00GRo"
+                    />
 
+                    <a
+                      href="https://drive.google.com/uc?export=view&id=1VzJ5soTBEnGdjxX2zBmmqN3Vr18k7noB"
+                      alt=""
+                    >
+                      Click here to Download
+                    </a>
+                  </div>
+                </div>
+                <div className="flex mt-4 flex-row w-full rounded-md bg-indigo-100">
+                  <img
+                    src="https://drive.google.com/uc?export=view&id=1VVLbDsg1pQHSfcNVx-5GzeqRGbQPIAUA"
+                    alt=""
+                    className="w-1/2 m-4 rounded-lg mr-6"
+                  />
+                  <div className="flex flex-col w-1/2 m-4">
+                    <h1 className="font-popb text-purple-800 text-lg">
+                      Movie Screening : Pad Man
+                    </h1>
+                    <h1 className=" text-pop text-purple-800 mt-2">
+                      About the movie : Story of a man upon realizing the extent
+                      to which women are affected by their menses, sets out to
+                      create a sanitary pad machine and to provide inexpensive
+                      sanitary pads to the women of rural India.
+                    </h1>
+                    <h1 className=" text-pop text-purple-800 mt-2">
+                      Pad Man movie has been screened at Jesubhai Memorial
+                      Auditorium (Audi 600) on 2nd April 2022.
+                    </h1>
+                  </div>
+                </div>
+              </motion.div>
+            ) : (
+              <></>
+            )}
+            <div
+              onClick={() => setSec1(!sec1)}
+              className="flex flex-row cursor-pointer text-sm mt-2 text-rose-600
+            hover:text-rose-400 mx-auto text-center mb-2 bg-purple-100 transition-all py-1 px-2 rounded-full"
+            >
+              {" "}
+              See {sec1 ? "less" : "more"}
+              <ChevronDownIcon
+                className={"w-5 ml-1 transform " + (sec1 ? "rotate-180" : "")}
+              />
+            </div>
+          </div>
+        </Element>
         {/* Second */}
 
         <div className="mt-4 flex flex-col w-full">
@@ -310,13 +402,16 @@ function Campaigns() {
             exit={{ opacity: 0 }}
             className="md:w-1/2 w-5/7 my-4 mx-auto font-treb text-sm text-purple-400"
           >
-            <div className="flex flex-col w-4/5 mx-auto">
-              <h1 className="font-treb text-purple-700  font-semibold text-left text-3xl">
-                Zero Waste
-              </h1>
-              <h1 className="font-treb text-purple-400  font-semibold text-left text-xl">
-                Bring your Own Containers
-              </h1>
+            <div className="flex flex-row justify-between w-full">
+              <div className="w-full"></div>
+              <div className="flex flex-col w-4/5 mx-auto">
+                <h1 className="font-treb text-purple-700  font-semibold text-left text-3xl">
+                  Zero Waste
+                </h1>
+                <h1 className="font-treb text-purple-400  font-semibold text-left text-xl">
+                  Bring your Own Containers
+                </h1>
+              </div>
             </div>
             <div className="flex md:flex-row flex-col items-center justify-between  my-2">
               <div className="text-center w-3/5 md:-ml-8 items-center justify-center flex flex-row">
@@ -372,7 +467,157 @@ function Campaigns() {
             />
           </div>
         </div>
+        {/* Fourth */}
+        <Element name="scrollNoSpit">
+          <div className="mt-4 flex flex-col w-full">
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{
+                opacity: 1,
+                transition: { duration: 1.2, delay: 0.6 },
+              }}
+              exit={{ opacity: 0 }}
+              className="md:w-1/2 w-5/7 my-4 mx-auto font-treb text-sm text-purple-400"
+            >
+              <div className="flex flex-col w-4/5 mx-auto">
+                <h1 className="font-treb text-white  font-semibold text-left text-3xl">
+                  Stop India Spitting
+                </h1>
+                <h1 className="font-treb text-purple-400  font-semibold text-left text-xl">
+                  No Spit Campaign
+                </h1>
+              </div>
 
+              <div className="flex md:flex-row flex-col items-center justify-between  my-2">
+                <div className="md:w-2/5 w-4/5 flex flex-col mx-2 md:mt-0 mt-4 justify-center text-left">
+                  <h1 className="text-justify text-white">
+                    India has a spitting problem, and no amount of rules has
+                    helped change this. With Covid-19, it seems like a good time
+                    for the country to quit. Green Club in collaboration with Ms
+                    Odette Katrak from Stop India Spitting came up with a
+                    campaign to quit this habit and educate people about the
+                    diseases and health issues related to the spitting habit.
+                  </h1>
+                </div>
+                <div className="text-center w-3/5 md:ml-8 items-center justify-center flex flex-row">
+                  <Vector1
+                    className=""
+                    color="#ffffff"
+                    link="https://cdn.dnaindia.com/sites/default/files/styles/full/public/2015/01/15/301859-spitting-600.jpg"
+                  />
+                </div>
+              </div>
+            </motion.div>
+            {sec4 ? (
+              <motion.div
+                initial={{ height: 0, opacity: 0 }}
+                animate={{ height: "auto", opacity: 1 }}
+                exit={{ height: 0 }}
+                className="md:w-1/2 w-4/5 text-sm font-treb text-white  text-justify flex flex-col justify-center items-center mx-auto"
+              >
+                <div className="flex mt-4 flex-col justify-center items-center w-full rounded-md bg-indigo-100">
+                  <h1 className="font-popb my-4 text-purple-800 text-lg">
+                    Video Promoting No Spit Campaign by Students of IIT GN
+                    (Gujarati)
+                  </h1>
+
+                  <ReactPlayer
+                    width="100%"
+                    url="https://www.youtube.com/watch?v=NE4JJAZHu0g"
+                  />
+                </div>
+                <div className="flex mt-4 flex-col justify-center items-center w-full rounded-md bg-indigo-100">
+                  <h1 className="font-popb my-4 text-purple-800 text-lg">
+                    Posters Promoting No Spit Campaign (Gujarati)
+                  </h1>
+                  <div class="grid-cols-3 p-20 space-y-2 lg:space-y-0 lg:grid lg:gap-3 lg:grid-rows-3">
+                    <div class="w-full rounded">
+                      <img
+                        src="https://drive.google.com/uc?export=view&id=1IBrVSTPuPxPIeq6XWHk5cVp7Mz7k4CNT"
+                        alt="image"
+                      />
+                    </div>
+                    <div class="w-full col-span-2 row-span-2 rounded">
+                      <img
+                        src="https://drive.google.com/uc?export=view&id=1yMqYOo8S8t3LXo399gK6yhVTn1jrMslm"
+                        alt="image"
+                      />
+                    </div>
+                    <div class="w-full rounded">
+                      <img
+                        src="https://drive.google.com/uc?export=view&id=1rp2wBUSGoLPIxMsE_K319xjNyCF-O4BH"
+                        alt="image"
+                      />
+                    </div>
+                    <div class="w-full rounded">
+                      <img
+                        src="https://drive.google.com/uc?export=view&id=1jlWmK3ghd13b6XTRG51LUZi1hfAj5V63"
+                        alt="image"
+                      />
+                    </div>
+                    <div class="w-full rounded">
+                      <img
+                        src="https://drive.google.com/uc?export=view&id=1MKaudXoEMtzP8kk3n9gOXKvqmB3mEFJl"
+                        alt="image"
+                      />
+                    </div>
+                    <div class="w-full rounded">
+                      <img
+                        src="https://drive.google.com/uc?export=view&id=1bUxlFKnMACElbcgsrFOXcR-bwBpy2j0J"
+                        alt="image"
+                      />
+                    </div>
+                    <div class="w-full rounded">
+                      <img
+                        src="https://drive.google.com/uc?export=view&id=1tB3VtA6uo9BnhIRLYJbmx4ajOXex0BWr"
+                        alt="image"
+                      />
+                    </div>
+
+                    <div class="w-full rounded">
+                      <img
+                        src="https://drive.google.com/uc?export=view&id=1V_fnygSAkctIw43ylXn_n2Q4TdI8JiGi"
+                        alt="image"
+                      />
+                    </div>
+                  </div>
+                  <h1 className="font-popb my-4 text-purple-800 text-xs">
+                    All rights of above posters belongs to Stop India Spitting,
+                    Beautiful Bengaluru
+                  </h1>
+                </div>
+                <div className="flex mt-4 flex-col justify-center items-center w-full rounded-md bg-indigo-100">
+                  <h1 className="font-popb my-4 text-purple-800 text-lg">
+                    Green Club Stall in Nyasa Sanjeevani 2022
+                  </h1>
+                  <h1 className="font-pop my-4 text-purple-800 text-sm">
+                    Green Club opened a stall during the Sanjeevani health camp
+                    2022 for the people from Basan, Palaj villages Gujarat on 27
+                    March 2022.
+                  </h1>
+                  <img
+                    src="https://drive.google.com/uc?export=view&id=1sXUQnzOBu0XlqCiXxExA-HoApYeXVV7U"
+                    alt=""
+                  />
+                </div>
+              </motion.div>
+            ) : (
+              <></>
+            )}
+            <div
+              onClick={() => setSec4(!sec4)}
+              className="flex flex-row cursor-pointer mt-2 text-white
+            hover:text-white mx-auto text-center mb-2 bg-purple-600 text-sm 
+            transition-all py-1 px-2 rounded-full"
+            >
+              {" "}
+              See {sec4 ? "less" : "more"}
+              <ChevronDownIcon
+                className={"w-5 ml-1 transform " + (sec4 ? "rotate-180" : "")}
+              />
+            </div>
+          </div>
+        </Element>
         <motion.svg
           xmlns="http://www.w3.org/2000/svg"
           animate={{ rotate: [0, 180, 0] }}
