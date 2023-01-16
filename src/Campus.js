@@ -68,6 +68,40 @@ const CampusActivities = [
     logo: "1f3yfdrVnlnvr7pcNlmz7c2pcf1i_55Bl",
     images: ["1f3yfdrVnlnvr7pcNlmz7c2pcf1i_55Bl"],
   },
+  {
+    name: "Swachhata Awareness in Basan Village",
+    details:
+      "Awareness sessions were conducted in a school and anganwadi of Basan village. More than 40 students from Basan School and around 20 students from Anganwadi attended the session. Aim of these sessions to give awareness on the  importance of Waste Segregation and Cleanliness",
+    logo: "18z6ltvD0l00lMiQ6oWssMTEBKowr6Opa",
+    images: [
+      "18z6ltvD0l00lMiQ6oWssMTEBKowr6Opa",
+      "1XMfYntYmi5a3XYKTuuYcDPFu7vYrZE3F",
+      "1dZgfdYOsPrq01KOKxFw8sJ_nchSzBw4o",
+      "1OSuT3yJMImcXy7kRy7IgMMLU5DJhN0Bp",
+    ],
+  },
+  {
+    name: "Awareness of housekeeping staff and office attendants",
+    details:
+      "Awareness sessions for housekeeping staff and office attendants working in the academic and hostel blocks. They were educated about the importance of segregation of waste and cleanliness.",
+    logo: "1mvUNp37wmXAzhaKoBNnWo4MHj9-fbS-o",
+    images: [
+      "1mvUNp37wmXAzhaKoBNnWo4MHj9-fbS-o",
+      "1mWwC4cajqQaUAPI5aVeScIppPvp10dBn",
+    ],
+  },
+  {
+    name: "Earth Day plantation and cleanliness drive",
+    details:
+      "As part of the Earth Day 2022, Green Club organised a plantation and cleanliness drive.",
+    logo: "1vchXm03W4tGyZYHI4dNI2HaRraOa-S2L",
+    images: [
+      "1vchXm03W4tGyZYHI4dNI2HaRraOa-S2L",
+      "1aURoPYtB0-IU6Lki5617Sag00Mgn6Xn3",
+      "18pJBwhPYs16fqgjaJDDQTCuYQex6nIYs",
+      "1VpIhpLl4IVD86fu5nJ8C7KY7Xl2kJBpm",
+    ],
+  },
 ];
 function Campus() {
   const svgColor = "#8B5Cf6";

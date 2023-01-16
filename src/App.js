@@ -17,6 +17,7 @@ import Campus from "./Campus";
 import Campaigns from "./Campaigns";
 import SustainableCampusInput from "./SustainableCampusInput";
 import ReactGA from "react-ga";
+import Milestones from "./milestones/Milestone";
 
 function App() {
   const TRACKING_ID = "UA-210876047-1"; // OUR_TRACKING_ID
@@ -82,6 +83,10 @@ function App() {
           <Route path="/AddEvent">
             <NavBar keyID="/AddEvent" />
             <AddEvent />
+          </Route>
+          <Route path="/Milestones">
+            <NavBar keyID="/Milestones" />
+            <Milestones />
           </Route>
         </Switch>
       </AnimatePresence>

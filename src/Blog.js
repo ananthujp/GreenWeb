@@ -55,9 +55,14 @@ function Blog() {
             your message to make this world a better place. Come pen down your
             thoughts and create a unique and beautiful blog.
           </motion.h1>
-          <button class="py-2 cursor-pointer my-2 px-4 hover:bg-white hover:text-indigo-500 font-semibold rounded-lg shadow-md bg-indigo-700 text-white focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-75">
-            Launching in {parseInt(time / (60 * 60))} hours &nbsp;
-            {parseInt((time / 60) % 60)} min {parseInt(time % 60)} sec
+          <button
+            onClick={() =>
+              (window.location.href =
+                "https://students.iitgn.ac.in/greenclub/blog/")
+            }
+            class="py-2 cursor-pointer my-2 px-4 hover:bg-white hover:text-indigo-500 font-semibold rounded-lg shadow-md bg-indigo-700 text-white focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-75"
+          >
+            Visit Now!
           </button>
         </div>
       </div>

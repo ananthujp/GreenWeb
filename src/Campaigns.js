@@ -248,40 +248,43 @@ function Campaigns() {
                   to know about the cost of your period products, on your pocket
                   and the planet.
                 </h1>
-                <div className="flex mt-4 flex-row w-full rounded-md bg-indigo-100">
-                  <img
-                    src="https://drive.google.com/uc?export=view&id=1exqsV9meobN5EwxWuldra-LYy-otmRrF"
-                    alt=""
-                    className="w-1/2 m-4 rounded-lg mr-6"
-                  />
-                  <div className="flex flex-col w-1/2 m-4">
-                    <h1 className="font-popb text-purple-800 text-lg">
-                      Webinar by Dr Mira Butani : 31 March 2022
-                    </h1>
-                    <h1 className=" text-pop text-purple-800 mt-2">
-                      Bio of the speaker : Dr Mira is a gynaecologist at IIT
-                      Gandhinagar. She has started her career as a doctor in
-                      1983.{" "}
-                    </h1>
-                    <h1 className=" text-pop text-purple-800 mt-2">
-                      She had talked about Periods, Best practices, Hygiene and
-                      Menstrual disorders
-                    </h1>
-                    <h1 className=" text-pop text-purple-800 mt-2">
-                      Find the recording of the event here :
-                    </h1>
-                    <ReactPlayer
-                      width="100%"
-                      url="https://www.youtube.com/watch?v=aUu1CV00GRo"
-                    />
-
-                    <a
-                      href="https://drive.google.com/uc?export=view&id=1VzJ5soTBEnGdjxX2zBmmqN3Vr18k7noB"
+                <div className="flex border border-indigo-300 shadow-md flex-col mt-4 w-full rounded-md bg-indigo-100">
+                  <h1 className="font-popb mt-2 text-center text-purple-800 text-lg">
+                    Webinar by Dr Mira Butani : 31 March 2022
+                  </h1>
+                  <div className="flex flex-row w-full">
+                    <img
+                      src="https://drive.google.com/uc?export=view&id=1exqsV9meobN5EwxWuldra-LYy-otmRrF"
                       alt=""
-                    >
-                      Click here to Download
-                    </a>
+                      className="w-1/2 m-4 rounded-lg mr-6"
+                    />
+                    <div className="flex flex-col w-1/2 m-4">
+                      <h1 className=" text-pop text-purple-800 mt-2">
+                        Bio of the speaker : Dr Mira is a gynaecologist at IIT
+                        Gandhinagar. She has started her career as a doctor in
+                        1983.{" "}
+                      </h1>
+                      <h1 className=" text-pop text-purple-800 mt-2">
+                        She had talked about Periods, Best practices, Hygiene
+                        and Menstrual disorders
+                      </h1>
+                    </div>
                   </div>
+                  <h1 className="text-center text-pop text-purple-800 mt-2">
+                    Find the recording of the event here :
+                  </h1>
+                  <ReactPlayer
+                    width="100%"
+                    url="https://www.youtube.com/watch?v=aUu1CV00GRo"
+                  />
+
+                  <a
+                    className="text-center"
+                    href="https://drive.google.com/uc?export=view&id=1VzJ5soTBEnGdjxX2zBmmqN3Vr18k7noB"
+                    alt=""
+                  >
+                    Click here to Download
+                  </a>
                 </div>
                 <div className="flex mt-4 flex-row w-full rounded-md bg-indigo-100">
                   <img
@@ -590,7 +593,7 @@ function Campaigns() {
                   <h1 className="font-popb my-4 text-purple-800 text-lg">
                     Green Club Stall in Nyasa Sanjeevani 2022
                   </h1>
-                  <h1 className="font-pop my-4 text-purple-800 text-sm">
+                  <h1 className="font-pop my-4 mx-4 text-purple-800 text-sm">
                     Green Club opened a stall during the Sanjeevani health camp
                     2022 for the people from Basan, Palaj villages Gujarat on 27
                     March 2022.

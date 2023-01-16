@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bgdots {
+  background: linear-gradient(90deg, rgb(238 242 255) 21px, transparent 1%)
+      center,
+    linear-gradient(rgb(238 242 255) 21px, transparent 1%) center, #a799cc;
+  background-size: 22px 22px;
+}
+.glassBg {
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
