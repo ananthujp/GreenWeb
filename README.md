@@ -6,6 +6,7 @@ Welcome to the official GitHub repository of the Green Club IIT Gandhinagar's in
 <h3>Demo</h3>
 Check out the live demo <a href="https://students.iitgn.ac.in/greenclub">here</a>.
 
+<img src="https://students.iitgn.ac.in/greenclub/preview.png" alt=""/>
 <h2>Overview</h2>
 The Green Club IIT Gandhinagar is committed to promoting environmental awareness, sustainable practices, and eco-friendly initiatives on the campus. This interactive website serves as a hub for showcasing various activities, campaigns, and initiatives undertaken by the Green Club. It provides a platform for students and visitors to learn about the club's projects, participate in activities, and contribute to the campus's environmental sustainability.
 
